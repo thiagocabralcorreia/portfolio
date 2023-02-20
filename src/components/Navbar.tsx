@@ -6,8 +6,8 @@ function Navbar() {
   const ref = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-neutral-900 animate-fade-in-down">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-neutral-800 lg:bg-neutral-900 animate-fade-in-down">
+      <div className="w-10/12 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           <div className="w-full flex items-center justify-between">
             <div className="flex-shrink-0">
@@ -62,11 +62,11 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div className="-mr-2 flex lg:hidden">
+          <div className="mr-2 flex lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="bg-neutral-900 inline-flex items-center justify-center p-2 rounded-md text-white hover:amber-300 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-800 focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:amber-300 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -107,7 +107,7 @@ function Navbar() {
             </button>
           </div>
         </div>
-      </nav>
+      </div>
 
       <Transition
         show={isOpen}
@@ -118,8 +118,11 @@ function Navbar() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <nav className="lg:hidden" id="mobile-menu">
-          <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="lg:hidden " id="mobile-menu">
+          <div
+            ref={ref}
+            className="text-center px-2 pt-2 pb-3 space-y-1 sm:px-3"
+          >
             <a
               href="#"
               className="text-white hover:text-amber-300 block font-bold px-3 py-4 rounded-md text-lg"
@@ -159,9 +162,9 @@ function Navbar() {
               Contact
             </a>
           </div>
-        </nav>
+        </div>
       </Transition>
-    </header>
+    </nav>
   );
 }
 
