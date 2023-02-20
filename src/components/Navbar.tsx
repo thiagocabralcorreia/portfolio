@@ -21,41 +21,41 @@ function Navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Home
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
                 >
                   About
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Experience
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Projects
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Recommendations
                 </a>
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Contact
                 </a>
@@ -66,7 +66,7 @@ function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:amber-300 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-800 focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-amber-300 duration-500 hover:bg-neutral-800"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -125,39 +125,39 @@ function Navbar() {
           >
             <a
               href="#"
-              className="text-white hover:text-amber-300 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
             >
               Home
             </a>
             <a
               href="#"
-              className="text-white hover:text-amber-300 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
             >
               About
             </a>
 
             <a
               href="#"
-              className="text-white hover:text-amber-300 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
             >
               Experience
             </a>
 
             <a
               href="#"
-              className="text-white hover:text-amber-300 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
             >
               Projects
             </a>
             <a
               href="#"
-              className="text-white hover:text-amber-300 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
             >
               Recommendations
             </a>
             <a
               href="#"
-              className="text-white hover:text-amber-300 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
             >
               Contact
             </a>
