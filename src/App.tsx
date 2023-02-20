@@ -1,5 +1,6 @@
 import IntroBanner from "./components/IntroBanner";
 import Navbar from "./components/Navbar";
+import SocialLinks from "./components/SocialLinks";
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <header className="w-full h-screen bg-neutral-900">
         <Navbar />
         <IntroBanner />
+
+        <SocialLinks />
       </header>
     </div>
   );

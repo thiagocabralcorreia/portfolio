@@ -11,10 +11,10 @@ const IntroBanner = () => {
       className="w-10/12 h-5/6 m-auto px-8 lg:flex"
     >
       <div className="flex flex-col text-center lg:text-left content-center justify-center max-lg:my-20 max-auto">
-        <p className="text-neutral-300 text-xl pb-3 md:pb-4">
+        <p className="text-neutral-300 text-xl mb-3 sm:mb-4">
           Hi, there! My name is
         </p>
-        <h1 className="text-3xl sm:text-5xl xl:text-6xl text-white md:font-bold pb-3 md:pb-5 font-barlow">
+        <h1 className="text-3xl sm:text-5xl xl:text-6xl text-white md:font-bold mb-3 sm:mb-5 font-barlow">
           <span className="text-amber-300">THIAGO</span> CABRAL CORREIA
         </h1>
         <p className="text-xl max-w-xl max-lg:mx-auto sm:text-xl text-neutral-300">
