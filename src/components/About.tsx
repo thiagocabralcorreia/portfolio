@@ -32,10 +32,8 @@ const About = () => {
     >
       <div className="w-10/12 flex max-lg:flex-col m-auto max-lg:text-center content-center justify-center">
         <div className="max-md: px-5 lg:w-1/2 lg:mr-24 max-lg:mb-20">
-          <h1 className="text-3xl sm:text-5xl xl:text-5xl max-lg:mb-8 mb-12 text-white font-barlow">
-            NICE TO MEET YOU
-          </h1>
-          <p className="text-xl mx-auto mb-8 text-neutral-300">
+          <h1 className="topic-title">NICE TO MEET YOU</h1>
+          <p className="topic-text">
             So, I've been a{" "}
             <span className="text-amber-300">
               Front-end Web & Mobile Developer
@@ -49,7 +47,7 @@ const About = () => {
             creating cool digital stuff, such as{" "}
             <span className="text-amber-300">websites and mobile apps</span>.
           </p>
-          <p className="text-xl mx-auto mb-8 text-neutral-300">
+          <p className="topic-text">
             I enjoy every project step: from the first team meeting, discovering
             the purposes and problems to solve, to taking vector designs and
             bring them to life in code, thus making a{" "}
@@ -70,10 +68,8 @@ const About = () => {
           </p>
         </div>
         <div className="lg:w-1/2 lg:mr-24 max-lg:mb-20">
-          <h1 className="text-3xl sm:text-5xl xl:text-5xl max-lg:mb-8 mb-12 text-white font-barlow">
-            SKILLS
-          </h1>
-          <p className="text-xl mx-auto mb-8 text-neutral-300">
+          <h1 className="topic-title">SKILLS</h1>
+          <p className="topic-text">
             Some skills and tools I’ve been working with:
           </p>
           <div className="flex flex-wrap max-lg:justify-center">
