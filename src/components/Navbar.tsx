@@ -6,8 +6,8 @@ function Navbar() {
   const ref = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-neutral-800 lg:bg-neutral-900 animate-fade-in-down">
-      <div className="w-10/12 mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 z-10 bg-neutral-800 lg:bg-neutral-900 animate-fade-in-down">
+      <nav className="w-10/12 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           <div className="w-full flex items-center justify-between">
             <div className="flex-shrink-0">
@@ -21,43 +21,36 @@ function Navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-[21px] font-medium font-barlow"
                 >
-                  Home
+                  HOME
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-[21px] font-medium font-barlow"
                 >
-                  About
+                  ABOUT
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-[21px] font-medium font-barlow"
                 >
-                  Experience
+                  PROJECTS
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-[21px] font-medium font-barlow"
                 >
-                  Projects
-                </a>
-
-                <a
-                  href="#"
-                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
-                >
-                  Recommendations
+                  RECOMMENDATIONS
                 </a>
                 <a
                   href="#"
-                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-lg font-medium"
+                  className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-[21px] font-medium font-barlow"
                 >
-                  Contact
+                  CONTACT
                 </a>
               </div>
             </div>
@@ -107,7 +100,7 @@ function Navbar() {
             </button>
           </div>
         </div>
-      </div>
+      </nav>
 
       <Transition
         show={isOpen}
@@ -118,53 +111,53 @@ function Navbar() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <div className="lg:hidden " id="mobile-menu">
+        <nav className="lg:hidden " id="mobile-menu">
           <div
             ref={ref}
             className="text-center px-2 pt-2 pb-3 space-y-1 sm:px-3"
           >
             <a
               href="#"
-              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
             >
-              Home
+              HOME
             </a>
             <a
               href="#"
-              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
             >
-              About
-            </a>
-
-            <a
-              href="#"
-              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
-            >
-              Experience
+              ABOUT
             </a>
 
             <a
               href="#"
-              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
             >
-              Projects
+              EXPERIENCE
+            </a>
+
+            <a
+              href="#"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
+            >
+              PROJECTS
             </a>
             <a
               href="#"
-              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
             >
-              Recommendations
+              RECOMMENDATIONS
             </a>
             <a
               href="#"
-              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-lg"
+              className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
             >
-              Contact
+              CONTACT
             </a>
           </div>
-        </div>
+        </nav>
       </Transition>
-    </nav>
+    </header>
   );
 }
 
