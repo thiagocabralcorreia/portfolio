@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from "react";
-import { topics, TopicSchema } from "../data/topics";
+import { sections, SectionSchema } from "../data/sections";
 import DropdownMenu from "./DropdownMenu";
 
 function Navbar() {
@@ -31,14 +31,14 @@ function Navbar() {
             </div>
             <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                {topics.map(({ id, topic }: TopicSchema) => {
+                {sections.map(({ id, section }: SectionSchema) => {
                   return (
                     <a
                       key={id}
                       href="#"
                       className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-[21px] font-medium font-barlow"
                     >
-                      {topic}
+                      {section}
                     </a>
                   );
                 })}

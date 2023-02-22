@@ -1,46 +1,7 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-
-interface SocialLinksProps {
-  id: number;
-  child: any;
-  href: string;
-  style?: string;
-}
+import { links, LinkSchema } from "../data/socialLinks";
 
 const SocialLinks = () => {
-  const links = [
-    {
-      id: 1,
-      child: (
-        <>
-          <p className="ml-5">LinkedIn</p> <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://www.linkedin.com/in/thiago-cabral-correia/",
-      style: "rounded-tr-md",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          <p className="ml-5">GitHub</p> <FaGithub size={30} />
-        </>
-      ),
-      href: "https://github.com/thiagocabralcorreia",
-    },
-    {
-      id: 3,
-      child: (
-        <>
-          <p className="ml-5">Mail</p> <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:thiagocabralcorreia@gmail.com",
-    },
-  ];
-
   return (
     <motion.div
       initial={{ x: -180 }}
@@ -49,7 +10,7 @@ const SocialLinks = () => {
       className="absolute hidden md:flex flex-col top-[50%] lg:top-[35%] left-0"
     >
       <ul>
-        {links.map(({ id, child, href, style }: SocialLinksProps) => (
+        {links.map(({ id, child, href, style }: LinkSchema) => (
           <li
             key={id}
             className={

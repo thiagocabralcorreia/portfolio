@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Transition } from "@headlessui/react";
-import { topics, TopicSchema } from "../data/topics";
+import { sections, SectionSchema } from "../data/sections";
 
 interface DropdownMenuProps {
   show: boolean;
@@ -22,7 +22,7 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
       <nav className="lg:hidden">
         <div ref={ref} className="h-screen overflow-hidden text-center">
           <div className="pt-2 pb-3 space-y-1 sm:px-3 bg-neutral-800 lg:bg-neutral-900">
-            {topics.map(({ id, topic }: TopicSchema) => {
+            {sections.map(({ id, section }: SectionSchema) => {
               return (
                 // eslint-disable-next-line jsx-a11y/anchor-is-valid
                 <a
@@ -31,7 +31,7 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
                   onClick={onClose}
                   className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
                 >
-                  {topic}
+                  {section}
                 </a>
               );
             })}

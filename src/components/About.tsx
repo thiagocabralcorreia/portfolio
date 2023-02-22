@@ -1,26 +1,5 @@
 import { motion } from "framer-motion";
-
-interface SkillSchema {
-  id: number;
-  skill: string;
-}
-
-const skills = [
-  { id: 1, skill: "React.js" },
-  { id: 2, skill: "TypeScript" },
-  { id: 3, skill: "HMTL & CSS" },
-  { id: 4, skill: "JavaScript" },
-  { id: 5, skill: "Next.js" },
-  { id: 6, skill: "Git & GitHub" },
-  { id: 7, skill: "Data Structures" },
-  { id: 8, skill: "Tailwind" },
-  { id: 9, skill: "React Native" },
-  { id: 10, skill: "UI/UX" },
-  { id: 11, skill: "Styled-components" },
-  { id: 12, skill: "Redux" },
-  { id: 13, skill: "Scrum & Kanban" },
-  { id: 14, skill: "Accessibility" },
-];
+import { skills, SkillSchema } from "../data/skills";
 
 const About = () => {
   return (
@@ -32,8 +11,8 @@ const About = () => {
     >
       <div className="w-10/12 flex max-lg:flex-col m-auto max-lg:text-center content-center justify-center">
         <div className="max-md: px-5 lg:w-1/2 lg:mr-24 max-lg:mb-20">
-          <h1 className="topic-title">NICE TO MEET YOU</h1>
-          <p className="topic-text">
+          <h1 className="section-title">NICE TO MEET YOU</h1>
+          <p className="section-text">
             So, I've been a{" "}
             <span className="text-amber-300">
               Front-end Web & Mobile Developer
@@ -47,7 +26,7 @@ const About = () => {
             creating cool digital stuff, such as{" "}
             <span className="text-amber-300">websites and mobile apps</span>.
           </p>
-          <p className="topic-text">
+          <p className="section-text">
             I enjoy every project step: from the first team meeting, discovering
             the purposes and problems to solve, to taking vector designs and
             bring them to life in code, thus making a{" "}
@@ -68,8 +47,8 @@ const About = () => {
           </p>
         </div>
         <div className="lg:w-1/2 lg:mr-24 max-lg:mb-20">
-          <h1 className="topic-title">SKILLS</h1>
-          <p className="topic-text">
+          <h1 className="section-title">SKILLS</h1>
+          <p className="section-text">
             Some skills and tools I’ve been working with:
           </p>
           <div className="flex flex-wrap max-lg:justify-center">

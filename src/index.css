@@ -15,11 +15,11 @@
     font-family: "Barlow Condensed", sans-serif;
   }
 
-  .topic-title {
+  .section-title {
     @apply text-3xl sm:text-5xl xl:text-5xl max-lg:mb-8 mb-12 text-white font-barlow;
   }
 
-  .topic-text {
+  .section-text {
     @apply text-xl mx-auto mb-8 text-neutral-300;
   }
 }
