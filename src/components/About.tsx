@@ -7,11 +7,11 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="bg-neutral-800 max-md:pb-2 py-20"
+      className="bg-neutral-800 py-20"
     >
       <div className="w-10/12 flex max-lg:flex-col m-auto max-lg:text-center content-center justify-center">
         <div className="max-md: px-5 lg:w-1/2 lg:mr-24 max-lg:mb-20">
-          <h1 className="section-title">NICE TO MEET YOU</h1>
+          <h1 className="section-title">NICE TO MEET YOU!</h1>
           <p className="section-text">
             So, I've been a{" "}
             <span className="text-amber-300">
@@ -46,17 +46,17 @@ const About = () => {
             .
           </p>
         </div>
-        <div className="lg:w-1/2 lg:mr-24 max-lg:mb-20">
-          <h1 className="section-title">SKILLS</h1>
+        <div className="lg:w-1/2 lg:mr-24 mb-10 max-lg:mb-20">
+          <h1 className="section-title">SKILLS & TOOLS</h1>
           <p className="section-text">
-            Some skills and tools I’ve been working with:
+            Some skills and technologies I’ve been working with:
           </p>
           <div className="flex flex-wrap max-lg:justify-center">
             {skills.map(({ id, skill }: SkillSchema) => {
               return (
                 <div
                   key={id}
-                  className="flex justify-center items-center max-md:w-36 w-40 my-1 md:my-2 mr-2 lg:mr-4 text-lg py-2 sm:py-3 rounded-lg bg-amber-300 text-neutral-900"
+                  className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3 rounded-lg bg-amber-300 text-neutral-900"
                 >
                   <p className="text-sm">{skill}</p>
                 </div>
