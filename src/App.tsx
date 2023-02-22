@@ -1,6 +1,7 @@
 import About from "./components/About";
 import IntroBanner from "./components/IntroBanner";
 import Navbar from "./components/Navbar";
+import ProjectsGrid from "./components/ProjectsGrid";
 import SocialLinks from "./components/SocialLinks";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       </div>
 
       <About />
+      <ProjectsGrid />
     </div>
   );
 }
