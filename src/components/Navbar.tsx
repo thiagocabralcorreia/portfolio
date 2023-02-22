@@ -18,8 +18,8 @@ function Navbar() {
   window.addEventListener("resize", closeDropdownMenu);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 animate-fade-in-down">
-      <nav className="bg-neutral-800 lg:bg-neutral-900">
+    <header className="fixed top-0 left-0 right-0 z-10 animate-fade-in-down ">
+      <nav className="mb-[-5px] bg-neutral-800 lg:bg-neutral-900">
         <div className="flex items-center justify-between w-10/12 mx-auto px-4 sm:px-6 lg:px-8 h-24">
           <div className="w-full flex items-center justify-between">
             <div className="flex-shrink-0">

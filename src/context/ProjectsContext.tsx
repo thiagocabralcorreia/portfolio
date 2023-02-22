@@ -6,7 +6,7 @@ interface ProjectsContextProps {
   setProjects?: (value: ProjecSchema[]) => void;
   selectProject?: string;
   setSelectProject?: (value: string) => void;
-  selectProjectsByCategory?: React.SetStateAction<ProjecSchema[]>;
+  selectProjectsByCategory?: React.SetStateAction<any>;
   children?: React.ReactNode;
 }
 
@@ -16,7 +16,7 @@ export const ProjectsContext = createContext<ProjectsContextProps>(
 
 export const ProjectsProvider = (props: ProjectsContextProps) => {
   const [projects, setProjects] = useState<ProjecSchema[]>(projectsData);
-  const [selectProject, setSelectProject] = useState<string>("");
+  const [selectProject, setSelectProject] = useState<string>("All Projects");
 
   const selectProjectsByCategory = projects.filter((item) => {
     let category =
