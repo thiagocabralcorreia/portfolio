@@ -1,22 +1,18 @@
-import About from "./components/About";
-import IntroBanner from "./components/IntroBanner";
-import Navbar from "./components/Navbar";
-import ProjectsGrid from "./components/ProjectsGrid";
-import SocialLinks from "./components/SocialLinks";
-import { Link } from "react-scroll";
+import { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+const Home = lazy(() => import("./pages/Home"));
 
 function App() {
   return (
     <div className="bg-neutral-900">
-      <Navbar />
-
-      <div className="relative w-full h-screen max-lg:mb-32 bg-neutral-900">
-        <IntroBanner />
-        <SocialLinks />
-      </div>
-
-      <About />
-      <ProjectsGrid />
+      <Router>
+        <Suspense fallback={""}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Suspense>
+      </Router>
     </div>
   );
 }
