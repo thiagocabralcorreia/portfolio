@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import { sections, SectionSchema } from "../data/sections";
 import DropdownMenu from "./DropdownMenu";
 
@@ -18,7 +19,7 @@ function Navbar() {
   window.addEventListener("resize", closeDropdownMenu);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 animate-fade-in-down ">
+    <header className="fixed h-24 top-0 left-0 right-0 z-10 animate-fade-in-down">
       <nav className="mb-[-5px] bg-neutral-800 lg:bg-neutral-900">
         <div className="flex items-center justify-between w-10/12 mx-auto px-4 sm:px-6 lg:px-8 h-24">
           <div className="w-full flex items-center justify-between">
@@ -33,13 +34,17 @@ function Navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 {sections.map(({ id, section }: SectionSchema) => {
                   return (
-                    <a
+                    <Link
                       key={id}
-                      href="#"
-                      className="text-white hover:text-amber-300 duration-500 px-3 py-2 rounded-md text-[21px] font-medium font-barlow"
+                      to={section.toLowerCase()}
+                      offset={-96}
+                      smooth
+                      duration={500}
+                      className="text-white hover:text-amber-300 duration-500 px-3 py-2
+                      rounded-md text-[21px] font-medium font-barlow cursor-pointer"
                     >
                       {section}
-                    </a>
+                    </Link>
                   );
                 })}
               </div>

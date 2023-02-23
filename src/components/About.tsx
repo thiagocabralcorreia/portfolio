@@ -4,6 +4,7 @@ import { skills, SkillSchema } from "../data/skills";
 const About = () => {
   return (
     <motion.section
+      id="about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
