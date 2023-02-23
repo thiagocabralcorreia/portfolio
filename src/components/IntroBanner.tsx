@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import poster from "../assets/poster.png";
-import DownloadButton from "./DownloadCVButton";
+import DownloadButton from "./DownloadButton";
 
 const IntroBanner = () => {
   return (
     <motion.section
+      id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}

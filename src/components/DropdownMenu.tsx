@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Transition } from "@headlessui/react";
 import { sections, SectionSchema } from "../data/sections";
+import { Link } from "react-scroll";
 
 interface DropdownMenuProps {
   show: boolean;
@@ -25,14 +26,15 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
             {sections.map(({ id, section }: SectionSchema) => {
               return (
                 // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                <a
+                <Link
                   key={id}
-                  href="#"
+                  to={section.toLowerCase()}
                   onClick={onClose}
-                  className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4 rounded-md text-[22px] font-barlow"
+                  offset={-96}
+                  className="header-link block px-3 py-4"
                 >
                   {section}
-                </a>
+                </Link>
               );
             })}
           </div>
