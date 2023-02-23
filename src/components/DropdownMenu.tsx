@@ -31,8 +31,7 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
                   to={section.toLowerCase()}
                   onClick={onClose}
                   offset={-96}
-                  className="text-white hover:text-amber-300 duration-500 block font-bold px-3 py-4
-                  rounded-md text-[22px] font-barlow cursor-pointer"
+                  className="header-link block px-3 py-4"
                 >
                   {section}
                 </Link>

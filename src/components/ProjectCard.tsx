@@ -20,11 +20,11 @@ const ProjectCard = ({ title, category, image }: ProjecSchema) => {
             alt="Single Project"
           />
         </div>
-        <div className="rounded-b-xl text-center px-4 py-6 bg-neutral-700">
-          <p className="mb-2 text-lg md:text-2xl text-white font-bold font-barlow">
+        <div className="rounded-b-xl text-center px-4 py-6 bg-amber-300">
+          <p className="mb-2 text-lg md:text-2xl text-neutral-900 font-bold font-barlow">
             {title.toLocaleUpperCase()}
           </p>
-          <span className="text-md text-white">{category}</span>
+          <span className="text-md text-neutral-900">{category}</span>
         </div>
       </div>
     </motion.div>

@@ -57,7 +57,8 @@ const About = () => {
               return (
                 <div
                   key={id}
-                  className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3 rounded-lg bg-amber-300 text-neutral-900"
+                  className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
+                  rounded-lg bg-amber-300 text-neutral-900"
                 >
                   <p className="text-sm">{skill}</p>
                 </div>

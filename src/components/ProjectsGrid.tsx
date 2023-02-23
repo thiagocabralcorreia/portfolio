@@ -5,7 +5,11 @@ import { ProjecSchema } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectsFilter from "./ProjectsFilter";
 
-const ProjectsGrid = () => {
+interface ProjectsGrid {
+  home?: boolean;
+}
+
+const ProjectsGrid = ({ home }: ProjectsGrid) => {
   const {
     projects,
     selectProject,
@@ -34,12 +38,26 @@ const ProjectsGrid = () => {
         <span className="lg:block"> You can filter them by category.</span>
       </p>
 
-      <div className="w-10/12 m-auto text-center mt-10">
-        <ProjectsFilter setSelectProject={setSelectProject} />
-      </div>
+      {!home && (
+        <div className="w-10/12 m-auto text-center mt-10">
+          <ProjectsFilter setSelectProject={setSelectProject} />
+        </div>
+      )}
 
       <div className="w-9/12 m-auto max-sm:mt-12 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-        {selectProject !== "All Projects"
+        {home
+          ? projects?.map((project, index) => {
+              if (index < 6)
+                return (
+                  <ProjectCard
+                    title={project.title}
+                    category={project.category}
+                    image={project.image}
+                    key={project.id}
+                  />
+                );
+            })
+          : selectProject !== "All Projects"
           ? selectProjectsByCategory?.map((project: ProjecSchema) => (
               <ProjectCard
                 title={project.title}

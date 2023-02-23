@@ -22,4 +22,8 @@
   .section-text {
     @apply text-xl mx-auto mb-8 text-neutral-300;
   }
+
+  .header-link {
+    @apply text-[21px] text-white hover:text-amber-300 duration-500 cursor-pointer font-barlow;
+  }
 }
