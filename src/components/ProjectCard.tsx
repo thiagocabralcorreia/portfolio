@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ProjecSchema } from "../data/projects";
 
-const ProjectCard = ({ title, category, image }: ProjecSchema) => {
+const ProjectCard = ({ title, category, image, onClick }: ProjecSchema) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,7 +12,10 @@ const ProjectCard = ({ title, category, image }: ProjecSchema) => {
         delay: 0.15,
       }}
     >
-      <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0">
+      <div
+        onClick={onClick}
+        className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
+      >
         <div>
           <img
             src={image}

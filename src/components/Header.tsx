@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 interface HeaderProps {
@@ -12,7 +13,12 @@ function Header({
   dropdownMenu,
 }: HeaderProps) {
   return (
-    <header className="fixed h-24 top-0 left-0 right-0 z-10 animate-fade-in-down">
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
+      className="fixed h-24 top-0 left-0 right-0 z-10"
+    >
       <nav className="mb-[-5px] bg-neutral-800 lg:bg-neutral-900">
         <div className="flex items-center justify-between w-10/12 mx-auto px-4 sm:px-6 lg:px-8 h-24">
           <div className="lg:w-full flex items-center justify-between">
@@ -38,7 +44,7 @@ function Header({
       </nav>
 
       <>{dropdownMenu}</>
-    </header>
+    </motion.header>
   );
 }
 

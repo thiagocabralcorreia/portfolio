@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import ProjectDetails from "./pages/ProjectDetails";
 import Projects from "./pages/Projects";
 
 const Home = lazy(() => import("./pages/Home"));
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/project/:id" element={<ProjectDetails />} />
           </Routes>
         </Suspense>
       </Router>

@@ -27,3 +27,13 @@
     @apply text-[21px] text-white hover:text-amber-300 duration-500 cursor-pointer font-barlow;
   }
 }
+
+::selection {
+  background-color: #fcd34d; /* Altere para a cor desejada */
+  color: #171717; /* Altere para a cor desejada */
+}
+
+::-moz-selection {
+  background-color: #fcd34d; /* Altere para a cor desejada */
+  color: #171717; /* Altere para a cor desejada */
+}

@@ -1,21 +1,29 @@
-import { motion } from "framer-motion";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import { ProjectsContext } from "../context/ProjectsContext";
-import { ProjecSchema } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectsFilter from "./ProjectsFilter";
+import { ProjecSchema } from "../data/projects";
 
-interface ProjectsGrid {
+interface ProjectsGridProps {
   home?: boolean;
 }
 
-const ProjectsGrid = ({ home }: ProjectsGrid) => {
+const ProjectsGrid = ({ home }: ProjectsGridProps) => {
   const {
     projects,
     selectProject,
     setSelectProject,
     selectProjectsByCategory,
   } = useContext(ProjectsContext);
+
+  const navigate = useNavigate();
+
+  const handleProjectClick = (id: string) => {
+    navigate(`/project/${id}`);
+  };
 
   return (
     <motion.section
@@ -46,17 +54,17 @@ const ProjectsGrid = ({ home }: ProjectsGrid) => {
 
       <div className="w-9/12 m-auto max-sm:mt-12 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
         {home
-          ? projects?.map((project, index) => {
-              if (index < 6)
-                return (
-                  <ProjectCard
-                    title={project.title}
-                    category={project.category}
-                    image={project.image}
-                    key={project.id}
-                  />
-                );
-            })
+          ? projects
+              ?.slice(0, 6)
+              .map((project) => (
+                <ProjectCard
+                  title={project.title}
+                  category={project.category}
+                  image={project.image}
+                  key={project.id}
+                  onClick={() => handleProjectClick(project.id || "")}
+                />
+              ))
           : selectProject !== "All Projects"
           ? selectProjectsByCategory?.map((project: ProjecSchema) => (
               <ProjectCard
@@ -64,6 +72,7 @@ const ProjectsGrid = ({ home }: ProjectsGrid) => {
                 category={project.category}
                 image={project.image}
                 key={project.id}
+                onClick={() => handleProjectClick(project.id || "")}
               />
             ))
           : projects?.map((project) => (
@@ -72,6 +81,7 @@ const ProjectsGrid = ({ home }: ProjectsGrid) => {
                 category={project.category}
                 image={project.image}
                 key={project.id}
+                onClick={() => handleProjectClick(project.id || "")}
               />
             ))}
       </div>

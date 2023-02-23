@@ -8,57 +8,58 @@ import WA from "../assets/project-wa1.png";
 import GoFinances from "../assets/project-gofinances1.png";
 
 export interface ProjecSchema {
-  id?: number;
+  id?: string;
   title: string;
   category: string;
   image: string;
+  onClick?: () => void;
 }
 
 export const projectsData = [
   {
-    id: 1,
+    id: "scoutfy",
     title: "Scoutfy",
     category: "Web Application",
     image: Scoutfy,
   },
   {
-    id: 2,
+    id: "caule",
     title: "Caule App",
     category: "Mobile Application",
     image: Caule,
   },
   {
-    id: 3,
+    id: "coffee-house",
     title: "CoffeeHouse",
     category: "Web Application",
     image: CoffeeHouse,
   },
   {
-    id: 4,
+    id: "wee-travel",
     title: "Wee Travel",
     category: "Mobile Application",
     image: WeeTravel,
   },
   {
-    id: 5,
+    id: "film-n-chips",
     title: "Film N Chips",
     category: "Web Application",
     image: FilmNChips,
   },
   {
-    id: 6,
+    id: "appqd",
     title: "APPqd",
     category: "Mobile Application",
     image: APPqd,
   },
   {
-    id: 7,
+    id: "web-accessibility",
     title: "Web Accessibility",
     category: "Web Application",
     image: WA,
   },
   {
-    id: 8,
+    id: "gofinances",
     title: "GoFinances",
     category: "Mobile Application",
     image: GoFinances,
