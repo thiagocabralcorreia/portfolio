@@ -43,7 +43,8 @@ function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
-          className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-amber-300 duration-500 hover:bg-neutral-800"
+          className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-amber-300
+          duration-500 hover:bg-neutral-800"
           aria-controls="mobile-menu"
           aria-expanded="false"
         >

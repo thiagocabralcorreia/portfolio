@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import IntroBanner from "../components/IntroBanner";
 import Navbar from "../components/Navbar";
 import ProjectsGrid from "../components/ProjectsGrid";
+import RecommendationsSlider from "../components/RecommendationsSlider";
 import SocialLinks from "../components/SocialLinks";
 
 const Home = () => {
@@ -30,6 +31,8 @@ const Home = () => {
             <Button>More Projects</Button>
           </Link>
         </div>
+
+        <RecommendationsSlider />
       </motion.div>
     </>
   );

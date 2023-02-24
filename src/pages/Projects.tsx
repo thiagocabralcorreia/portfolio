@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import { AiFillCaretLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import ProjectsGrid from "../components/ProjectsGrid";
 import { motion } from "framer-motion";
+import ProjectsGrid from "../components/ProjectsGrid";
 
 const Projects = () => {
   return (
