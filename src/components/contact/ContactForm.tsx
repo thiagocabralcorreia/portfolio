@@ -1,9 +1,38 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import { FiArrowUpCircle } from "react-icons/fi";
 
 import Button from "../Button";
 import FormInput from "../FormInput";
 
 const ContactForm = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "thiago_dev",
+          "template_portfolio_mail",
+          form.current,
+          "Y-CiN9lXMgaSKwlPV"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+
+      form.current.reset();
+    }
+  };
+
   return (
     <div className="w-full lg:w-1/2">
       <h1 className="section-title text-left max-lg:text-center">
@@ -11,9 +40,8 @@ const ContactForm = () => {
       </h1>
       <div className="leading-loose">
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
+          ref={form}
+          onSubmit={sendEmail}
           className="max-lg:justify-content max-lg:m-auto max-w-xl rounded-xl shadow-xl text-left"
         >
           <FormInput
@@ -40,7 +68,7 @@ const ContactForm = () => {
             inputType="text"
             inputId="subject"
             inputName="subject"
-            placeholderText="Subject"
+            placeholderText="Enter a subject"
             ariaLabelName="Subject"
           />
 
@@ -57,6 +85,7 @@ const ContactForm = () => {
               cols={14}
               rows={6}
               aria-label="Message"
+              required
             ></textarea>
           </div>
 
