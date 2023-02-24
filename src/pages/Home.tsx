@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import About from "../components/About";
 import Button from "../components/Button";
+import Contact from "../components/Contact";
 import IntroBanner from "../components/IntroBanner";
 import Navbar from "../components/Navbar";
 import ProjectsGrid from "../components/ProjectsGrid";
-import RecommendationsSlider from "../components/RecommendationsSlider";
+import RecommendationsSlider from "../components/Recommendations";
 import SocialLinks from "../components/SocialLinks";
 
 const Home = () => {
@@ -32,7 +33,11 @@ const Home = () => {
           </Link>
         </div>
 
-        <RecommendationsSlider />
+        <div className="relative">
+          <RecommendationsSlider />
+        </div>
+
+        <Contact />
       </motion.div>
     </>
   );

@@ -3,7 +3,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 export interface LinkSchema {
   id: number;
-  child: any;
+  child: React.ReactNode;
   href: string;
   style?: string;
 }

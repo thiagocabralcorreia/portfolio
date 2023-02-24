@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import { skills, SkillSchema } from "../data/skills";
 
 const About = () => {
@@ -42,11 +43,21 @@ const About = () => {
             and making connections, especially over a cup of coffee.{" "}
             <span className="text-amber-300">
               Feel free to{" "}
-              <span className="underline underline-offset-4">contact</span> me
+              <Link
+                to={"contact"}
+                offset={-96}
+                smooth
+                duration={500}
+                className="underline underline-offset-4 cursor-pointer"
+              >
+                contact
+              </Link>{" "}
+              me
             </span>
             .
           </p>
         </div>
+
         <div className="lg:w-1/2 lg:mr-24">
           <h1 className="section-title">SKILLS & TOOLS</h1>
           <p className="section-text">

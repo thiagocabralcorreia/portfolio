@@ -12,7 +12,7 @@ function RecommendationsSlider() {
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       id="recommendations"
-      className="relative bg-neutral-800"
+      className="relative bg-neutral-800 max-sm:h-[892px] max-md:h-[600px] h-[530px]"
     >
       <div className="absolute top-0 left-0 w-full h-full bg-neutral-800">
         {recommendations.map((recommendation, index) => (
@@ -20,10 +20,10 @@ function RecommendationsSlider() {
             key={recommendation.id}
             className={`${
               index === activeIndex ? "opacity-100" : "opacity-0"
-            } transition-opacity duration-1000 ease-in-out absolute top-0 left-0 w-full h-full `}
+            } transition-opacity duration-1000 ease-in-out absolute top-0 left-0 w-full h-full`}
           >
+            {/* navigation dots */}
             <div className="relative bg-neutral-800 py-6 pb-24">
-              {/* navigation dots */}
               <div className="flex absolute z-20 bottom-20 left-1/2 right-1/2 justify-center">
                 <div className="flex justify-center space-x-5">
                   {recommendations.map((_, index) => (
@@ -40,7 +40,7 @@ function RecommendationsSlider() {
                 </div>
               </div>
 
-              <div className="max-w-screen-xl px-14 md:px-4 py-8 mx-auto text-center py-16 lg:px-6">
+              <div className="max-w-screen-xl px-14 md:px-4 mx-auto text-center py-8 lg:px-6">
                 <figure className="max-w-screen-md mx-auto">
                   <svg
                     className="h-12 mx-auto mb-3 text-amber-300"
