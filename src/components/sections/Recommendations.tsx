@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Recommendation, recommendationsData } from "../data/recommendations";
+import {
+  Recommendation,
+  recommendationsData,
+} from "../../data/recommendations";
 
 function RecommendationsSlider() {
   const [activeIndex, setActiveIndex] = useState(0);

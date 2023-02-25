@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import poster from "../assets/poster.png";
-import DownloadButton from "./DownloadButton";
+import poster from "../../assets/poster.png";
+import DownloadButton from "../DownloadButton";
 
 const IntroBanner = () => {
   return (

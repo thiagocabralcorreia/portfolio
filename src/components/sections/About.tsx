@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { skills, SkillSchema } from "../data/skills";
+import { skills, SkillSchema } from "../../data/skills";
 
 const About = () => {
   return (

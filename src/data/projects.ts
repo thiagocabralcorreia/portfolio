@@ -1,11 +1,11 @@
-import Scoutfy from "../assets/project-scoutfy1.png";
-import Caule from "../assets/project-caule1.png";
-import CoffeeHouse from "../assets/project-coffeehouse1.png";
-import WeeTravel from "../assets/project-weetravel1.png";
-import FilmNChips from "../assets/project-film-n-chips1.png";
-import APPqd from "../assets/project-appqd1.png";
-import WA from "../assets/project-wa1.png";
-import GoFinances from "../assets/project-gofinances1.png";
+import Scoutfy from "../assets/projects/project-scoutfy1.png";
+import Caule from "../assets/projects/project-caule1.png";
+import CoffeeHouse from "../assets/projects/project-coffeehouse1.png";
+import WeeTravel from "../assets/projects/project-weetravel1.png";
+import FilmNChips from "../assets/projects/project-film-n-chips1.png";
+import APPqd from "../assets/projects/project-appqd1.png";
+import WA from "../assets/projects/project-wa1.png";
+import GoFinances from "../assets/projects/project-gofinances1.png";
 
 export interface ProjecSchema {
   id?: string;

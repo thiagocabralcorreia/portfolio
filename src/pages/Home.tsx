@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import About from "../components/About";
+import About from "../components/sections/About";
 import Button from "../components/Button";
-import Contact from "../components/Contact";
-import IntroBanner from "../components/IntroBanner";
+import Contact from "../components/sections/Contact";
+import IntroBanner from "../components/sections/IntroBanner";
 import Navbar from "../components/Navbar";
-import ProjectsGrid from "../components/ProjectsGrid";
-import RecommendationsSlider from "../components/Recommendations";
+import ProjectsGrid from "../components/sections/ProjectsGrid";
+import RecommendationsSlider from "../components/sections/Recommendations";
 import SocialLinks from "../components/SocialLinks";
 
 const Home = () => {

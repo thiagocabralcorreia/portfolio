@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import ContactDetails from "../components/contact/ContactInfo";
-import ContactForm from "../components/contact/ContactForm";
+import ContactForm from "../contact/ContactForm";
+import ContactInfo from "../contact/ContactInfo";
 
 const Contact = () => {
   return (
@@ -15,7 +15,7 @@ const Contact = () => {
       }}
       className="w-10/12 flex max-lg:flex-col m-auto py-20 px-4 sm:px-6 lg:px-8"
     >
-      <ContactDetails />
+      <ContactInfo />
       <ContactForm />
     </motion.div>
   );

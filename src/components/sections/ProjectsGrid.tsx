@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import { ProjectsContext } from "../context/ProjectsContext";
-import ProjectCard from "./ProjectCard";
-import ProjectsFilter from "./ProjectsFilter";
-import { ProjecSchema } from "../data/projects";
+import { ProjectsContext } from "../../context/ProjectsContext";
+import ProjectCard from "../ProjectCard";
+import { ProjecSchema } from "../../data/projects";
+import ProjectsFilter from "../ProjectsFilter";
 
 interface ProjectsGridProps {
   home?: boolean;

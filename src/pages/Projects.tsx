@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import { AiFillCaretLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import ProjectsGrid from "../components/ProjectsGrid";
+import ProjectsGrid from "../components/sections/ProjectsGrid";
 
 const Projects = () => {
   return (
