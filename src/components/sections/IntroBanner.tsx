@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { FiArrowDownCircle } from "react-icons/fi";
+
 import poster from "../../assets/poster.png";
-import DownloadButton from "../DownloadButton";
+import Hyperlink from "../Hyperlink";
 
 const IntroBanner = () => {
   return (
@@ -28,7 +30,17 @@ const IntroBanner = () => {
             beautiful user interfaces and great digital experiences.
           </span>
         </p>
-        <DownloadButton />
+
+        <div className="flex justify-center text-lg lg:block w-52 pt-12 mb-6 sm:mb-0 max-lg:m-auto ">
+          <Hyperlink
+            download="thiagocabralcorreia-resume.pdf"
+            href="/files/thiagocabralcorreia-resume.pdf"
+            aria-label="Download Resume"
+          >
+            <FiArrowDownCircle className="mr-2 w-5 h-5 duration-100"></FiArrowDownCircle>
+            <span>Download CV</span>
+          </Hyperlink>
+        </div>
       </div>
 
       <motion.div

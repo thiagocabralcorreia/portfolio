@@ -19,7 +19,7 @@ const Home = () => {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="bg-neutral-900"
       >
-        <div className="relative w-full h-screen max-lg:mb-32 bg-neutral-900">
+        <div className="relative w-full max-sm:mb-6 max-lg:mb-32 md:h-screen bg-neutral-900">
           <IntroBanner />
           <SocialLinks />
         </div>

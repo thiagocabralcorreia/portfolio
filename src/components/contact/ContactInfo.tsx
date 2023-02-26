@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import Hyperlink from "../Hyperlink";
 
 const ContactInfo = () => {
   return (
@@ -18,22 +19,17 @@ const ContactInfo = () => {
           , sharing knowledge and discussing new projects or opportunities.
           Let's talk!
         </p>
-        <div className="flex justify-center lg:block max-lg:mt-[-40px] max-lg:mb-20">
-          <a
+
+        <div className="flex justify-center text-lg lg:block w-52 mt-10 max-lg:mb-20 max-lg:m-auto">
+          <Hyperlink
             aria-label="WhasApp"
             href="https://wa.me/5585986206343"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0
-            text-lg border border-neutral-900 hover:border-amber-300 py-2.5 sm:py-3
-            shadow-lg rounded-lg bg-amber-300 hover:bg-neutral-900 text-neutral-900
-            hover:text-amber-300 duration-500"
           >
-            <FaWhatsapp className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FaWhatsapp>
-            <span className="text-sm sm:text-lg duration-100">
-              Chat with me
-            </span>
-          </a>
+            <FaWhatsapp className="mr-2 w-5 h-5 duration-100"></FaWhatsapp>
+            <span>Chat with me</span>
+          </Hyperlink>
         </div>
       </div>
     </div>
