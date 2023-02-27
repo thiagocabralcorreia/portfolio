@@ -43,7 +43,9 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
 
       <p className="section-text w-8/12 m-auto text-center">
         Here are a few professional and personal projects I’ve built.
-        <span className="lg:block"> You can filter them by category.</span>
+        {!home && (
+          <span className="lg:block"> You can filter them by category.</span>
+        )}
       </p>
 
       {!home && (
