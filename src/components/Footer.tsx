@@ -16,7 +16,7 @@ function Footer() {
           href="https://github.com/thiagocabralcorreia"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-amber-300 ease-out duration-500"
+          className="text-white hover:text-amber-400 ease-out duration-500"
         >
           <FaGithub size={30} />
         </a>
@@ -26,7 +26,7 @@ function Footer() {
           href="https://www.linkedin.com/in/thiago-cabral-correia/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-amber-300 ease-out duration-500"
+          className="text-white hover:text-amber-400 ease-out duration-500"
         >
           <FaLinkedin size={30} />
         </a>

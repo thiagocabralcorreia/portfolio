@@ -78,7 +78,7 @@ const ContactForm = () => {
             </label>
             <textarea
               className="w-full px-5 py-2 border border-gray-300 border-opacity-50 text-white
-              focus:outline-none focus:border-amber-300 focus:ring-1 focus:ring-amber-300
+              focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400
               bg-neutral-900 rounded-md shadow-sm text-md"
               id="message"
               name="message"

@@ -18,11 +18,11 @@ const IntroBanner = () => {
           Hi, there! My name is
         </p>
         <h1 className="text-3xl sm:text-5xl xl:text-6xl text-white md:font-bold mb-3 sm:mb-5 font-barlow">
-          <span className="text-amber-300">THIAGO</span> CABRAL CORREIA
+          <span className="text-amber-400">THIAGO</span> CABRAL CORREIA
         </h1>
         <p className="text-xl max-w-xl max-lg:mx-auto text-neutral-300">
           I'm a{" "}
-          <span className="text-amber-300 md:font-bold">
+          <span className="text-amber-400 md:font-bold">
             Front-end Developer
           </span>{" "}
           passionate about building{" "}

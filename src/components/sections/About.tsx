@@ -16,23 +16,23 @@ const About = () => {
           <h1 className="section-title">NICE TO MEET YOU!</h1>
           <p className="section-text">
             So, I've been a{" "}
-            <span className="text-amber-300">
+            <span className="text-amber-400">
               Front-end Web & Mobile Developer
             </span>{" "}
             for a bit more than 2 years now. During this time, I've worked
             remotely for{" "}
-            <span className="text-amber-300">
+            <span className="text-amber-400">
               consulting agencies and startups
             </span>
             . I've had the chance to work with some amazing professional folks,
             creating cool digital stuff, such as{" "}
-            <span className="text-amber-300">websites and mobile apps</span>.
+            <span className="text-amber-400">websites and mobile apps</span>.
           </p>
           <p className="section-text">
             I enjoy every project step: from the first team meeting, discovering
             the purposes and problems to solve, to taking vector designs and
             bring them to life in code, thus making a{" "}
-            <span className="text-amber-300">
+            <span className="text-amber-400">
               beautiful, responsive and fully functional product
             </span>
             .
@@ -41,7 +41,7 @@ const About = () => {
             Always excited to learn and progress, I'm constantly improving my
             current skills and studying new technologies. I love collaborating
             and making connections, especially over a cup of coffee.{" "}
-            <span className="text-amber-300">
+            <span className="text-amber-400">
               Feel free to{" "}
               <Link
                 to={"contact"}
@@ -69,7 +69,7 @@ const About = () => {
                 <div
                   key={id}
                   className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
-                  rounded-lg bg-amber-300 text-neutral-900"
+                  rounded-lg bg-amber-400 text-neutral-900"
                 >
                   <p className="text-sm">{skill}</p>
                 </div>

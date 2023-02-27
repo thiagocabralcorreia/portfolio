@@ -23,7 +23,7 @@ const ProjectCard = ({ title, category, image, onClick }: ProjecSchema) => {
             alt="Single Project"
           />
         </div>
-        <div className="rounded-b-xl text-center px-4 py-6 bg-amber-300">
+        <div className="rounded-b-xl text-center px-4 py-6 bg-amber-400">
           <p className="mb-2 text-lg md:text-2xl text-neutral-900 font-bold font-barlow">
             {title.toLocaleUpperCase()}
           </p>

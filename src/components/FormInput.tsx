@@ -25,7 +25,7 @@ const FormInput = ({
       <input
         className="w-full px-5 py-2 border border-neutral-300 border-opacity-50
         text-white bg-neutral-900 rounded-md shadow-sm text-md
-        focus:outline-none focus:border-amber-300 focus:ring-1 focus:ring-amber-300"
+        focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
         type={inputType}
         id={inputId}
         name={inputName}

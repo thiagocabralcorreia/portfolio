@@ -13,7 +13,7 @@ const ContactInfo = () => {
         </p>
         <p className="section-text">
           I'm{" "}
-          <span className="text-amber-300">
+          <span className="text-amber-400">
             always open to making connections
           </span>
           , sharing knowledge and discussing new projects or opportunities.

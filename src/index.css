@@ -24,7 +24,7 @@
   }
 
   .header-link {
-    @apply text-[21px] text-white hover:text-amber-300 duration-500 cursor-pointer font-barlow;
+    @apply text-[21px] text-white hover:text-amber-400 duration-500 cursor-pointer font-barlow;
   }
 }
 

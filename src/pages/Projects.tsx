@@ -13,7 +13,7 @@ const Projects = () => {
             to={"/"}
             className="flex content-center justify-center header-link"
           >
-            <AiFillCaretLeft className="mr-2 self-center text-amber-300"></AiFillCaretLeft>
+            <AiFillCaretLeft className="mr-2 self-center text-amber-400"></AiFillCaretLeft>
             GO BACK HOME
           </Link>
         }
@@ -22,7 +22,7 @@ const Projects = () => {
             to={"/"}
             className="flex content-center justify-center header-link"
           >
-            <AiFillCaretLeft className="mr-2 self-center text-amber-300"></AiFillCaretLeft>
+            <AiFillCaretLeft className="mr-2 self-center text-amber-400"></AiFillCaretLeft>
             GO HOME
           </Link>
         }
