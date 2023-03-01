@@ -17,6 +17,9 @@ import WA2 from "../assets/projects/project-wa2.png";
 import WA3 from "../assets/projects/project-wa3.png";
 import GoFinances1 from "../assets/projects/project-gofinances2.png";
 import GoFinances2 from "../assets/projects/project-gofinances3.png";
+import Portfolio1 from "../assets/projects/project-portfolio1.png";
+import Portfolio2 from "../assets/projects/project-portfolio2.png";
+import Portfolio3 from "../assets/projects/project-portfolio3.png";
 
 export interface ProjectText {
   id: string;
@@ -396,6 +399,57 @@ export const projectDetailsData = [
         id: "gofinances2.png",
         src: GoFinances2,
         alt: "Smartphones with GoFinances app screens",
+      },
+    ],
+  },
+  {
+    id: "portfolio",
+    name: "Portfolio",
+    date: "Feb 2022",
+    type: "Web Application",
+    professional: false,
+    skills: [
+      "React.js",
+      "Responsive Web Design",
+      "TypeScript",
+      "Taildwind CSS",
+      "UX/UI",
+      "EmailJS",
+      "Vercel Deploy",
+    ],
+    about: [
+      {
+        id: "portfolio1",
+        text: "I'm proud of the work I put into this project and I hope it serves as a great representation of my skills and experience.",
+      },
+      {
+        id: "portfolio2",
+        text: "Built with React.js, TypeScript and Tailwind, this website is fully responsive and includes downloadable resume, links to social media profiles, introduction section, skills list, project grid, detailed project pages, recommendation slider, and contact form powered by EmailJS.",
+      },
+      {
+        id: "portfolio3",
+        text: "To enhance the user experience, I incorporated Framer Motion for smooth animations and React Scroll for seamless scrolling between sections.",
+      },
+    ],
+    website: "https://thiagocabralcorreia.vercel.app",
+    github: "https://github.com/thiagocabralcorreia/portfolio",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "portfolio1.png",
+        src: Portfolio1,
+        alt: "Portfolio website home page",
+      },
+      {
+        id: "portfolio2.png",
+        src: Portfolio2,
+        alt: "Portfolio website project grid",
+      },
+      {
+        id: "portfolio3.png",
+        src: Portfolio3,
+        alt: "Portfolio website contact and recommendations",
       },
     ],
   },

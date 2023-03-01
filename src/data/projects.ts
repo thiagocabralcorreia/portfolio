@@ -6,6 +6,7 @@ import FilmNChips from "../assets/projects/project-film-n-chips1.png";
 import APPqd from "../assets/projects/project-appqd1.png";
 import WA from "../assets/projects/project-wa1.png";
 import GoFinances from "../assets/projects/project-gofinances1.png";
+import Portfolio1 from "../assets/projects/project-portfolio1.png";
 
 export interface ProjecSchema {
   id?: string;
@@ -41,10 +42,10 @@ export const projectsData = [
     image: WeeTravel,
   },
   {
-    id: "film-n-chips",
-    title: "Film N Chips",
+    id: "web-accessibility",
+    title: "Web Accessibility",
     category: "Web Application",
-    image: FilmNChips,
+    image: WA,
   },
   {
     id: "appqd",
@@ -53,15 +54,22 @@ export const projectsData = [
     image: APPqd,
   },
   {
-    id: "web-accessibility",
-    title: "Web Accessibility",
+    id: "film-n-chips",
+    title: "Film N Chips",
     category: "Web Application",
-    image: WA,
+    image: FilmNChips,
   },
   {
     id: "gofinances",
     title: "GoFinances",
     category: "Mobile Application",
     image: GoFinances,
+  },
+
+  {
+    id: "portfolio",
+    title: "Portfolio",
+    category: "Web Application",
+    image: Portfolio1,
   },
 ];

@@ -9,7 +9,7 @@ function Footer() {
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="w-full justify-center content-center py-10 text-center m-auto bg-neutral-800"
     >
-      <h2 className="text-4xl text-white font-bold font-barlow">FOLLOW ME</h2>
+      <h2 className="text-4xl text-white font-barlow">FOLLOW ME</h2>
       <div className="flex w-full items-center justify-center mt-5 mb-10">
         <a
           title="Visit Thiago Cabral Correia's profile on GitHub"
