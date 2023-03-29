@@ -9,7 +9,7 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="bg-neutral-800 py-20"
+      className="dark:bg-neutral-800 bg-neutral-100 py-20"
     >
       <div className="w-10/12 flex max-lg:flex-col m-auto lg:mb-10 max-lg:text-center content-center justify-center">
         <div className="max-md: px-5 lg:w-1/2 lg:mr-24 max-lg:mb-20">
@@ -37,7 +37,7 @@ const About = () => {
             </span>
             .
           </p>
-          <p className="text-xl mx-auto text-neutral-300">
+          <p className="text-xl mx-auto dark:text-neutral-300 text-neutral-800">
             Always excited to learn and progress, I'm constantly improving my
             current skills and studying new technologies. I love collaborating
             and making connections, especially over a cup of coffee.{" "}

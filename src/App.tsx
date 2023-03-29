@@ -11,7 +11,7 @@ const Home = lazy(() => import("./pages/Home"));
 
 function App() {
   return (
-    <div className="bg-neutral-900">
+    <div className="bg-white dark:bg-neutral-900">
       <Router>
         <ScrollToTop />
         <Suspense fallback={""}>

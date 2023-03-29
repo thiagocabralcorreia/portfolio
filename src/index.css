@@ -15,16 +15,24 @@
     font-family: "Barlow Condensed", sans-serif;
   }
 
+  .primary-font-colors {
+    @apply dark:text-white text-black dark:hover:text-amber-400 hover:text-amber-400;
+  }
+
+  .primary-background-colors {
+    @apply dark:bg-neutral-900 bg-white;
+  }
+
   .section-title {
-    @apply text-3xl sm:text-5xl xl:text-5xl max-lg:mb-8 mb-12 text-white font-barlow;
+    @apply text-3xl sm:text-5xl xl:text-5xl max-lg:mb-8 mb-12 dark:text-white text-black font-barlow;
   }
 
   .section-text {
-    @apply text-xl mx-auto mb-8 text-neutral-300;
+    @apply text-xl mx-auto mb-8 dark:text-neutral-300 text-neutral-800;
   }
 
   .header-link {
-    @apply text-[21px] text-white hover:text-amber-400 duration-500 cursor-pointer font-barlow;
+    @apply text-[21px] dark:text-white text-black dark:hover:text-amber-400 hover:text-amber-400 duration-500 cursor-pointer font-barlow;
   }
 }
 

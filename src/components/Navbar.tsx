@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { sections, SectionSchema } from "../data/sections";
 import DropdownMenu from "./DropdownMenu";
 import Header from "./Header";
+import { ThemeToggleButton } from "./ThemeToggleButton";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,52 +38,56 @@ function Navbar() {
               </Link>
             );
           })}
+          <ThemeToggleButton />
         </>
       }
       mobileChildren={
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          type="button"
-          className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-amber-400
-          duration-500 hover:bg-neutral-800"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
-          <span className="sr-only">Open main menu</span>
-          {!isOpen ? (
-            <svg
-              className="block h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          ) : (
-            <svg
-              className="block h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          )}
-        </button>
+        <>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            type="button"
+            className="inline-flex items-center justify-center p-2 rounded-md primary-font-colors
+          duration-500 dark:hover:bg-neutral-800 hover:bg-neutral-100"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span className="sr-only">Open main menu</span>
+            {!isOpen ? (
+              <svg
+                className="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            )}
+          </button>
+          <ThemeToggleButton iconSize={24} />
+        </>
       }
       dropdownMenu={
         <DropdownMenu show={isOpen} onClose={() => setIsOpen(false)} />

@@ -10,7 +10,9 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
     <div className="block sm:flex gap-0 sm:gap-10 sm:mt-14">
       <div className="w-full sm:w-1/3 text-left">
         <div className="mb-7">
-          <p className="text-4xl text-white font-barlow mb-7">SKILLS & TOOLS</p>
+          <p className="text-4xl text-black dark:text-white font-barlow mb-7">
+            SKILLS & TOOLS
+          </p>
           <div className="flex flex-wrap">
             {project?.skills.map((skill, index) => {
               return (
@@ -27,7 +29,9 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
         </div>
 
         <div className="mb-7">
-          <p className="text-4xl text-white font-barlow mb-7">LINKS</p>
+          <p className="text-4xl text-black dark:text-white font-barlow mb-7">
+            LINKS
+          </p>
           {project?.website && (
             <a
               href={project?.website}
@@ -76,7 +80,9 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
       </div>
 
       <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-        <p className="text-4xl text-white font-barlow mb-7">PROJECT OVERVIEW</p>
+        <p className="text-4xl text-black dark:text-white font-barlow mb-7">
+          PROJECT OVERVIEW
+        </p>
         {project?.about.map(({ id, text }) => (
           <p key={id} className="section-text">
             {text}

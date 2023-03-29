@@ -42,7 +42,7 @@ const ContactForm = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="max-lg:justify-content max-lg:m-auto max-w-xl rounded-xl shadow-xl text-left"
+          className="max-lg:justify-content max-lg:m-auto max-w-xl rounded-xl text-left"
         >
           <FormInput
             inputLabel="Name"
@@ -73,13 +73,16 @@ const ContactForm = () => {
           />
 
           <div className="mt-6">
-            <label className="block text-lg text-white mb-2" htmlFor="message">
+            <label
+              className="block text-lg dark:text-black text-white mb-2"
+              htmlFor="message"
+            >
               Message
             </label>
             <textarea
-              className="w-full px-5 py-2 border border-gray-300 border-opacity-50 text-white
+              className="w-full px-5 py-2 border dark:border-gray-300 border-gray-700 border-opacity-50 text-black dark:text-white
               focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400
-              bg-neutral-900 rounded-md shadow-sm text-md"
+              bg-white dark:bg-neutral-900 rounded-md shadow-sm text-md"
               id="message"
               name="message"
               cols={14}

@@ -19,7 +19,7 @@ function Header({
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="fixed h-24 top-0 left-0 right-0 z-50"
     >
-      <nav className="mb-[-5px] bg-neutral-800 lg:bg-neutral-900">
+      <nav className="mb-[-5px] dark:bg-neutral-800 lg:dark:bg-neutral-900 bg-neutral-100 lg:bg-white">
         <div className="flex items-center justify-between w-10/12 mx-auto px-4 sm:px-6 lg:px-8 h-24">
           <div className="lg:w-full flex items-center justify-between">
             <div className="flex-shrink-0">

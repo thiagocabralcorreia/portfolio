@@ -15,9 +15,9 @@ function RecommendationsSlider() {
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       id="recommendations"
-      className="relative bg-neutral-800 max-sm:h-[892px] max-md:h-[600px] h-[530px]"
+      className="relative dark:bg-neutral-800 bg-neutral-100 max-sm:h-[892px] max-md:h-[600px] h-[530px]"
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-neutral-800">
+      <div className="absolute top-0 left-0 w-full h-full dark:bg-neutral-800 bg-neutral-100">
         {recommendations.map((recommendation, index) => (
           <div
             key={recommendation.id}
@@ -26,7 +26,7 @@ function RecommendationsSlider() {
             } transition-opacity duration-1000 ease-in-out absolute top-0 left-0 w-full h-full`}
           >
             {/* navigation dots */}
-            <div className="relative bg-neutral-800 py-6 pb-24">
+            <div className="relative dark:bg-neutral-800 bg-neutral-100 py-6 pb-24">
               <div className="flex absolute z-20 bottom-20 left-1/2 right-1/2 justify-center">
                 <div className="flex justify-center space-x-5">
                   {recommendations.map((_, index) => (
@@ -70,11 +70,11 @@ function RecommendationsSlider() {
                     <div className="flex max-sm:flex-col items-center max-sm:divide-x-0 divide-x-2 divide-amber-400">
                       <div
                         className="max-sm:px-0 max-sm:pb-2 pr-4 max-sm:text-md text-lg 
-                      text-neutral-300 max-sm:text-amber-400"
+                      dark:text-neutral-300 text-neutral-700 max-sm:text-amber-400"
                       >
                         {recommendation.name}
                       </div>
-                      <div className="max-sm:px-0 pl-4 max-sm:text-md text-lg text-neutral-300">
+                      <div className="max-sm:px-0 pl-4 max-sm:text-md text-lg dark:text-neutral-300 text-neutral-700">
                         {recommendation.occupation}
                       </div>
                     </div>

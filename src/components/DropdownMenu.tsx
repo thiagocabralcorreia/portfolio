@@ -22,7 +22,7 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
     >
       <nav className="lg:hidden">
         <div ref={ref} className="h-screen overflow-hidden text-center">
-          <div className="pt-2 pb-3 space-y-1 sm:px-3 bg-neutral-800 lg:bg-neutral-900">
+          <div className="pt-2 pb-3 space-y-1 sm:px-3 dark:bg-neutral-800 bg-neutral-100 lg:primary-background-colors">
             {sections.map(({ id, section }: SectionSchema) => {
               return (
                 // eslint-disable-next-line jsx-a11y/anchor-is-valid

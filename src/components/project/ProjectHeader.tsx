@@ -3,6 +3,7 @@ import { ProjectDetailsSchema } from "../../data/projectDetails";
 import { AiFillCalendar, AiFillTag } from "react-icons/ai";
 import Header from "../Header";
 import { motion } from "framer-motion";
+import { ThemeToggleButton } from "../ThemeToggleButton";
 
 interface ProjectHeaderProps {
   project?: ProjectDetailsSchema;
@@ -25,7 +26,8 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
               className="flex content-center justify-center header-link px-3 py-2"
             >
               PROJECTS
-            </Link>
+            </Link>{" "}
+            <ThemeToggleButton />
           </>
         }
         mobileChildren={
@@ -42,6 +44,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
             >
               PROJECTS
             </Link>
+            <ThemeToggleButton />
           </>
         }
       />
@@ -58,14 +61,14 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         </p>
         <div className="flex max-sm:flex-col mt-[-14px] lg:mt-[-24px]">
           <div className="flex items-center max-sm:mb-5 mr-10">
-            <AiFillCalendar className="text-lg text-neutral-300" />
-            <span className="ml-2 leading-none text-neutral-300">
+            <AiFillCalendar className="text-lg dark:text-neutral-300 text-neutral-700" />
+            <span className="ml-2 leading-none dark:text-neutral-300 text-neutral-700">
               {project?.date}
             </span>
           </div>
           <div className="flex items-center">
-            <AiFillTag className="text-lg text-neutral-300" />
-            <span className="ml-2 leading-none text-neutral-300">
+            <AiFillTag className="text-lg dark:text-neutral-300 text-neutral-700" />
+            <span className="ml-2 leading-none dark:text-neutral-300 text-neutral-700">
               {project?.type}
             </span>
           </div>

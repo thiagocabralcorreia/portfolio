@@ -72,10 +72,6 @@ export const projectDetailsData = [
         id: "scoutfy2",
         text: "Scoutfy is an intuitive sports management platform for amateurs to high-performance athletes, who can build a sports summary, apply for grants and sponsorships, contact the community, manage affiliations, members, events, competitions, teams, commission members, subscriptions and staff.",
       },
-      {
-        id: "scoutfy3",
-        text: "Scoutfy is an intuitive sports management platform for amateurs to high-performance athletes, who can build a sports summary, apply for grants and sponsorships, contact the community, manage affiliations, members, events, competitions, teams, commission members, subscriptions and staff.",
-      },
     ],
     website: "https://scoutfy.webflow.io",
     github: "",
@@ -157,11 +153,11 @@ export const projectDetailsData = [
     about: [
       {
         id: "ch1",
-        text: "This was my first personal project, built from scratch with my ideas and design As a coffee lover, I was super excited to create a fictional London coffee shop chain: brand, visual identity, menu and addresses. I even elaborated the graphic arts with signs, facades and banners of this site, edited with Adobe Photoshop.",
+        text: "This was my first personal project, built from scratch with my ideas and design. As a coffee lover, I was super excited to create a fictional London coffee shop chain: brand, visual identity, menu and addresses. I even elaborated the graphic arts with signs, facades and banners of this site, edited with Adobe Photoshop.",
       },
       {
         id: "ch2",
-        text: "It was a challenging and really fun way to put my knowledge of React.js into practice. Among the features: responsive design using Sass, an infinite Image slider, mobile menu, gallery grid with slideshow modal, an adresses page using store filter, coffee quiz with score, contact form and newsletter subscribe with validation, menu page with context, css animations and charts.",
+        text: "It was a challenging and really fun way to put my knowledge of React.js into practice. Among the features: responsive design using Sass, an infinite Image slider, mobile menu, gallery grid with slideshow modal, an adresses page using store filter, coffee quiz with score, contact form and newsletter subscribe with validation, menu page with context, CSS animations and charts.",
       },
     ],
     website: "https://coffeehouse-website-kohl.vercel.app",
