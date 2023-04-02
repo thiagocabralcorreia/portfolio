@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ProjectDetailsSchema } from "../../data/projectDetails";
-import { AiFillCalendar, AiFillTag } from "react-icons/ai";
+import { AiFillCalendar, AiFillCaretLeft, AiFillTag } from "react-icons/ai";
 import Header from "../Header";
 import { motion } from "framer-motion";
 import { ThemeToggleButton } from "../ThemeToggleButton";
@@ -33,18 +33,13 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         mobileChildren={
           <>
             <Link
-              to={"/"}
-              className="flex content-center justify-center header-link px-3 py-2"
-            >
-              HOME
-            </Link>
-            <Link
               to={"/projects"}
-              className="flex content-center justify-center header-link px-3 py-2"
+              className="flex content-center justify-center header-link py-2"
             >
+              <AiFillCaretLeft className="mr-1 self-center text-amber-400"></AiFillCaretLeft>
               PROJECTS
             </Link>
-            <ThemeToggleButton />
+            <ThemeToggleButton extraStyle="pl-4" />
           </>
         }
       />

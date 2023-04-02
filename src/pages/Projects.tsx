@@ -27,10 +27,10 @@ const Projects = () => {
               to={"/"}
               className="flex content-center justify-center header-link"
             >
-              <AiFillCaretLeft className="mr-2 self-center text-amber-400"></AiFillCaretLeft>
+              <AiFillCaretLeft className="mr-1 self-center text-amber-400"></AiFillCaretLeft>
               GO HOME
             </Link>
-            <ThemeToggleButton />
+            <ThemeToggleButton extraStyle="pl-4" />
           </>
         }
       />

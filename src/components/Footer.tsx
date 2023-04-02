@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-function Footer() {
+const Footer = () => {
   return (
     <motion.footer
       initial={{ y: 100 }}
@@ -38,6 +38,6 @@ function Footer() {
       </p>
     </motion.footer>
   );
-}
+};
 
 export default Footer;

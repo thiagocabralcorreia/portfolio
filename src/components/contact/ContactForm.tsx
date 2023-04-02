@@ -74,7 +74,7 @@ const ContactForm = () => {
 
           <div className="mt-6">
             <label
-              className="block text-lg dark:text-black text-white mb-2"
+              className="block text-lg text-black dark:text-white mb-2"
               htmlFor="message"
             >
               Message

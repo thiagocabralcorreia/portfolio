@@ -4,9 +4,11 @@ import { Link } from "react-scroll";
 import { sections, SectionSchema } from "../data/sections";
 import DropdownMenu from "./DropdownMenu";
 import Header from "./Header";
+import MenuDropdown from "./MenuDropdown";
 import { ThemeToggleButton } from "./ThemeToggleButton";
+import Tooltip from "./Tooltip";
 
-function Navbar() {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeDropdownMenu = () => {
@@ -38,7 +40,13 @@ function Navbar() {
               </Link>
             );
           })}
-          <ThemeToggleButton />
+          <Tooltip text="Toggle theme" customStyle="top-10 w-24">
+            <ThemeToggleButton />
+          </Tooltip>
+          <MenuDropdown
+            imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+          />
         </>
       }
       mobileChildren={
@@ -87,6 +95,18 @@ function Navbar() {
             )}
           </button>
           <ThemeToggleButton iconSize={24} />
+          <MenuDropdown
+            imgWidth={22}
+            imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+          />
+          {/* <img
+            src="https://hatscripts.github.io/circle-flags/flags/br.svg"
+            width="22"
+            alt="Português (Brasil)"
+            className="ml-4 cursor-pointer"
+            onClick={() => {}}
+          /> */}
         </>
       }
       dropdownMenu={
@@ -94,6 +114,6 @@ function Navbar() {
       }
     />
   );
-}
+};
 
 export default Navbar;
