@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
 import { Link } from "react-scroll";
+import { LanguageContext } from "../../context/LanguageContext";
+import { enAboutData, ptAboutData } from "../../data/about";
+
 import { skills, SkillSchema } from "../../data/skills";
 
 const About = () => {
+  const { language } = useContext(LanguageContext);
+  const aboutData = language === "en" ? enAboutData : ptAboutData;
+
   return (
     <motion.section
       id="about"
@@ -13,36 +20,23 @@ const About = () => {
     >
       <div className="w-10/12 flex max-lg:flex-col m-auto lg:mb-10 max-lg:text-center content-center justify-center">
         <div className="max-md: px-5 lg:w-1/2 lg:mr-24 max-lg:mb-20">
-          <h1 className="section-title">NICE TO MEET YOU!</h1>
+          <h1 className="section-title">{aboutData.niceToMeet}</h1>
           <p className="section-text">
-            So, I've been a{" "}
-            <span className="text-amber-400">
-              Front-end Web & Mobile Developer
-            </span>{" "}
-            for a bit more than 2 years now. During this time, I've worked
-            remotely for{" "}
-            <span className="text-amber-400">
-              consulting agencies and startups
-            </span>
-            . I've had the chance to work with some amazing professional folks,
-            creating cool digital stuff, such as{" "}
-            <span className="text-amber-400">websites and mobile apps</span>.
+            {aboutData.iAm}{" "}
+            <span className="text-amber-400">{aboutData.frontend}</span>{" "}
+            {aboutData.exp}{" "}
+            <span className="text-amber-400">{aboutData.companies}</span>.{" "}
+            {aboutData.work}{" "}
+            <span className="text-amber-400">{aboutData.web}</span>.
           </p>
           <p className="section-text">
-            I enjoy every project step: from the first team meeting, discovering
-            the purposes and problems to solve, to taking vector designs and
-            bring them to life in code, thus making a{" "}
-            <span className="text-amber-400">
-              beautiful, responsive and fully functional product
-            </span>
-            .
+            {aboutData.enjoy}{" "}
+            <span className="text-amber-400">{aboutData.beautiful}</span>.
           </p>
           <p className="text-xl mx-auto dark:text-neutral-300 text-neutral-800">
-            Always excited to learn and progress, I'm constantly improving my
-            current skills and studying new technologies. I love collaborating
-            and making connections, especially over a cup of coffee.{" "}
+            {aboutData.learn}{" "}
             <span className="text-amber-400">
-              Feel free to{" "}
+              {aboutData.feelFree}{" "}
               <Link
                 to={"contact"}
                 offset={-96}
@@ -50,19 +44,17 @@ const About = () => {
                 duration={500}
                 className="underline underline-offset-4 cursor-pointer"
               >
-                contact
+                {aboutData.contact}
               </Link>{" "}
-              me
+              {aboutData.me}
             </span>
             .
           </p>
         </div>
 
         <div className="lg:w-1/2 lg:mr-24">
-          <h1 className="section-title">SKILLS & TOOLS</h1>
-          <p className="section-text">
-            Some skills and technologies I’ve been working with:
-          </p>
+          <h1 className="section-title">{aboutData.skills}</h1>
+          <p className="section-text">{aboutData.someSkills}</p>
           <div className="flex flex-wrap max-lg:justify-center">
             {skills.map(({ id, skill }: SkillSchema) => {
               return (
