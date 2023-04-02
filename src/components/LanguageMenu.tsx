@@ -1,19 +1,21 @@
 import { Fragment, useContext } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { Language, LanguageContext } from "../context/LanguageContext";
+import { enHeaderData, ptHeaderData } from "../data/header";
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {}
 
-interface MenuDropdownProps {
+interface LanguageMenuProps {
   imgWidth?: number;
   imgStyle: string;
 }
 
-const MenuDropdown: React.FC<MenuDropdownProps> = ({
+const LanguageMenu: React.FC<LanguageMenuProps> = ({
   imgWidth = 23,
   imgStyle,
 }) => {
   const { language, setLanguage } = useContext(LanguageContext);
+  const headerData = language === "en" ? enHeaderData : ptHeaderData;
 
   const handleLanguageChange = (selectedLanguage: Language) => {
     setLanguage(selectedLanguage);
@@ -27,7 +29,9 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({
             language === "pt" ? "br" : "gb"
           }.svg`}
           width={imgWidth}
-          alt="English (UK)"
+          alt={
+            language === "pt" ? headerData.ptLanguage : headerData.enLanguage
+          }
           className={imgStyle}
         />
       </Menu.Button>
@@ -41,7 +45,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items
-          className="absolute top-8 right-0 mt-2 w-56 origin-top-right
+          className="absolute top-8 right-0 mt-2 w-56 origin-top-right z-50
         divide-y divide-gray-100 rounded-md dark:bg-neutral-700 bg-neutral-50 shadow-lg
         ring-1 ring-black ring-opacity-5 focus:outline-none"
         >
@@ -59,10 +63,10 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({
                   <img
                     src="https://hatscripts.github.io/circle-flags/flags/gb.svg"
                     width="23"
-                    alt="English (UK)"
+                    alt={headerData.enLanguage}
                     className="ml-2 cursor-pointer content-center my-auto mr-3 transition ease-out duration-500 rounded-xl"
                   />
-                  English (UK)
+                  {headerData.enLanguage}
                 </button>
               )}
             </Menu.Item>
@@ -79,10 +83,10 @@ const MenuDropdown: React.FC<MenuDropdownProps> = ({
                   <img
                     src="https://hatscripts.github.io/circle-flags/flags/br.svg"
                     width="23"
-                    alt="Portuguese (Brazil)"
+                    alt={headerData.ptLanguage}
                     className="ml-2 cursor-pointer content-center my-auto mr-3 transition ease-out duration-500 rounded-xl"
                   />
-                  Portuguese (Brazil)
+                  {headerData.ptLanguage}
                 </button>
               )}
             </Menu.Item>
@@ -175,4 +179,4 @@ function DeleteActiveIcon(props: IconProps) {
   );
 }
 
-export default MenuDropdown;
+export default LanguageMenu;

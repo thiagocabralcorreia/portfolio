@@ -1,11 +1,18 @@
 import Header from "../components/Header";
+import { LanguageContext } from "../context/LanguageContext";
 import { AiFillCaretLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ProjectsGrid from "../components/sections/ProjectsGrid";
 import { ThemeToggleButton } from "../components/ThemeToggleButton";
+import LanguageMenu from "../components/LanguageMenu";
+import { enHeaderData, ptHeaderData } from "../data/header";
+import { useContext } from "react";
 
 const Projects = () => {
+  const { language } = useContext(LanguageContext);
+  const headerData = language === "en" ? enHeaderData : ptHeaderData;
+
   return (
     <>
       <Header
@@ -16,9 +23,13 @@ const Projects = () => {
               className="flex content-center justify-center header-link"
             >
               <AiFillCaretLeft className="mr-2 self-center text-amber-400"></AiFillCaretLeft>
-              GO BACK HOME
+              {headerData.goBack}
             </Link>
             <ThemeToggleButton />
+            <LanguageMenu
+              imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+            />
           </>
         }
         mobileChildren={
@@ -28,9 +39,14 @@ const Projects = () => {
               className="flex content-center justify-center header-link"
             >
               <AiFillCaretLeft className="mr-1 self-center text-amber-400"></AiFillCaretLeft>
-              GO HOME
+              {headerData.smGoBack}
             </Link>
             <ThemeToggleButton extraStyle="pl-4" />
+            <LanguageMenu
+              imgWidth={22}
+              imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+            />
           </>
         }
       />

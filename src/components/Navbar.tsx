@@ -1,15 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { sections, SectionSchema } from "../data/sections";
+import { enSections, ptSections, SectionSchema } from "../data/sections";
+import { LanguageContext } from "../context/LanguageContext";
+
 import DropdownMenu from "./DropdownMenu";
+import LanguageMenu from "./LanguageMenu";
 import Header from "./Header";
-import MenuDropdown from "./MenuDropdown";
 import { ThemeToggleButton } from "./ThemeToggleButton";
 import Tooltip from "./Tooltip";
+import { enHeaderData, ptHeaderData } from "../data/header";
 
 const Navbar = () => {
+  const { language } = useContext(LanguageContext);
   const [isOpen, setIsOpen] = useState(false);
+
+  const sections = language === "en" ? enSections : ptSections;
+  const headerData = language === "en" ? enHeaderData : ptHeaderData;
 
   const closeDropdownMenu = () => {
     if (window.innerWidth >= 1024) {
@@ -26,11 +33,11 @@ const Navbar = () => {
     <Header
       desktopChildren={
         <>
-          {sections.map(({ id, section }: SectionSchema) => {
+          {sections.map(({ id, section, value }: SectionSchema) => {
             return (
               <Link
                 key={id}
-                to={section.toLowerCase()}
+                to={value.toLowerCase()}
                 offset={-96}
                 smooth
                 duration={500}
@@ -40,10 +47,10 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <Tooltip text="Toggle theme" customStyle="top-10 w-24">
+          <Tooltip text={headerData.toggleTheme} customStyle="top-10 w-24">
             <ThemeToggleButton />
           </Tooltip>
-          <MenuDropdown
+          <LanguageMenu
             imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
             hover:border-2 hover:border-amber-400 rounded-xl"
           />
@@ -59,7 +66,6 @@ const Navbar = () => {
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
-            <span className="sr-only">Open main menu</span>
             {!isOpen ? (
               <svg
                 className="block h-6 w-6"
@@ -95,18 +101,11 @@ const Navbar = () => {
             )}
           </button>
           <ThemeToggleButton iconSize={24} />
-          <MenuDropdown
+          <LanguageMenu
             imgWidth={22}
             imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
             hover:border-2 hover:border-amber-400 rounded-xl"
           />
-          {/* <img
-            src="https://hatscripts.github.io/circle-flags/flags/br.svg"
-            width="22"
-            alt="Português (Brasil)"
-            className="ml-4 cursor-pointer"
-            onClick={() => {}}
-          /> */}
         </>
       }
       dropdownMenu={

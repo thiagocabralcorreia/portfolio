@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { Transition } from "@headlessui/react";
-import { sections, SectionSchema } from "../data/sections";
+import { LanguageContext } from "../context/LanguageContext";
+import { enSections, ptSections, SectionSchema } from "../data/sections";
 import { Link } from "react-scroll";
 
 interface DropdownMenuProps {
@@ -10,6 +11,10 @@ interface DropdownMenuProps {
 
 const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
   const ref = useRef(null);
+  const { language } = useContext(LanguageContext);
+
+  const sections = language === "en" ? enSections : ptSections;
+
   return (
     <Transition
       show={show}
@@ -23,12 +28,12 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
       <nav className="lg:hidden">
         <div ref={ref} className="h-screen overflow-hidden text-center">
           <div className="pt-2 pb-3 space-y-1 sm:px-3 dark:bg-neutral-800 bg-neutral-100 lg:primary-background-colors">
-            {sections.map(({ id, section }: SectionSchema) => {
+            {sections.map(({ id, section, value }: SectionSchema) => {
               return (
                 // eslint-disable-next-line jsx-a11y/anchor-is-valid
                 <Link
                   key={id}
-                  to={section.toLowerCase()}
+                  to={value.toLowerCase()}
                   onClick={onClose}
                   offset={-96}
                   className="header-link block px-3 py-4"

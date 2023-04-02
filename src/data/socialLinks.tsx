@@ -31,7 +31,7 @@ export const links = [
     id: 3,
     child: (
       <>
-        <p className="ml-5">Mail</p> <HiOutlineMail size={30} />
+        <p className="ml-5">Email</p> <HiOutlineMail size={30} />
       </>
     ),
     href: "mailto:thiagocabralcorreia@gmail.com",
