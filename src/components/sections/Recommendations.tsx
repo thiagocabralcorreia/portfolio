@@ -10,8 +10,7 @@ import {
 function RecommendationsSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const newLocal = useContext(LanguageContext);
-  const { language } = newLocal;
+  const { language } = useContext(LanguageContext);
   const recommendationsData: Recommendation[] =
     language === "en" ? enRecommendationsData : ptRecommendationsData;
 
