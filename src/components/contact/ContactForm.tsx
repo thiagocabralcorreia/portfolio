@@ -1,13 +1,17 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import emailjs from "@emailjs/browser";
-
 import { FiArrowUpCircle } from "react-icons/fi";
+
+import { LanguageContext } from "../../context/LanguageContext";
+import { enContactData, ptContactData } from "../../data/contact";
 
 import Button from "../Button";
 import FormInput from "../FormInput";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
+  const { language } = useContext(LanguageContext);
+  const contactData = language === "en" ? enContactData : ptContactData;
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -36,7 +40,7 @@ const ContactForm = () => {
   return (
     <div className="w-full lg:w-1/2">
       <h1 className="section-title text-left max-lg:text-center">
-        GET IN TOUCH
+        {contactData.inTouch}
       </h1>
       <div className="leading-loose">
         <form
@@ -45,39 +49,39 @@ const ContactForm = () => {
           className="max-lg:justify-content max-lg:m-auto max-w-xl rounded-xl text-left"
         >
           <FormInput
-            inputLabel="Name"
+            inputLabel={contactData.name}
             labelFor="name"
             inputType="text"
             inputId="name"
             inputName="name"
-            placeholderText="Enter your full name"
+            placeholderText={contactData.fullName}
             ariaLabelName="Name"
           />
           <FormInput
-            inputLabel="Email"
+            inputLabel={contactData.email}
             labelFor="email"
             inputType="email"
             inputId="email"
             inputName="email"
-            placeholderText="Enter your best email"
+            placeholderText={contactData.bestEmail}
             ariaLabelName="Email"
           />
           <FormInput
-            inputLabel="Subject"
+            inputLabel={contactData.subject}
             labelFor="subject"
             inputType="text"
             inputId="subject"
             inputName="subject"
-            placeholderText="Enter a subject"
+            placeholderText={contactData.enterSubject}
             ariaLabelName="Subject"
           />
 
           <div className="mt-6">
             <label
-              className="block text-lg dark:text-black text-white mb-2"
+              className="block text-lg text-black dark:text-white mb-2"
               htmlFor="message"
             >
-              Message
+              {contactData.message}
             </label>
             <textarea
               className="w-full px-5 py-2 border dark:border-gray-300 border-gray-700 border-opacity-50 text-black dark:text-white
@@ -95,7 +99,7 @@ const ContactForm = () => {
           <div className="mt-8">
             <Button type="submit" aria-label="Submit Message">
               <FiArrowUpCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowUpCircle>
-              Submit
+              {contactData.submit}
             </Button>
           </div>
         </form>

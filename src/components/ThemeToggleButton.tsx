@@ -3,9 +3,13 @@ import { useTheme } from "../context/ThemeContext";
 
 interface ThemeToggleButtonProps {
   iconSize?: number;
+  extraStyle?: string;
 }
 
-export function ThemeToggleButton({ iconSize = 28 }: ThemeToggleButtonProps) {
+export function ThemeToggleButton({
+  iconSize = 28,
+  extraStyle,
+}: ThemeToggleButtonProps) {
   const { theme, setTheme } = useTheme();
 
   function handleToggleTheme() {
@@ -14,7 +18,7 @@ export function ThemeToggleButton({ iconSize = 28 }: ThemeToggleButtonProps) {
   }
 
   return (
-    <div className="content-center pl-2 my-auto header-link">
+    <div className={`content-center pl-2 my-auto header-link ${extraStyle}`}>
       {theme ? (
         <Moon
           size={iconSize}

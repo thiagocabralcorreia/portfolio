@@ -1,17 +1,28 @@
+import { useContext } from "react";
 import { FaGlobe, FaApple, FaGooglePlay, FaGithub } from "react-icons/fa";
-import { ProjectDetailsSchema } from "../../data/projectDetails";
+import { LanguageContext } from "../../context/LanguageContext";
+
+import {
+  enIntroProjectDetailsData,
+  ProjectDetailsSchema,
+  ptIntroProjectDetailsData,
+} from "../../data/projectDetails";
 
 interface ProjectContentProps {
   project?: ProjectDetailsSchema;
 }
 
 const ProjectContent = ({ project }: ProjectContentProps) => {
+  const { language } = useContext(LanguageContext);
+  const projectIntroDetailsData =
+    language === "en" ? enIntroProjectDetailsData : ptIntroProjectDetailsData;
+
   return (
     <div className="block sm:flex gap-0 sm:gap-10 sm:mt-14">
       <div className="w-full sm:w-1/3 text-left">
         <div className="mb-7">
           <p className="text-4xl text-black dark:text-white font-barlow mb-7">
-            SKILLS & TOOLS
+            {projectIntroDetailsData.skills}
           </p>
           <div className="flex flex-wrap">
             {project?.skills.map((skill, index) => {
@@ -40,7 +51,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
             >
               <FaGlobe size={28} />
-              <p className="ml-4"> Visit website</p>
+              <p className="ml-4">{projectIntroDetailsData.website}</p>
             </a>
           )}
           {project?.appleStore && (
@@ -51,7 +62,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
             >
               <FaApple size={28} />
-              <p className="ml-4">Download from Apple Store</p>
+              <p className="ml-4">{projectIntroDetailsData.apple}</p>
             </a>
           )}
           {project?.playStore && (
@@ -62,7 +73,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
             >
               <FaGooglePlay size={28} />
-              <p className="ml-4">Download from Play Store</p>
+              <p className="ml-4">{projectIntroDetailsData.play}</p>
             </a>
           )}
           {project?.github && (
@@ -73,7 +84,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
             >
               <FaGithub size={28} />
-              <p className="ml-4">Check out the code</p>
+              <p className="ml-4">{projectIntroDetailsData.code}</p>
             </a>
           )}
         </div>
@@ -81,7 +92,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
 
       <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
         <p className="text-4xl text-black dark:text-white font-barlow mb-7">
-          PROJECT OVERVIEW
+          {projectIntroDetailsData.overview}
         </p>
         {project?.about.map(({ id, text }) => (
           <p key={id} className="section-text">

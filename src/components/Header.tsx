@@ -7,11 +7,11 @@ interface HeaderProps {
   dropdownMenu?: React.ReactNode;
 }
 
-function Header({
+const Header = ({
   desktopChildren,
   mobileChildren,
   dropdownMenu,
-}: HeaderProps) {
+}: HeaderProps) => {
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -46,6 +46,6 @@ function Header({
       <>{dropdownMenu}</>
     </motion.header>
   );
-}
+};
 
 export default Header;

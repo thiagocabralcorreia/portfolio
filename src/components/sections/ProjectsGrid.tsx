@@ -3,9 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { ProjectsContext } from "../../context/ProjectsContext";
+import { LanguageContext } from "../../context/LanguageContext";
 import ProjectCard from "../ProjectCard";
-import { ProjecSchema } from "../../data/projects";
 import ProjectsFilter from "../ProjectsFilter";
+
+import {
+  enIntroProjectsData,
+  ProjecSchema,
+  ptIntroProjectsData,
+} from "../../data/projects";
 
 interface ProjectsGridProps {
   home?: boolean;
@@ -18,7 +24,9 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
     setSelectProject,
     selectProjectsByCategory,
   } = useContext(ProjectsContext);
-
+  const { language } = useContext(LanguageContext);
+  const contactData =
+    language === "en" ? enIntroProjectsData : ptIntroProjectsData;
   const navigate = useNavigate();
 
   const handleProjectClick = (id: string) => {
@@ -38,14 +46,12 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
       className="w-full pt-20 pb-12"
     >
       <div className="w-10/12 m-auto text-center">
-        <h1 className="section-title">PROJECTS</h1>
+        <h1 className="section-title">{contactData.title}</h1>
       </div>
 
       <p className="section-text w-8/12 m-auto text-center">
-        Here are a few professional and personal projects I’ve built.
-        {!home && (
-          <span className="lg:block"> You can filter them by category.</span>
-        )}
+        {contactData.description}
+        {!home && <span className="lg:block">{contactData.filter}</span>}
       </p>
 
       {!home && (
@@ -67,7 +73,7 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
                   onClick={() => handleProjectClick(project.id || "")}
                 />
               ))
-          : selectProject !== "All Projects"
+          : selectProject !== "All"
           ? selectProjectsByCategory?.map((project: ProjecSchema) => (
               <ProjectCard
                 title={project.title}

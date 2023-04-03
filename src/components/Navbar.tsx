@@ -1,13 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { sections, SectionSchema } from "../data/sections";
+import { enSections, ptSections, SectionSchema } from "../data/sections";
+import { LanguageContext } from "../context/LanguageContext";
+
 import DropdownMenu from "./DropdownMenu";
+import LanguageMenu from "./LanguageMenu";
 import Header from "./Header";
 import { ThemeToggleButton } from "./ThemeToggleButton";
+import Tooltip from "./Tooltip";
+import { enHeaderData, ptHeaderData } from "../data/header";
 
-function Navbar() {
+const Navbar = () => {
+  const { language } = useContext(LanguageContext);
   const [isOpen, setIsOpen] = useState(false);
+
+  const sections = language === "en" ? enSections : ptSections;
+  const headerData = language === "en" ? enHeaderData : ptHeaderData;
 
   const closeDropdownMenu = () => {
     if (window.innerWidth >= 1024) {
@@ -24,11 +33,11 @@ function Navbar() {
     <Header
       desktopChildren={
         <>
-          {sections.map(({ id, section }: SectionSchema) => {
+          {sections.map(({ id, section, value }: SectionSchema) => {
             return (
               <Link
                 key={id}
-                to={section.toLowerCase()}
+                to={value.toLowerCase()}
                 offset={-96}
                 smooth
                 duration={500}
@@ -38,7 +47,16 @@ function Navbar() {
               </Link>
             );
           })}
-          <ThemeToggleButton />
+          <Tooltip
+            text={headerData.toggleTheme}
+            customStyle="top-10 right-[-36px] w-24"
+          >
+            <ThemeToggleButton />
+          </Tooltip>
+          <LanguageMenu
+            imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+          />
         </>
       }
       mobileChildren={
@@ -51,7 +69,6 @@ function Navbar() {
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
-            <span className="sr-only">Open main menu</span>
             {!isOpen ? (
               <svg
                 className="block h-6 w-6"
@@ -87,6 +104,11 @@ function Navbar() {
             )}
           </button>
           <ThemeToggleButton iconSize={24} />
+          <LanguageMenu
+            imgWidth={22}
+            imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+          />
         </>
       }
       dropdownMenu={
@@ -94,6 +116,6 @@ function Navbar() {
       }
     />
   );
-}
+};
 
 export default Navbar;

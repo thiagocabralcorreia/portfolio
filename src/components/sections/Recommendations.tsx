@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 import {
+  enRecommendationsData,
+  ptRecommendationsData,
   Recommendation,
-  recommendationsData,
 } from "../../data/recommendations";
 
 function RecommendationsSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const recommendations: Recommendation[] = recommendationsData;
+
+  const { language } = useContext(LanguageContext);
+  const recommendationsData: Recommendation[] =
+    language === "en" ? enRecommendationsData : ptRecommendationsData;
 
   return (
     <motion.section
@@ -18,7 +23,7 @@ function RecommendationsSlider() {
       className="relative dark:bg-neutral-800 bg-neutral-100 max-sm:h-[892px] max-md:h-[600px] h-[530px]"
     >
       <div className="absolute top-0 left-0 w-full h-full dark:bg-neutral-800 bg-neutral-100">
-        {recommendations.map((recommendation, index) => (
+        {recommendationsData.map((recommendation, index) => (
           <div
             key={recommendation.id}
             className={`${
@@ -29,7 +34,7 @@ function RecommendationsSlider() {
             <div className="relative dark:bg-neutral-800 bg-neutral-100 py-6 pb-24">
               <div className="flex absolute z-20 bottom-20 left-1/2 right-1/2 justify-center">
                 <div className="flex justify-center space-x-5">
-                  {recommendations.map((_, index) => (
+                  {recommendationsData.map((_, index) => (
                     <button
                       key={index}
                       className={`w-[11px] h-[11px] rounded-full ${

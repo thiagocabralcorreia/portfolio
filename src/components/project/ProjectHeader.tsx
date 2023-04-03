@@ -1,15 +1,23 @@
 import { Link } from "react-router-dom";
 import { ProjectDetailsSchema } from "../../data/projectDetails";
-import { AiFillCalendar, AiFillTag } from "react-icons/ai";
+import { AiFillCalendar, AiFillCaretLeft, AiFillTag } from "react-icons/ai";
+import { LanguageContext } from "../../context/LanguageContext";
+
 import Header from "../Header";
 import { motion } from "framer-motion";
 import { ThemeToggleButton } from "../ThemeToggleButton";
+import LanguageMenu from "../LanguageMenu";
+import { useContext } from "react";
+import { enHeaderData, ptHeaderData } from "../../data/header";
 
 interface ProjectHeaderProps {
   project?: ProjectDetailsSchema;
 }
 
 const ProjectHeader = ({ project }: ProjectHeaderProps) => {
+  const { language } = useContext(LanguageContext);
+  const headerData = language === "en" ? enHeaderData : ptHeaderData;
+
   return (
     <>
       <Header
@@ -19,32 +27,36 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
               to={"/"}
               className="flex content-center justify-center header-link px-3 py-2"
             >
-              HOME
+              {headerData.home}
             </Link>
             <Link
               to={"/projects"}
               className="flex content-center justify-center header-link px-3 py-2"
             >
-              PROJECTS
+              {headerData.projects}
             </Link>{" "}
             <ThemeToggleButton />
+            <LanguageMenu
+              imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+            />
           </>
         }
         mobileChildren={
           <>
             <Link
-              to={"/"}
-              className="flex content-center justify-center header-link px-3 py-2"
-            >
-              HOME
-            </Link>
-            <Link
               to={"/projects"}
-              className="flex content-center justify-center header-link px-3 py-2"
+              className="flex content-center justify-center header-link py-2"
             >
-              PROJECTS
+              <AiFillCaretLeft className="mr-1 self-center text-amber-400 dark:text-amber-400"></AiFillCaretLeft>
+              {headerData.projects}
             </Link>
-            <ThemeToggleButton />
+            <ThemeToggleButton extraStyle="pl-4" />
+            <LanguageMenu
+              imgWidth={22}
+              imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            hover:border-2 hover:border-amber-400 rounded-xl"
+            />
           </>
         }
       />
@@ -56,7 +68,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="pt-36 w-10/12 m-auto px-4 sm:px-6 lg:px-8 bg:neutral-900"
       >
-        <p className="section-title text-amber-400">
+        <p className="section-title text-amber-400 dark:text-amber-400">
           {project?.name.toLocaleUpperCase()}
         </p>
         <div className="flex max-sm:flex-col mt-[-14px] lg:mt-[-24px]">

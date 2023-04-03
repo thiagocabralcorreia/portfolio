@@ -1,10 +1,17 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
 import { FiArrowDownCircle } from "react-icons/fi";
 
-import poster from "../../assets/poster.png";
+import { LanguageContext } from "../../context/LanguageContext";
+import { enIntroBannerData, ptIntroBannerData } from "../../data/introBanner";
 import Hyperlink from "../Hyperlink";
+import poster from "../../assets/poster.png";
 
 const IntroBanner = () => {
+  const { language } = useContext(LanguageContext);
+  const introBannerData =
+    language === "en" ? enIntroBannerData : ptIntroBannerData;
+
   return (
     <motion.section
       id="home"
@@ -15,20 +22,18 @@ const IntroBanner = () => {
     >
       <div className="flex flex-col text-center lg:text-left content-center justify-center max-lg:my-20 max-auto">
         <p className="text-neutral-700 dark:text-neutral-300 text-xl mb-3 sm:mb-4">
-          Hi, there! My name is
+          {introBannerData.hi}
         </p>
         <h1 className="text-3xl sm:text-5xl xl:text-6xl dark:text-white text-black md:font-bold mb-3 sm:mb-5 font-barlow">
           <span className="text-amber-400">THIAGO</span> CABRAL CORREIA
         </h1>
         <p className="text-xl max-w-xl max-lg:mx-auto dark:text-neutral-300 text-neutral-700">
-          I'm a{" "}
-          <span className="text-amber-400 md:font-bold">
-            Front-end Developer
+          {introBannerData.iAm}{" "}
+          <span className="text-amber-400 font-bold">
+            {introBannerData.frontend}
           </span>{" "}
-          passionate about building{" "}
-          <span className="xl:block">
-            beautiful user interfaces and great digital experiences.
-          </span>
+          {introBannerData.passionate}{" "}
+          <span className="xl:block">{introBannerData.ui}</span>
         </p>
 
         <div className="flex justify-center text-lg lg:block w-52 pt-12 mb-6 sm:mb-0 max-lg:m-auto ">

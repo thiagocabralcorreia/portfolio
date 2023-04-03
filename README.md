@@ -25,6 +25,8 @@ I hope you enjoy exploring my portfolio as much as I enjoyed creating it. Feel f
 - Project Details Page
 - Recommendation Slider
 - Contact Form with EmailJS
+- Theme Toggle
+- Language Selection Menu
 
 ## Stacks
 
@@ -38,6 +40,7 @@ I hope you enjoy exploring my portfolio as much as I enjoyed creating it. Feel f
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Scroll](https://www.npmjs.com/package/react-scroll)
 - [EmailJS](https://www.emailjs.com)
+- [Headlessui](https://headlessui.com)
 
 ## Available Scripts
 

@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { LanguageContext } from "../context/LanguageContext";
+import { enFooterData, ptFooterData } from "../data/footer";
 
-function Footer() {
+const Footer = () => {
+  const { language } = useContext(LanguageContext);
+  const footerData = language === "en" ? enFooterData : ptFooterData;
+
   return (
     <motion.footer
       initial={{ y: 100 }}
@@ -10,7 +16,7 @@ function Footer() {
       className="w-full justify-center content-center py-10 text-center m-auto dark:bg-neutral-800 bg-neutral-100"
     >
       <h2 className="text-4xl text-black dark:text-white font-barlow">
-        FOLLOW ME
+        {footerData.follow}
       </h2>
       <div className="flex w-full items-center justify-center mt-5 mb-10">
         <a
@@ -34,10 +40,10 @@ function Footer() {
         </a>
       </div>
       <p className="text-md md:text-lg text-center text-black dark:text-white">
-        © 2023 | Portfolio by Thiago Cabral Correia
+        {footerData.by}
       </p>
     </motion.footer>
   );
-}
+};
 
 export default Footer;
