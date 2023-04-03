@@ -30,7 +30,7 @@ export const enRecommendationsData: Recommendation[] = [
   },
   {
     id: 3,
-    text: "When we started working together, Thiago was always willing to help in any way he could. If he couldn't, he would go after learning what was necessary to be able to collaborate. Your organization and communication are exceptional, and have helped a lot on all projects. He always shows care for them, and tries to understand everything in the best way, in order to be able to communicate even something that we had not seen. His role is indispensable in a Scrum team, not only for his role, but also for his empathy, humility and understanding.",
+    text: "When we started working together, Thiago was always willing to help in any way he could. If he couldn't, he would go after learning what was necessary to be able to collaborate. Your organization and communication are exceptional, and have helped a lot on All. He always shows care for them, and tries to understand everything in the best way, in order to be able to communicate even something that we had not seen. His role is indispensable in a Scrum team, not only for his role, but also for his empathy, humility and understanding.",
     image: AfonsoPimentel,
     name: "Afonso Pimentel",
     occupation: "Product Owner",

@@ -73,7 +73,7 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
                   onClick={() => handleProjectClick(project.id || "")}
                 />
               ))
-          : selectProject !== "All Projects"
+          : selectProject !== "All"
           ? selectProjectsByCategory?.map((project: ProjecSchema) => (
               <ProjectCard
                 title={project.title}

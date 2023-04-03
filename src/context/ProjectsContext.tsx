@@ -16,7 +16,7 @@ export const ProjectsContext = createContext<ProjectsContextProps>(
 
 export const ProjectsProvider = (props: ProjectsContextProps) => {
   const [projects, setProjects] = useState<ProjecSchema[]>(projectsData);
-  const [selectProject, setSelectProject] = useState<string>("All Projects");
+  const [selectProject, setSelectProject] = useState<string>("All");
 
   const selectProjectsByCategory = projects.filter((item) => {
     let category =
