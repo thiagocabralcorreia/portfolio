@@ -47,7 +47,10 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <Tooltip text={headerData.toggleTheme} customStyle="top-10 w-24">
+          <Tooltip
+            text={headerData.toggleTheme}
+            customStyle="top-10 right-[-36px] w-24"
+          >
             <ThemeToggleButton />
           </Tooltip>
           <LanguageMenu

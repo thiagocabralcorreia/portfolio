@@ -29,7 +29,7 @@ const IntroBanner = () => {
         </h1>
         <p className="text-xl max-w-xl max-lg:mx-auto dark:text-neutral-300 text-neutral-700">
           {introBannerData.iAm}{" "}
-          <span className="text-amber-400 md:font-bold">
+          <span className="text-amber-400 font-bold">
             {introBannerData.frontend}
           </span>{" "}
           {introBannerData.passionate}{" "}

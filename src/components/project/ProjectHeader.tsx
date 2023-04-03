@@ -48,7 +48,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
               to={"/projects"}
               className="flex content-center justify-center header-link py-2"
             >
-              <AiFillCaretLeft className="mr-1 self-center text-amber-400"></AiFillCaretLeft>
+              <AiFillCaretLeft className="mr-1 self-center text-amber-400 dark:text-amber-400"></AiFillCaretLeft>
               {headerData.projects}
             </Link>
             <ThemeToggleButton extraStyle="pl-4" />
@@ -68,7 +68,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="pt-36 w-10/12 m-auto px-4 sm:px-6 lg:px-8 bg:neutral-900"
       >
-        <p className="section-title text-amber-400">
+        <p className="section-title text-amber-400 dark:text-amber-400">
           {project?.name.toLocaleUpperCase()}
         </p>
         <div className="flex max-sm:flex-col mt-[-14px] lg:mt-[-24px]">

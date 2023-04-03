@@ -7,8 +7,8 @@ export const enHeaderData = {
   goBack: "GO BACK HOME",
   smGoBack: "GO HOME",
   toggleTheme: "Toggle theme",
-  enLanguage: "English (UK)",
-  ptLanguage: "Portuguese (Brazil)",
+  enLanguage: "English (GB)",
+  ptLanguage: "Portuguese (BR)",
 };
 
 export const ptHeaderData = {
@@ -20,6 +20,6 @@ export const ptHeaderData = {
   goBack: "HOME",
   smGoBack: "HOME",
   toggleTheme: "Mudar tema",
-  enLanguage: "Inglês (Reino Unido)",
-  ptLanguage: "Português (Brasil)",
+  enLanguage: "Inglês (GB)",
+  ptLanguage: "Português (BR)",
 };

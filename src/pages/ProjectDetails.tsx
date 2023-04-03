@@ -1,12 +1,21 @@
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import { LanguageContext } from "../context/LanguageContext";
+
 import ProjectHeader from "../components/project/ProjectHeader";
-import { projectDetailsData } from "../data/projectDetails";
 import ProjectGallery from "../components/project/ProjectGallery";
 import ProjectContent from "../components/project/ProjectContent";
+import {
+  enProjectDetailsData,
+  ptProjectDetailsData,
+} from "../data/projectDetails";
 
 const ProjectDetails = () => {
   const { id } = useParams();
+  const { language } = useContext(LanguageContext);
+  const projectDetailsData =
+    language === "en" ? enProjectDetailsData : ptProjectDetailsData;
 
   const project = projectDetailsData.find((p) => p.id === id);
 

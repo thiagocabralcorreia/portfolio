@@ -1,6 +1,11 @@
-const selectOptions = ["All Projects", "Web Application", "Mobile Application"];
+import { useContext } from "react";
+import { Language, LanguageContext } from "../context/LanguageContext";
+
+const selectOptions = ["All Projects", "Web", "Mobile"];
 
 const ProjectsFilter = ({ setSelectProject }: any) => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <select
       onChange={(e) => {

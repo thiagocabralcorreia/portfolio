@@ -49,7 +49,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
         divide-y divide-gray-100 rounded-md dark:bg-neutral-700 bg-neutral-50 shadow-lg
         ring-1 ring-black ring-opacity-5 focus:outline-none"
         >
-          <div className="px-1 py-1 ">
+          <div className="p-1">
             <Menu.Item>
               {({ active }) => (
                 <button
