@@ -1,17 +1,20 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FiArrowUpCircle } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 import { LanguageContext } from "../../context/LanguageContext";
 import { enContactData, ptContactData } from "../../data/contact";
 
 import Button from "../Button";
 import FormInput from "../FormInput";
+import { FaCheck } from "react-icons/fa";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
   const { language } = useContext(LanguageContext);
   const contactData = language === "en" ? enContactData : ptContactData;
+  const [wasMessageSent, setWasMessageSent] = useState<boolean>(false);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -26,7 +29,9 @@ const ContactForm = () => {
         )
         .then(
           (result) => {
+            setWasMessageSent(true);
             console.log(result.text);
+            setTimeout(() => setWasMessageSent(false), 7500);
           },
           (error) => {
             console.log(error.text);
@@ -96,11 +101,26 @@ const ContactForm = () => {
             ></textarea>
           </div>
 
-          <div className="mt-8">
+          <div className="flex max-sm:flex-col content-center mt-8 gap-x-6 max-sm:gap-y-6">
             <Button type="submit" aria-label="Submit Message">
               <FiArrowUpCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowUpCircle>
               {contactData.submit}
             </Button>
+            {wasMessageSent && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  ease: "easeInOut",
+                  duration: 0.3,
+                  delay: 0.15,
+                }}
+                className="flex text-xl content-center my-auto gap-x-2 dark:text-amber-300 text-neutral-800"
+              >
+                <FaCheck className="my-auto w-5 h-5"></FaCheck>
+                {contactData.sent}
+              </motion.p>
+            )}
           </div>
         </form>
       </div>

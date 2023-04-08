@@ -15,6 +15,7 @@ export const enContactData = {
   enterSubject: "Enter a subject",
   message: "Message",
   submit: "Submit",
+  sent: "Message sent!",
 };
 
 export const ptContactData = {
@@ -34,4 +35,5 @@ export const ptContactData = {
   enterSubject: "Digite um assunto",
   message: "Mensagem",
   submit: "Enviar",
+  sent: "Mensagem enviada!",
 };
