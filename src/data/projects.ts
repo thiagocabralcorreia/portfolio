@@ -7,6 +7,7 @@ import APPqd from "../assets/projects/project-appqd1.png";
 import WA from "../assets/projects/project-wa1.png";
 import GoFinances from "../assets/projects/project-gofinances1.png";
 import Portfolio1 from "../assets/projects/project-portfolio1.png";
+import DevMeetup from "../assets/projects/project-devmeetup1.png";
 
 export interface ProjecSchema {
   id?: string;
@@ -55,10 +56,10 @@ export const projectsData = [
     image: WeeTravel,
   },
   {
-    id: "web-accessibility",
-    title: "Web Accessibility",
+    id: "dev-meetup",
+    title: "DevMeetup",
     category: "Web",
-    image: WA,
+    image: DevMeetup,
   },
   {
     id: "appqd",
@@ -84,5 +85,11 @@ export const projectsData = [
     title: "Portfolio",
     category: "Web",
     image: Portfolio1,
+  },
+  {
+    id: "web-accessibility",
+    title: "Web Accessibility",
+    category: "Web",
+    image: WA,
   },
 ];

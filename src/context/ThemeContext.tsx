@@ -19,7 +19,9 @@ type ThemeContextData = {
 const ThemeContext = createContext({} as ThemeContextData);
 
 export function ThemeContextProvider({ children }: ThemeContextProps) {
-  const [theme, setTheme] = useState(() => localStorage.theme === "light");
+  const [theme, setTheme] = useState(() =>
+    localStorage.theme === "light" ? false : true
+  );
 
   useEffect(() => {
     const rootElement = window.document.documentElement;

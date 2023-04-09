@@ -20,6 +20,9 @@ import GoFinances2 from "../assets/projects/project-gofinances3.png";
 import Portfolio1 from "../assets/projects/project-portfolio1.png";
 import Portfolio2 from "../assets/projects/project-portfolio2.png";
 import Portfolio3 from "../assets/projects/project-portfolio3.png";
+import DevMeetup1 from "../assets/projects/project-devmeetup1.png";
+import DevMeetup2 from "../assets/projects/project-devmeetup2.png";
+import DevMeetup3 from "../assets/projects/project-devmeetup3.png";
 
 export interface ProjectText {
   id: string;
@@ -467,6 +470,60 @@ export const enProjectDetailsData = [
       },
     ],
   },
+  {
+    id: "dev-meetup",
+    name: "DevMeetup",
+    date: "Apr 2023",
+    type: "Web",
+    professional: false,
+    skills: [
+      "React.js",
+      "Responsive Web Design",
+      "TypeScript",
+      "Taildwind CSS",
+      "UX/UI",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Web Sockets",
+      "JSON Web Token",
+    ],
+    about: [
+      {
+        id: "devmeetup1",
+        text: "Inspired by watching and studying a MERN Bootcamp, I developed this project from Back-end to Front-end. This is a website for consulting, creating, editing and registering in developer meetups.",
+      },
+      {
+        id: "devmeetup2",
+        text: "On the front-end, I developed a responsive design with login and registration forms, a dashboard displaying all meetup events (with information and image), a category filter and much more. I also created a simple brand with icon and special font, to give more authenticity.",
+      },
+      {
+        id: "devmeetup3",
+        text: "On the back-end, I integrated user register and authentication, session control, CRUD operations, and event search using filters. It also includes event registration, uploading images to the server, site notification using web sockets, and saving images to the S3 Bucket. It was an excellent experience to work with JSON Web Token and Web Sockets.",
+      },
+    ],
+    website: "",
+    github: "https://github.com/thiagocabralcorreia/dev-meetup",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "devmeetup1.png",
+        src: DevMeetup1,
+        alt: "DevMeetup website dashboard",
+      },
+      {
+        id: "devmeetup2.png",
+        src: DevMeetup2,
+        alt: "DevMeetup responsive design on smartphone screen",
+      },
+      {
+        id: "devmeetup3.png",
+        src: DevMeetup3,
+        alt: "DevMeetup create event form page",
+      },
+    ],
+  },
 ];
 
 export const ptProjectDetailsData = [
@@ -868,6 +925,60 @@ export const ptProjectDetailsData = [
         id: "portfolio3.png",
         src: Portfolio3,
         alt: "Seções de contato e recomendações do site Portfolio",
+      },
+    ],
+  },
+  {
+    id: "dev-meetup",
+    name: "DevMeetup",
+    date: "Apr 2023",
+    type: "Web",
+    professional: false,
+    skills: [
+      "React.js",
+      "Responsive Web Design",
+      "TypeScript",
+      "Taildwind CSS",
+      "UX/UI",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Web Sockets",
+      "JSON Web Token",
+    ],
+    about: [
+      {
+        id: "devmeetup1",
+        text: "Inspirado ao assistir e estudar um MERN Bootcamp, desenvolvi esse projeto do Back-end ao Front-end. Trata-se de um website para consultar, criar, editar e se cadastrar em meetups de desenvolvedores.",
+      },
+      {
+        id: "devmeetup2",
+        text: "No front-end, desenvolvi um design responsivo com formulários de login e cadastro, um painel exibindo todos os eventos de meetup (com informações e imagem), um filtro de categoria e muito mais. Também criei uma simples marca com ícone e fonte especial, para dar mais autenticidade.",
+      },
+      {
+        id: "devmeetup3",
+        text: "No back-end, integrei o registro e autenticação de usuários, controle de sessão, operações CRUD e pesquisa de eventos usando filtros. Também incluí a inscrição em eventos e upload de imagens para o servidor. Foi uma excelente experiência trabalhar com JSON Web Token e Web Sockets.",
+      },
+    ],
+    website: "",
+    github: "https://github.com/thiagocabralcorreia/dev-meetup",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "devmeetup1.png",
+        src: DevMeetup1,
+        alt: "Site DevMeetup com painel",
+      },
+      {
+        id: "devmeetup2.png",
+        src: DevMeetup2,
+        alt: "Design responsivo de DevMeetup em tela de celular",
+      },
+      {
+        id: "devmeetup3.png",
+        src: DevMeetup3,
+        alt: "Formulário de criar evento do site DevMeetup",
       },
     ],
   },
