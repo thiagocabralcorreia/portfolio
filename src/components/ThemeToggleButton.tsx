@@ -18,7 +18,7 @@ export function ThemeToggleButton({
   }
 
   return (
-    <div className={`content-center pl-2 my-auto header-link ${extraStyle}`}>
+    <div className={`content-center my-auto header-link ${extraStyle}`}>
       {theme ? (
         <Moon
           size={iconSize}

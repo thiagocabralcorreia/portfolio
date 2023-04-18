@@ -6,8 +6,9 @@ import FilmNChips from "../assets/projects/project-film-n-chips1.png";
 import APPqd from "../assets/projects/project-appqd1.png";
 import WA from "../assets/projects/project-wa1.png";
 import GoFinances from "../assets/projects/project-gofinances1.png";
-import Portfolio1 from "../assets/projects/project-portfolio1.png";
+import Portfolio from "../assets/projects/project-portfolio1.png";
 import DevMeetup from "../assets/projects/project-devmeetup1.png";
+import ComidaNaHora from "../assets/projects/project-cnh1.png";
 
 export interface ProjecSchema {
   id?: string;
@@ -84,12 +85,18 @@ export const projectsData = [
     id: "portfolio",
     title: "Portfolio",
     category: "Web",
-    image: Portfolio1,
+    image: Portfolio,
   },
   {
     id: "web-accessibility",
     title: "Web Accessibility",
     category: "Web",
     image: WA,
+  },
+  {
+    id: "cnh",
+    title: "Comida na Hora",
+    category: "Mobile",
+    image: ComidaNaHora,
   },
 ];

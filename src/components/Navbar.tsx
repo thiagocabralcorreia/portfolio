@@ -104,11 +104,13 @@ const Navbar = () => {
             )}
           </button>
           <ThemeToggleButton iconSize={24} />
-          <LanguageMenu
-            imgWidth={22}
-            imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+          <div className="ml-2 content-center my-auto">
+            <LanguageMenu
+              imgWidth={22}
+              imgStyle="cursor-pointer transition ease-out duration-500
             hover:border-2 hover:border-amber-400 rounded-xl"
-          />
+            />
+          </div>
         </>
       }
       dropdownMenu={

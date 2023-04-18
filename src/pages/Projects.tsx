@@ -41,12 +41,16 @@ const Projects = () => {
               <AiFillCaretLeft className="mr-1 self-center text-amber-400"></AiFillCaretLeft>
               {headerData.smGoBack}
             </Link>
-            <ThemeToggleButton extraStyle="pl-4" />
-            <LanguageMenu
-              imgWidth={22}
-              imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+            <div className="pl-4 flex flex-col content-center justify-center">
+              <ThemeToggleButton />
+            </div>
+            <div className="ml-2 content-center my-auto">
+              <LanguageMenu
+                imgWidth={22}
+                imgStyle="cursor-pointer transition ease-out duration-500
             hover:border-2 hover:border-amber-400 rounded-xl"
-            />
+              />
+            </div>
           </>
         }
       />

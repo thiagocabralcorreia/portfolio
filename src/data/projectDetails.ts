@@ -23,6 +23,8 @@ import Portfolio3 from "../assets/projects/project-portfolio3.png";
 import DevMeetup1 from "../assets/projects/project-devmeetup1.png";
 import DevMeetup2 from "../assets/projects/project-devmeetup2.png";
 import DevMeetup3 from "../assets/projects/project-devmeetup3.png";
+import CNH1 from "../assets/projects/project-cnh1.png";
+import CNH2 from "../assets/projects/project-cnh2.png";
 
 export interface ProjectText {
   id: string;
@@ -524,6 +526,47 @@ export const enProjectDetailsData = [
       },
     ],
   },
+  {
+    id: "cnh",
+    name: "Comida na Hora",
+    date: "Dec 2022 - Jan 2023",
+    type: "Mobile",
+    professional: false,
+    skills: [
+      "React Native",
+      "TypeScript",
+      "REST API",
+      "Styled-Components",
+      "UX/UI",
+    ],
+    about: [
+      {
+        id: "cnh1",
+        text: "Comida na Hora is a food delivery app. A restaurant marketplace as a showcase for local businesses, with tens of thousands of downloads.",
+      },
+      {
+        id: "cnh2",
+        text: "At Nano Incub, one of our missions was to develop a new version of the mobile app, which already existed and was working (its first version created with Iconic and Laravel). We rebuilt it with React Native and added new elements to improve the user experience.",
+      },
+    ],
+    website: "",
+    github: "",
+    appleStore: "https://apps.apple.com/br/app/comida-na-hora/id1517670680",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.nanoincub.comidanahora&hl=pt&gl=US",
+    images: [
+      {
+        id: "cnh1.png",
+        src: CNH1,
+        alt: "Smartphones with Comida na Hora app screens",
+      },
+      {
+        id: "cnh2.png",
+        src: CNH2,
+        alt: "Smartphones with Comida na Hora app screens",
+      },
+    ],
+  },
 ];
 
 export const ptProjectDetailsData = [
@@ -979,6 +1022,47 @@ export const ptProjectDetailsData = [
         id: "devmeetup3.png",
         src: DevMeetup3,
         alt: "Formulário de criar evento do site DevMeetup",
+      },
+    ],
+  },
+  {
+    id: "cnh",
+    name: "Comida na Hora",
+    date: "Dez 2022 - Jan 2023",
+    type: "Mobile",
+    professional: false,
+    skills: [
+      "React Native",
+      "REST API",
+      "TypeScript",
+      "Styled-Components",
+      "UX/UI",
+    ],
+    about: [
+      {
+        id: "cnh1",
+        text: "O Comida na Hora é um aplicativo de entrega de comida. Um mercado de restaurantes como vitrine para empresas locais, com dezenas de milhares de downloads.",
+      },
+      {
+        id: "cnh2",
+        text: "Na Nano Incub, uma de nossas missões foi desenvolver uma nova versão do aplicativo móvel, que já existia e estava em funcionamento (sua primeira versão criada com Iconic e Laravel). Refizemos com React Native e adicionamos novos elementos a fim de melhorar a experiência do usuário.",
+      },
+    ],
+    website: "",
+    github: "",
+    appleStore: "https://apps.apple.com/br/app/comida-na-hora/id1517670680",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.nanoincub.comidanahora&hl=pt&gl=US",
+    images: [
+      {
+        id: "cnh1.png",
+        src: CNH1,
+        alt: "Smartphones with Comida na Hora app screens",
+      },
+      {
+        id: "cnh2.png",
+        src: CNH2,
+        alt: "Smartphones with Comida na Hora app screens",
       },
     ],
   },

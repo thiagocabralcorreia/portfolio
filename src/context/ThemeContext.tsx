@@ -20,7 +20,7 @@ const ThemeContext = createContext({} as ThemeContextData);
 
 export function ThemeContextProvider({ children }: ThemeContextProps) {
   const [theme, setTheme] = useState(() =>
-    localStorage.theme === "light" ? false : true
+    localStorage.theme ? localStorage.theme === "light" : false
   );
 
   useEffect(() => {
