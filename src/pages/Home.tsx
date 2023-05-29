@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import About from "../components/sections/About";
 import Button from "../components/Button";
 import Contact from "../components/sections/Contact";
-import IntroBanner from "../components/sections/IntroBanner";
+import Hero from "../components/sections/Hero";
 import Navbar from "../components/Navbar";
 import ProjectsGrid from "../components/sections/ProjectsGrid";
 import RecommendationsSlider from "../components/sections/Recommendations";
@@ -20,7 +20,7 @@ const Home = () => {
         className="dark:bg-neutral-900 bg-white"
       >
         <div className="relative w-full max-sm:mb-6 max-lg:mb-32 md:h-screen dark:bg-neutral-900 bg-white">
-          <IntroBanner />
+          <Hero />
           <SocialLinks />
         </div>
 

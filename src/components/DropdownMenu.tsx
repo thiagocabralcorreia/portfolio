@@ -18,16 +18,16 @@ const DropdownMenu = ({ show, onClose }: DropdownMenuProps) => {
   return (
     <Transition
       show={show}
-      enter="transition ease-out duration-200 transform"
-      enterFrom="opacity-0 scale-95"
-      enterTo="opacity-100 scale-100"
-      leave="transition ease-in duration-75 transform"
-      leaveFrom="opacity-100 scale-100"
-      leaveTo="opacity-0 scale-95"
+      enter="transition ease-out duration-900"
+      enterFrom="opacity-0 translate-x-[-100%]"
+      enterTo="opacity-100 translate-x-0"
+      leave="transition ease-in duration-900"
+      leaveFrom="opacity-100 translate-x-0"
+      leaveTo="opacity-0 translate-x-[-100%]"
     >
       <nav className="lg:hidden">
         <div ref={ref} className="h-screen overflow-hidden text-center">
-          <div className="pt-2 pb-3 space-y-1 sm:px-3 dark:bg-neutral-800 bg-neutral-100 lg:primary-background-colors">
+          <div className="h-screen pt-2 pb-3 space-y-1 sm:px-3 dark:bg-neutral-800 bg-neutral-100 lg:primary-background-colors">
             {sections.map(({ id, section, value }: SectionSchema) => {
               return (
                 // eslint-disable-next-line jsx-a11y/anchor-is-valid

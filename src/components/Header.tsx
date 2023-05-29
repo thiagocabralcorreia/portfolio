@@ -24,11 +24,11 @@ const Header = ({
           <div className="lg:w-full flex items-center justify-between">
             <div className="flex-shrink-0">
               <Link to={"/"}>
-                <img
-                  className="h-12 w-12 rounded-full"
-                  src="https://avatars.githubusercontent.com/u/74374833?v=4"
-                  alt="Workflow"
-                />
+                <div className="h-12 w-12 flex justify-center items-center m-auto rounded-full bg-amber-400">
+                  <p className="text-[21px] font-extrabold text-black font-barlow">
+                    TCC
+                  </p>
+                </div>
               </Link>
             </div>
 

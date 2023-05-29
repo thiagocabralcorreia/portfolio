@@ -1,4 +1,4 @@
-export const enIntroBannerData = {
+export const enHeroData = {
   hi: "Hi, there! My name is",
   iAm: "I'm a",
   frontend: "Front-end Developer",
@@ -6,7 +6,7 @@ export const enIntroBannerData = {
   ui: "beautiful user interfaces and great digital experiences",
 };
 
-export const ptIntroBannerData = {
+export const ptHeroData = {
   hi: "Olá! Meu nome é",
   iAm: "Sou um",
   frontend: "Desenvolvedor Front-end",

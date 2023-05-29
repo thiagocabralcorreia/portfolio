@@ -21,4 +21,5 @@ export const skills = [
   { id: 15, skill: "MongoDB" },
   { id: 16, skill: "Scrum & Kanban" },
   { id: 17, skill: "Web Accessibility" },
+  { id: 18, skill: "Design Systems" },
 ];

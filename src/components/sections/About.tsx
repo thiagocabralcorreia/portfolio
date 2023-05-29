@@ -25,13 +25,17 @@ const About = () => {
             {aboutData.iAm}{" "}
             <span className="text-amber-400">{aboutData.frontend}</span>{" "}
             {aboutData.exp}{" "}
-            <span className="text-amber-400">{aboutData.companies}</span>.{" "}
-            {aboutData.work}{" "}
-            <span className="text-amber-400">{aboutData.web}</span>.
+            <span className="text-amber-400">{aboutData.companies}</span>,{" "}
+            {aboutData.work}.{" "}
           </p>
           <p className="section-text">
-            {aboutData.enjoy}{" "}
-            <span className="text-amber-400">{aboutData.beautiful}</span>.
+            {aboutData.iAmUiUx}{" "}
+            <span className="text-amber-400">{aboutData.uiUx}</span>,{" "}
+            {aboutData.detailOriented}
+            <span className="text-amber-400">
+              {" "}
+              {aboutData.designSystem}
+            </span>, {aboutData.library}
           </p>
           <p className="text-xl mx-auto dark:text-neutral-300 text-neutral-800">
             {aboutData.learn}{" "}

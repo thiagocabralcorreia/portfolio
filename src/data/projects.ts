@@ -1,14 +1,14 @@
-import Scoutfy from "../assets/projects/project-scoutfy1.png";
-import Caule from "../assets/projects/project-caule1.png";
-import CoffeeHouse from "../assets/projects/project-coffeehouse1.png";
-import WeeTravel from "../assets/projects/project-weetravel1.png";
-import FilmNChips from "../assets/projects/project-film-n-chips1.png";
-import APPqd from "../assets/projects/project-appqd1.png";
-import WA from "../assets/projects/project-wa1.png";
-import GoFinances from "../assets/projects/project-gofinances1.png";
-import Portfolio from "../assets/projects/project-portfolio1.png";
-import DevMeetup from "../assets/projects/project-devmeetup1.png";
-import ComidaNaHora from "../assets/projects/project-cnh1.png";
+import Scoutfy from "../assets/projects/project-scoutfy0.png";
+import Caule from "../assets/projects/project-caule0.png";
+import CoffeeHouse from "../assets/projects/project-coffeehouse0.png";
+import WeeTravel from "../assets/projects/project-weetravel0.png";
+import FilmNChips from "../assets/projects/project-film-n-chips0.png";
+import APPqd from "../assets/projects/project-appqd0.png";
+import WA from "../assets/projects/project-wa0.png";
+import GoFinances from "../assets/projects/project-gofinances0.png";
+import Portfolio from "../assets/projects/project-portfolio0.png";
+import DevMeetup from "../assets/projects/project-devmeetup0.png";
+import ComidaNaHora from "../assets/projects/project-cnh0.png";
 
 export interface ProjecSchema {
   id?: string;
@@ -75,12 +75,11 @@ export const projectsData = [
     image: FilmNChips,
   },
   {
-    id: "gofinances",
-    title: "GoFinances",
+    id: "cnh",
+    title: "Comida na Hora",
     category: "Mobile",
-    image: GoFinances,
+    image: ComidaNaHora,
   },
-
   {
     id: "portfolio",
     title: "Portfolio",
@@ -94,9 +93,9 @@ export const projectsData = [
     image: WA,
   },
   {
-    id: "cnh",
-    title: "Comida na Hora",
+    id: "gofinances",
+    title: "GoFinances",
     category: "Mobile",
-    image: ComidaNaHora,
+    image: GoFinances,
   },
 ];

@@ -6,9 +6,11 @@ const ProjectCard = ({ title, category, image, onClick }: ProjecSchema) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 1.1 }}
       transition={{
         ease: "easeInOut",
-        duration: 0.7,
+        duration: 0.15,
         delay: 0.15,
       }}
     >
