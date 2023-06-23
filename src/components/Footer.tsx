@@ -24,7 +24,7 @@ const Footer = () => {
           href="https://github.com/thiagocabralcorreia"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black dark:text-white hover:text-amber-400 dark:hover:text-amber-400 ease-out duration-500"
+          className="text-black dark:text-white hover:text-primary dark:hover:text-primaryDark ease-out duration-500"
         >
           <FaGithub size={30} />
         </a>
@@ -34,7 +34,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/thiago-cabral-correia/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black dark:text-white hover:text-amber-400 dark:hover:text-amber-400 ease-out duration-500"
+          className="text-black dark:text-white hover:text-primary dark:hover:text-primaryDark ease-out duration-500"
         >
           <FaLinkedin size={30} />
         </a>

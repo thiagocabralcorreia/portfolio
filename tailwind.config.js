@@ -4,6 +4,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        primary: "#0177B5",
+        primaryDark: "#FBBD25",
+      },
       keyframes: {
         "fade-in-down": {
           "0%": {

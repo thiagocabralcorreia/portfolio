@@ -38,7 +38,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
             <ThemeToggleButton />
             <LanguageMenu
               imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
-            hover:border-2 hover:border-amber-400 rounded-xl"
+            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
             />
           </>
         }
@@ -48,7 +48,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
               to={"/projects"}
               className="flex content-center justify-center header-link py-2"
             >
-              <AiFillCaretLeft className="mr-1 self-center text-amber-400 dark:text-amber-400"></AiFillCaretLeft>
+              <AiFillCaretLeft className="mr-1 self-center text-primary dark:text-primaryDark"></AiFillCaretLeft>
               {headerData.projects}
             </Link>
             <div className="pl-4 flex flex-col content-center justify-center">
@@ -58,7 +58,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
               <LanguageMenu
                 imgWidth={22}
                 imgStyle="cursor-pointer transition ease-out duration-500
-            hover:border-2 hover:border-amber-400 rounded-xl"
+            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
               />
             </div>
           </>
@@ -72,7 +72,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="pt-36 w-10/12 m-auto px-4 sm:px-6 lg:px-8 bg:neutral-900"
       >
-        <p className="section-title text-amber-400 dark:text-amber-400">
+        <p className="section-title text-primary dark:text-primaryDark">
           {project?.name.toLocaleUpperCase()}
         </p>
         <div className="flex max-sm:flex-col mt-[-14px] lg:mt-[-24px]">

@@ -22,13 +22,13 @@ const Projects = () => {
               to={"/"}
               className="flex content-center justify-center header-link"
             >
-              <AiFillCaretLeft className="mr-2 self-center text-amber-400"></AiFillCaretLeft>
+              <AiFillCaretLeft className="mr-2 self-center text-primary dark:text-primaryDark"></AiFillCaretLeft>
               {headerData.goBack}
             </Link>
             <ThemeToggleButton />
             <LanguageMenu
               imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
-            hover:border-2 hover:border-amber-400 rounded-xl"
+            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
             />
           </>
         }
@@ -38,7 +38,7 @@ const Projects = () => {
               to={"/"}
               className="flex content-center justify-center header-link"
             >
-              <AiFillCaretLeft className="mr-1 self-center text-amber-400"></AiFillCaretLeft>
+              <AiFillCaretLeft className="mr-1 self-center text-primary dark:text-primaryDark"></AiFillCaretLeft>
               {headerData.smGoBack}
             </Link>
             <div className="pl-4 flex flex-col content-center justify-center">
@@ -48,7 +48,7 @@ const Projects = () => {
               <LanguageMenu
                 imgWidth={22}
                 imgStyle="cursor-pointer transition ease-out duration-500
-            hover:border-2 hover:border-amber-400 rounded-xl"
+            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
               />
             </div>
           </>

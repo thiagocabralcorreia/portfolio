@@ -3,8 +3,6 @@ import { Menu, Transition } from "@headlessui/react";
 import { Language, LanguageContext } from "../context/LanguageContext";
 import { enHeaderData, ptHeaderData } from "../data/header";
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {}
-
 interface LanguageMenuProps {
   imgWidth?: number;
   imgStyle: string;
@@ -56,7 +54,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
                   onClick={() => handleLanguageChange("en")}
                   className={`${
                     active
-                      ? "bg-amber-400 text-neutral-900"
+                      ? "bg-primary text-white dark:bg-primaryDark dark:text-neutral-900"
                       : "dark:text-white text-neutral-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
@@ -76,7 +74,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
                   onClick={() => handleLanguageChange("pt")}
                   className={`${
                     active
-                      ? "bg-amber-400 text-neutral-900"
+                      ? "bg-primary text-white dark:bg-primaryDark dark:text-neutral-900"
                       : "dark:text-white text-neutral-900"
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
@@ -96,87 +94,5 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
     </Menu>
   );
 };
-
-function UpdateInactiveIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4 13V16H7L16 7L13 4L4 13Z"
-        fill="#ffc2df"
-        stroke="#E82E81"
-        strokeWidth="2"
-      />
-    </svg>
-  );
-}
-
-function UpdateActiveIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4 13V16H7L16 7L13 4L4 13Z"
-        fill="#ef4b95"
-        stroke="#fbbad8"
-        strokeWidth="2"
-      />
-    </svg>
-  );
-}
-
-function DeleteInactiveIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="5"
-        y="6"
-        width="10"
-        height="10"
-        fill="#ffc2df"
-        stroke="#E82E81"
-        strokeWidth="2"
-      />
-      <path d="M3 6H17" stroke="#E82E81" strokeWidth="2" />
-      <path d="M8 6V4H12V6" stroke="#E82E81" strokeWidth="2" />
-    </svg>
-  );
-}
-
-function DeleteActiveIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="5"
-        y="6"
-        width="10"
-        height="10"
-        fill="#ef4b95"
-        stroke="#fbbad8"
-        strokeWidth="2"
-      />
-      <path d="M3 6H17" stroke="#fbbad8" strokeWidth="2" />
-      <path d="M8 6V4H12V6" stroke="#fbbad8" strokeWidth="2" />
-    </svg>
-  );
-}
 
 export default LanguageMenu;

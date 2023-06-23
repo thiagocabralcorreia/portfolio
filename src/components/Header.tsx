@@ -24,8 +24,8 @@ const Header = ({
           <div className="lg:w-full flex items-center justify-between">
             <div className="flex-shrink-0">
               <Link to={"/"}>
-                <div className="h-12 w-12 flex justify-center items-center m-auto rounded-full bg-amber-400">
-                  <p className="text-[21px] font-extrabold text-black font-barlow">
+                <div className="h-12 w-12 flex justify-center items-center m-auto rounded-full bg-primary dark:bg-primaryDark">
+                  <p className="text-[21px] font-extrabold text-white dark:text-black font-barlow">
                     TCC
                   </p>
                 </div>

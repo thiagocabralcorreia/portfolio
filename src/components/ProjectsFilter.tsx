@@ -39,14 +39,14 @@ const ProjectsFilter = ({ setSelectProject }: any) => {
       <div className="relative flex m-auto justify-center z-50">
         <Listbox.Button
           className="h-11 w-40 flex justify-between content-center rounded-xl appearance-none relative
-          py-2 pl-5 pr-3 bg-amber-400 text-neutral-900 border border-none text-md text-center
+          py-2 pl-5 pr-3 bg-primary dark:bg-primaryDark text-white dark:text-neutral-900 border border-none text-md text-center
           focus:outline-none cursor-default transition duration-150 ease-out hover:ease-in"
         >
           <span className="content-center my-auto">
             {translate(selected.name)}
           </span>
           <HiChevronUpDown
-            className="h-7 w-6 text-neutral-900"
+            className="h-7 w-6 text-white dark:text-neutral-900"
             aria-hidden="true"
           />
         </Listbox.Button>
@@ -68,7 +68,7 @@ const ProjectsFilter = ({ setSelectProject }: any) => {
                     className={({ active }) =>
                       `cursor-default text-left select-none pl-5 py-2 pr-4  ${
                         active
-                          ? "bg-amber-400 text-neutral-900"
+                          ? "bg-primary dark:bg-primaryDark text-white dark:text-neutral-900"
                           : "text-gray-900 dark:text-white"
                       }`
                     }

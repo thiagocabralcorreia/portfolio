@@ -1,15 +1,20 @@
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { FiArrowDownCircle } from "react-icons/fi";
 
 import { LanguageContext } from "../../context/LanguageContext";
 import { enHeroData, ptHeroData } from "../../data/hero";
 import Hyperlink from "../Hyperlink";
 import poster from "../../assets/developer.png";
+import posterBlue from "../../assets/developer-blue.png";
+import { useTheme } from "../../context/ThemeContext";
 
 const Hero = () => {
   const { language } = useContext(LanguageContext);
+  const { theme } = useTheme();
   const heroData = language === "en" ? enHeroData : ptHeroData;
+
+  useEffect(() => {}, [theme]);
 
   return (
     <motion.section
@@ -24,11 +29,14 @@ const Hero = () => {
           {heroData.hi}
         </p>
         <h1 className="text-3xl sm:text-5xl xl:text-6xl dark:text-white text-black md:font-bold mb-3 sm:mb-5 font-barlow">
-          <span className="text-amber-400">THIAGO</span> CABRAL CORREIA
+          <span className="text-primary dark:text-primaryDark">THIAGO</span>{" "}
+          CABRAL CORREIA
         </h1>
         <p className="text-xl max-w-xl max-lg:mx-auto dark:text-neutral-300 text-neutral-700">
           {heroData.iAm}{" "}
-          <span className="text-amber-400 font-bold">{heroData.frontend}</span>{" "}
+          <span className="text-primary dark:text-primaryDark font-bold">
+            {heroData.frontend}
+          </span>{" "}
           {heroData.passionate} <span className="xl:block">{heroData.ui}</span>
         </p>
 
@@ -52,8 +60,8 @@ const Hero = () => {
         flex flex-col mx-auto max-lg:pb-20 content-center justify-center"
       >
         <img
-          src={poster}
-          alt="Yellow design vectors of computer, mobile phone, pencil, eraser, papers, book and coffee"
+          src={theme ? posterBlue : poster}
+          alt="Animated developer guy with laptop"
         />
       </motion.div>
     </motion.section>

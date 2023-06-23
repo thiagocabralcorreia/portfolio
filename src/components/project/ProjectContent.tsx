@@ -30,7 +30,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
                 <div
                   key={index}
                   className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
-                  rounded-lg bg-amber-400 text-neutral-900"
+                  rounded-lg bg-primary dark:bg-primaryDark text-white dark:text-neutral-900"
                 >
                   <p className="text-sm">{skill}</p>
                 </div>
@@ -48,7 +48,8 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               href={project?.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
+              className="flex items-center w-full section-text mb-5
+              hover:text-primary dark:hover:text-primaryDark duration-300"
             >
               <FaGlobe size={28} />
               <p className="ml-4">{projectIntroDetailsData.website}</p>
@@ -59,7 +60,8 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               href={project?.appleStore}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
+              className="flex items-center w-full section-text mb-5
+              hover:text-primary dark:hover:text-primaryDark duration-300"
             >
               <FaApple size={28} />
               <p className="ml-4">{projectIntroDetailsData.apple}</p>
@@ -70,7 +72,8 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               href={project?.playStore}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
+              className="flex items-center w-full section-text mb-5
+              hover:text-primary dark:hover:text-primaryDark duration-300"
             >
               <FaGooglePlay size={28} />
               <p className="ml-4">{projectIntroDetailsData.play}</p>
@@ -81,7 +84,8 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               href={project?.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center w-full section-text mb-5 hover:text-amber-400 duration-300"
+              className="flex items-center w-full section-text mb-5
+              hover:text-primary dark:hover:text-primaryDark duration-300"
             >
               <FaGithub size={28} />
               <p className="ml-4">{projectIntroDetailsData.code}</p>

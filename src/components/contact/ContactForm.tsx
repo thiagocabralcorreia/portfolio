@@ -90,8 +90,9 @@ const ContactForm = () => {
             </label>
             <textarea
               className="w-full px-5 py-2 border dark:border-gray-300 border-gray-700 border-opacity-50 text-black dark:text-white
-              focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400
-              bg-white dark:bg-neutral-900 rounded-md shadow-sm text-md"
+              focus:outline-none focus:border-primary dark:focus:border-primaryDark focus:ring-1
+              focus:ring-primary dark:focus:ring-primaryDark bg-white dark:bg-neutral-900
+              rounded-md shadow-sm text-md"
               id="message"
               name="message"
               cols={14}
@@ -115,7 +116,7 @@ const ContactForm = () => {
                   duration: 0.3,
                   delay: 0.15,
                 }}
-                className="flex text-xl content-center my-auto gap-x-2 dark:text-amber-300 text-neutral-800"
+                className="flex text-xl content-center my-auto gap-x-2 dark:text-primaryDark text-neutral-800"
               >
                 <FaCheck className="my-auto w-5 h-5"></FaCheck>
                 {contactData.sent}

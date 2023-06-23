@@ -55,7 +55,7 @@ const Navbar = () => {
           </Tooltip>
           <LanguageMenu
             imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
-            hover:border-2 hover:border-amber-400 rounded-xl"
+            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
           />
         </>
       }
@@ -108,7 +108,7 @@ const Navbar = () => {
             <LanguageMenu
               imgWidth={22}
               imgStyle="cursor-pointer transition ease-out duration-500
-            hover:border-2 hover:border-amber-400 rounded-xl"
+            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
             />
           </div>
         </>

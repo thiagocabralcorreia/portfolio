@@ -39,7 +39,7 @@ function RecommendationsSlider() {
                       key={index}
                       className={`w-[11px] h-[11px] rounded-full ${
                         index === activeIndex
-                          ? "bg-amber-400"
+                          ? "bg-primary dark:bg-primaryDark"
                           : "bg-gray-300 hover:bg-neutral-500"
                       }`}
                       onClick={() => setActiveIndex(index)}
@@ -51,7 +51,7 @@ function RecommendationsSlider() {
               <div className="max-w-screen-xl px-14 md:px-4 mx-auto text-center py-8 lg:px-6">
                 <figure className="max-w-screen-md mx-auto">
                   <svg
-                    className="h-12 mx-auto mb-3 text-amber-400"
+                    className="h-12 mx-auto mb-3 text-primary dark:text-primaryDark"
                     viewBox="0 0 24 27"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,10 +72,10 @@ function RecommendationsSlider() {
                       src={recommendation.image}
                       alt={recommendation.name}
                     />
-                    <div className="flex max-sm:flex-col items-center max-sm:divide-x-0 divide-x-2 divide-amber-400">
+                    <div className="flex max-sm:flex-col items-center max-sm:divide-x-0 divide-x-2 divide-primary dark:divide-primaryDark">
                       <div
                         className="max-sm:px-0 max-sm:pb-2 pr-4 max-sm:text-md text-lg 
-                      dark:text-neutral-300 text-neutral-700 max-sm:text-amber-400"
+                      dark:text-neutral-300 text-neutral-700 max-sm:text-primary dark:max-sm:text-primaryDark"
                       >
                         {recommendation.name}
                       </div>

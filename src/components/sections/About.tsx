@@ -23,23 +23,30 @@ const About = () => {
           <h1 className="section-title">{aboutData.niceToMeet}</h1>
           <p className="section-text">
             {aboutData.iAm}{" "}
-            <span className="text-amber-400">{aboutData.frontend}</span>{" "}
+            <span className="text-primary dark:text-primaryDark">
+              {aboutData.frontend}
+            </span>{" "}
             {aboutData.exp}{" "}
-            <span className="text-amber-400">{aboutData.companies}</span>,{" "}
-            {aboutData.work}.{" "}
+            <span className="text-primary dark:text-primaryDark">
+              {aboutData.companies}
+            </span>
+            , {aboutData.work}.{" "}
           </p>
           <p className="section-text">
             {aboutData.iAmUiUx}{" "}
-            <span className="text-amber-400">{aboutData.uiUx}</span>,{" "}
-            {aboutData.detailOriented}
-            <span className="text-amber-400">
+            <span className="text-primary dark:text-primaryDark">
+              {aboutData.uiUx}
+            </span>
+            , {aboutData.detailOriented}
+            <span className="text-primary dark:text-primaryDark">
               {" "}
               {aboutData.designSystem}
-            </span>, {aboutData.library}
+            </span>
+            , {aboutData.library}
           </p>
           <p className="text-xl mx-auto dark:text-neutral-300 text-neutral-800">
             {aboutData.learn}{" "}
-            <span className="text-amber-400">
+            <span className="text-primary dark:text-primaryDark">
               {aboutData.feelFree}{" "}
               <Link
                 to={"contact"}
@@ -65,7 +72,7 @@ const About = () => {
                 <div
                   key={id}
                   className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
-                  rounded-lg bg-amber-400 text-neutral-900"
+                  rounded-lg bg-primary dark:bg-primaryDark text-white dark:text-neutral-900"
                 >
                   <p className="text-sm">{skill}</p>
                 </div>

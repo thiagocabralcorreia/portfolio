@@ -15,8 +15,10 @@ const ContactInfo = () => {
         <p className="section-text">{contactData.if}</p>
         <p className="section-text">
           {contactData.iAm}{" "}
-          <span className="text-amber-400">{contactData.always}</span>,{" "}
-          {contactData.sharing}
+          <span className="text-primary dark:text-primaryDark">
+            {contactData.always}
+          </span>
+          , {contactData.sharing}
         </p>
 
         <div className="flex justify-center text-lg lg:block w-52 mt-10 max-lg:mb-20 max-lg:m-auto">
