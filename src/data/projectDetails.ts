@@ -142,8 +142,8 @@ export const enProjectDetailsData = [
     ],
     website: "https://caule.app",
     github: "",
-    appleStore: "",
-    playStore: "",
+    appleStore: "https://apps.apple.com/br/app/caule/id6444843213",
+    playStore: "https://play.google.com/store/apps/details?id=com.caule.app",
     images: [
       {
         id: "caule1.png",
@@ -641,8 +641,8 @@ export const ptProjectDetailsData = [
     ],
     website: "https://caule.app",
     github: "",
-    appleStore: "",
-    playStore: "",
+    appleStore: "https://apps.apple.com/br/app/caule/id6444843213",
+    playStore: "https://play.google.com/store/apps/details?id=com.caule.app",
     images: [
       {
         id: "caule1.png",

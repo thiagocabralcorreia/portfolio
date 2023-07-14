@@ -15,7 +15,7 @@ const Footer = () => {
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="w-full justify-center content-center py-10 text-center m-auto dark:bg-neutral-800 bg-neutral-100"
     >
-      <h2 className="text-4xl text-black dark:text-white font-barlow">
+      <h2 className="text-4xl text-black dark:text-white font-barlow ">
         {footerData.follow}
       </h2>
       <div className="flex w-full items-center justify-center mt-5 mb-10">

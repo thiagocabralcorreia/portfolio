@@ -58,7 +58,7 @@ const NotFound = () => {
       />
       <div className="flex flex-col content-center justify-center max-sm:py-72 py-56 mx-auto text-center dark:bg-neutral-900 bg-white">
         <h1
-          className="font-bold text-[154px] md:text-[200px] leading-[160px] md:leading-[210px] font-barlow
+          className="font-bold text-[154px] md:text-[200px] leading-[160px] md:leading-[210px] font-barlow 
         dark:text-white text-neutral-800"
         >
           404
