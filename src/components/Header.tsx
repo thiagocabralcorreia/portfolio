@@ -19,21 +19,19 @@ const Header = ({
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="fixed h-24 top-0 left-0 right-0 z-50"
     >
-      <nav className="mb-[-5px] dark:bg-neutral-800 lg:dark:bg-neutral-900 bg-neutral-100 lg:bg-white">
+      <nav className="mb-[-5px] dark:bg-black bg-neutral-100 lg:bg-white">
         <div className="flex items-center justify-between w-10/12 mx-auto px-4 sm:px-6 lg:px-8 h-24">
-          <div className="lg:w-full flex items-center justify-between">
+          <div className="flex w-full items-center justify-between">
             <div className="flex-shrink-0">
               <Link to={"/"}>
-                <div className="h-12 w-12 flex justify-center items-center m-auto rounded-full bg-primary dark:bg-primaryDark">
-                  <p className="text-[21px] font-extrabold text-white dark:text-black font-barlow ">
-                    TCC
-                  </p>
-                </div>
+                <p className="text-[24px] md:text-[32px] font-semibold dark:text-neutral-300 text-neutral-700 font-poppins">
+                  tcc<span className="blinking">_</span>
+                </p>
               </Link>
             </div>
 
             <div className="hidden lg:block">
-              <div className="flex items-baseline space-x-4">
+              <div className="flex w-full items-baseline justify-between space-x-4">
                 {desktopChildren}
               </div>
             </div>

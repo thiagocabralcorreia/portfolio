@@ -26,7 +26,7 @@ const ProjectCard = ({ title, category, image, onClick }: ProjecSchema) => {
           className="text-center content-center justify-center m-auto p-4 text-lg md:text-2xl
         dark:text-white text-neutral-900"
         >
-          <p className="mb-2 font-barlow ">{title.toLocaleUpperCase()}</p>
+          <p className="mb-2 font-poppins ">{title.toLocaleUpperCase()}</p>
         </div> */}
       </div>
     </motion.div>

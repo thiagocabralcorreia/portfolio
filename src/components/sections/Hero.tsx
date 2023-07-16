@@ -22,13 +22,13 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 1.2, delay: 0.2 }}
-      className="w-10/12 h-full m-auto px-8 max-lg:pt-28 lg:flex lg:justify-between"
+      className="w-10/12 h-full m-auto px-8 max-lg:pt-28 lg:flex lg:justify-between bg-primaryBg"
     >
       <div className="flex flex-col text-center lg:text-left content-center justify-center max-lg:my-20 max-auto">
         <p className="text-neutral-700 dark:text-neutral-300 text-xl mb-3 sm:mb-4">
           {heroData.hi}
         </p>
-        <h1 className="text-3xl sm:text-5xl xl:text-6xl dark:text-white text-black md:font-bold mb-3 sm:mb-5 font-barlow">
+        <h1 className="text-3xl sm:text-5xl xl:text-6xl dark:text-white text-black md:font-bold mb-3 sm:mb-5 font-poppins">
           <span className="text-primary dark:text-primaryDark">THIAGO</span>{" "}
           CABRAL CORREIA
         </h1>
