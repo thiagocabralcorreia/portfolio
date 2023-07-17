@@ -11,8 +11,9 @@ const Tooltip: React.FC<TooltipProps> = ({ children, text, customStyle }) => {
     <div className="relative group justify-center content-center m-auto">
       {children}
       <span
-        className={`absolute scale-0 rounded bg-neutral-700 p-2 text-xs text-white
-    group-hover:scale-100 text-center ${customStyle}`}
+        className={`absolute scale-0 rounded p-2 text-xs text-white
+        bg-tertiaryBackground dark:bg-tertiaryDarkBackground 
+        group-hover:scale-100 text-center ${customStyle}`}
       >
         {text}
       </span>

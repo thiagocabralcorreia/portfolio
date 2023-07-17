@@ -13,7 +13,7 @@ const Footer = () => {
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex w-full py-10 dark:bg-black bg-neutral-100"
+      className="flex w-full py-10 dark:bg-primaryDarkBackground bg-neutral-100"
     >
       <div className="flex w-10/12 mx-auto px-4 justify-between content-center">
         <p className="text-md text-black dark:text-white">{footerData.by}</p>

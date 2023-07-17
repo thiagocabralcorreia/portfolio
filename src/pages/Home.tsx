@@ -17,9 +17,9 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="dark:bg-neutral-900 bg-white"
+        className="dark:bg-primaryDarkBackground bg-white"
       >
-        <div className="relative w-full max-sm:mb-6 max-lg:mb-32 md:h-screen dark:bg-neutral-900 bg-white">
+        <div className="relative w-full pb-16 dark:bg-primaryDarkBackground bg-primaryBackground">
           <Hero />
           <SocialLinks />
         </div>

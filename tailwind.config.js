@@ -5,8 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#0177B5",
-        primaryDark: "#FBBD25",
+        primary: "#345247",
+        primaryDark: "#F6B21D",
+        primaryBackground: "#FFFFFF",
+        secondaryBackground: "#F6F4EB",
+        tertiaryBackground: "#c9bc98",
+        primaryDarkBackground: "#000000",
+        secondaryDarkBackground: "#141414",
+        tertiaryDarkBackground: "#404142",
       },
       keyframes: {
         "fade-in-down": {

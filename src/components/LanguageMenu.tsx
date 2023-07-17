@@ -44,7 +44,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
       >
         <Menu.Items
           className="absolute top-8 right-0 mt-2 w-56 origin-top-right z-50
-        divide-y divide-gray-100 rounded-md dark:bg-neutral-700 bg-neutral-50 shadow-lg
+        divide-y divide-gray-100 dark:bg-neutral-700 bg-neutral-50 shadow-lg
         ring-1 ring-black ring-opacity-5 focus:outline-none"
         >
           <div className="p-1">
@@ -56,7 +56,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
                     active
                       ? "bg-primary text-white dark:bg-primaryDark dark:text-neutral-900"
                       : "dark:text-white text-neutral-900"
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  } group flex w-full items-center px-2 py-2 text-sm`}
                 >
                   <img
                     src="https://hatscripts.github.io/circle-flags/flags/gb.svg"
@@ -76,7 +76,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
                     active
                       ? "bg-primary text-white dark:bg-primaryDark dark:text-neutral-900"
                       : "dark:text-white text-neutral-900"
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  } group flex w-full items-center px-2 py-2 text-sm`}
                 >
                   <img
                     src="https://hatscripts.github.io/circle-flags/flags/br.svg"

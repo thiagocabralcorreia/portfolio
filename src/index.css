@@ -9,11 +9,15 @@
   }
 
   body {
-    background-color: #171717;
+    background-color: #000000;
   }
 
   .font-poppins {
     font-family: "Poppins", sans-serif;
+  }
+
+  .font-inter {
+    font-family: "Inter", sans-serif;
   }
 
   .primary-font-colors {
@@ -21,7 +25,7 @@
   }
 
   .primary-background-colors {
-    @apply dark:bg-neutral-900 bg-white;
+    @apply dark:bg-primaryDarkBackground bg-white;
   }
 
   .section-title {
@@ -49,16 +53,16 @@
   }
 
   .blinking {
-    animation: blinking 1s infinite; /* Defina a duração da animação e especifique que ela deve se repetir infinitamente */
+    animation: blinking 1s infinite;
   }
 }
 
 ::selection {
-  background-color: #fcd34d; /* Altere para a cor desejada */
-  color: #171717; /* Altere para a cor desejada */
+  background-color: #000000;
+  color: #fbbc25;
 }
 
 ::-moz-selection {
-  background-color: #fcd34d; /* Altere para a cor desejada */
-  color: #171717; /* Altere para a cor desejada */
+  background-color: #000000;
+  color: #171717;
 }

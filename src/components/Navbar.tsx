@@ -66,8 +66,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="inline-flex items-center justify-center p-2 rounded-md primary-font-colors
-            duration-500 dark:hover:bg-neutral-800 hover:bg-neutral-100"
+            className="inline-flex items-center justify-center p-2 rounded-md primary-font-colors duration-500"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >

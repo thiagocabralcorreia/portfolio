@@ -5,7 +5,6 @@ export interface LinkSchema {
   id: number;
   child: React.ReactNode;
   href: string;
-  style?: string;
 }
 export const links = [
   {
@@ -16,7 +15,6 @@ export const links = [
       </>
     ),
     href: "https://www.linkedin.com/in/thiago-cabral-correia/",
-    style: "rounded-tr-md",
   },
   {
     id: 2,
