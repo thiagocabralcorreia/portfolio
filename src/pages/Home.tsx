@@ -6,7 +6,7 @@ import Contact from "../components/sections/Contact";
 import Hero from "../components/sections/Hero";
 import Navbar from "../components/Navbar";
 import ProjectsGrid from "../components/sections/ProjectsGrid";
-import RecommendationsSlider from "../components/sections/Recommendations";
+import Recommendations from "../components/sections/Recommendations";
 import SocialLinks from "../components/SocialLinks";
 
 const Home = () => {
@@ -23,9 +23,7 @@ const Home = () => {
           <Hero />
           <SocialLinks />
         </div>
-
         <About />
-
         <ProjectsGrid home />
         <div className="w-10/12 m-auto mt-[-20px] mb-20 text-center">
           <Link to={"/projects"}>
@@ -34,9 +32,8 @@ const Home = () => {
         </div>
 
         <div className="relative">
-          <RecommendationsSlider />
+          <Recommendations />
         </div>
-
         <Contact />
       </motion.div>
     </>

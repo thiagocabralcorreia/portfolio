@@ -19,7 +19,7 @@ const Header = ({
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="fixed h-24 top-0 left-0 right-0 z-50"
     >
-      <nav className="mb-[-5px] dark:bg-secondaryDarkBackground bg-secondaryBackground">
+      <nav className="mb-[-5px] dark:bg-secondaryDarkBackground bg-secondaryBackground opacity-95 backdrop-blur-md">
         <div className="flex items-center justify-between w-10/12 mx-auto px-4 sm:px-6 lg:px-8 h-24">
           <div className="flex w-full items-center justify-between">
             <div className="flex-shrink-0">

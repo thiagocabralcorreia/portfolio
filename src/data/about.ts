@@ -1,5 +1,5 @@
 export const enAboutData = {
-  niceToMeet: "NICE TO MEET YOU!",
+  niceToMeet: "Nice to meet you!",
   iAm: "So, I've been a",
   frontend: "Front-end Developer",
   exp: "for more than 2 years and, during this time, I've worked remotely for some IT Companies such as",
@@ -17,12 +17,12 @@ export const enAboutData = {
   feelFree: "Feel free to",
   contact: "contact",
   me: "me",
-  skills: "SKILLS & TOOLS",
-  someSkills: "Some skills and technologies I’ve been working with:",
+  skills: "My Skills",
+  someSkills: "Some skills and technologies I’ve been working with recently:",
 };
 
 export const ptAboutData = {
-  niceToMeet: "PRAZER EM TE CONHECER!",
+  niceToMeet: "Prazer em te conhecer!",
   iAm: "Bom, sou",
   frontend: "Desenvolvedor Front-end",
   exp: "há mais de 2 anos e, durante esse tempo, trabalhei remotamente para algumas empresas de tecnologia, como",
@@ -40,7 +40,7 @@ export const ptAboutData = {
   feelFree: "Fique à vontade para entrar em",
   contact: "contato",
   me: "comigo",
-  skills: "HABILIDADES E FERRAMENTAS",
+  skills: "Minhas Habilidades",
   someSkills:
     "Aqui estão algumas habilidades e tecnologias com as quais tenho trabalhado:",
 };

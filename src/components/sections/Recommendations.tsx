@@ -7,7 +7,7 @@ import {
   Recommendation,
 } from "../../data/recommendations";
 
-function RecommendationsSlider() {
+function Recommendations() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const { language } = useContext(LanguageContext);
@@ -20,9 +20,9 @@ function RecommendationsSlider() {
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       id="recommendations"
-      className="relative dark:bg-neutral-800 bg-neutral-100 max-sm:h-[892px] max-md:h-[600px] h-[530px]"
+      className="relative dark:bg-secondaryDarkBackground bg-secondaryBackground max-sm:h-[892px] max-md:h-[600px] h-[530px]"
     >
-      <div className="absolute top-0 left-0 w-full h-full dark:bg-neutral-800 bg-neutral-100">
+      <div className="absolute top-0 left-0 w-full h-full dark:bg-secondaryDarkBackground bg-secondaryBackground">
         {recommendationsData.map((recommendation, index) => (
           <div
             key={recommendation.id}
@@ -31,7 +31,7 @@ function RecommendationsSlider() {
             } transition-opacity duration-1000 ease-in-out absolute top-0 left-0 w-full h-full`}
           >
             {/* navigation dots */}
-            <div className="relative dark:bg-neutral-800 bg-neutral-100 py-6 pb-24">
+            <div className="relative dark:bg-secondaryDarkBackground bg-secondaryBackground py-6 pb-24">
               <div className="flex absolute z-20 bottom-20 left-1/2 right-1/2 justify-center">
                 <div className="flex justify-center space-x-5">
                   {recommendationsData.map((_, index) => (
@@ -40,7 +40,7 @@ function RecommendationsSlider() {
                       className={`w-[11px] h-[11px] rounded-full ${
                         index === activeIndex
                           ? "bg-primary dark:bg-primaryDark"
-                          : "bg-gray-300 hover:bg-neutral-500"
+                          : "dark:bg-tertiaryDarkBackground bg-tertiaryBackground hover:bg-primary dark:hover:bg-primaryDark"
                       }`}
                       onClick={() => setActiveIndex(index)}
                     />
@@ -72,16 +72,17 @@ function RecommendationsSlider() {
                       src={recommendation.image}
                       alt={recommendation.name}
                     />
-                    <div className="flex max-sm:flex-col items-center max-sm:divide-x-0 divide-x-2 divide-primary dark:divide-primaryDark">
-                      <div
-                        className="max-sm:px-0 max-sm:pb-2 pr-4 max-sm:text-md text-lg 
-                      dark:text-neutral-300 text-neutral-700 max-sm:text-primary dark:max-sm:text-primaryDark"
+                    <div className="flex max-sm:flex-col items-center max-sm:divide-x-0 divide-x-2 divide-tertiaryBackground dark:divide-tertiaryDarkBackground">
+                      <p
+                        className="max-sm:px-0 max-sm:pb-2 pr-4 max-sm:text-md text-lg
+                        dark:text-neutral-300 text-neutral-700 max-sm:text-primary dark:max-sm:text-primaryDark"
                       >
                         {recommendation.name}
-                      </div>
-                      <div className="max-sm:px-0 pl-4 max-sm:text-md text-lg dark:text-neutral-300 text-neutral-700">
+                      </p>
+
+                      <p className="max-sm:px-0 pl-4 max-sm:text-md text-lg dark:text-neutral-300 text-neutral-700">
                         {recommendation.occupation}
-                      </div>
+                      </p>
                     </div>
                   </figcaption>
                 </figure>
@@ -95,4 +96,4 @@ function RecommendationsSlider() {
   );
 }
 
-export default RecommendationsSlider;
+export default Recommendations;

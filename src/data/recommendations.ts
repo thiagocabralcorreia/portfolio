@@ -11,6 +11,7 @@ export interface Recommendation {
   image: string;
   name: string;
   occupation: string;
+  link: string;
 }
 
 export const enRecommendationsData: Recommendation[] = [
@@ -20,6 +21,7 @@ export const enRecommendationsData: Recommendation[] = [
     image: RafaelPerozin,
     name: "Rafael Perozin",
     occupation: "Software Development Manager",
+    link: "https://www.linkedin.com/in/rafaelperozin/",
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ export const enRecommendationsData: Recommendation[] = [
     image: LuisFelipe,
     name: "Luís Felipe Silva",
     occupation: "Mobile Developer",
+    link: "https://www.linkedin.com/in/luis-felipe-borges-silva-1905/",
   },
   {
     id: 3,
@@ -34,6 +37,7 @@ export const enRecommendationsData: Recommendation[] = [
     image: AfonsoPimentel,
     name: "Afonso Pimentel",
     occupation: "Product Owner",
+    link: "https://www.linkedin.com/in/afonsopimentel/",
   },
   {
     id: 4,
@@ -41,6 +45,7 @@ export const enRecommendationsData: Recommendation[] = [
     image: LuizDoretto,
     name: "Luiz Henrique Doretto",
     occupation: "Frontend Developer",
+    link: "https://www.linkedin.com/in/luiz-doretto/",
   },
   {
     id: 5,
@@ -48,6 +53,7 @@ export const enRecommendationsData: Recommendation[] = [
     image: PauloBorges,
     name: "Paulo Borges",
     occupation: "Software Engineer",
+    link: "https://br.linkedin.com/in/paulo-borges-1133341a1",
   },
   {
     id: 6,
@@ -55,6 +61,7 @@ export const enRecommendationsData: Recommendation[] = [
     image: LucasLima,
     name: "Lucas de Lima",
     occupation: "Mobile Developer",
+    link: "https://www.linkedin.com/in/lucas-de-lima-azsura/",
   },
 ];
 
@@ -65,6 +72,7 @@ export const ptRecommendationsData: Recommendation[] = [
     image: RafaelPerozin,
     name: "Rafael Perozin",
     occupation: "Gerente de Desenvolvimento de Software",
+    link: "https://www.linkedin.com/in/rafaelperozin/",
   },
   {
     id: 2,
@@ -72,6 +80,7 @@ export const ptRecommendationsData: Recommendation[] = [
     image: LuisFelipe,
     name: "Luís Felipe Silva",
     occupation: "Desenvolvedor Mobile",
+    link: "https://www.linkedin.com/in/luis-felipe-borges-silva-1905/",
   },
   {
     id: 3,
@@ -79,6 +88,7 @@ export const ptRecommendationsData: Recommendation[] = [
     image: AfonsoPimentel,
     name: "Afonso Pimentel",
     occupation: "Product Owner",
+    link: "https://www.linkedin.com/in/afonsopimentel/",
   },
   {
     id: 4,
@@ -86,6 +96,7 @@ export const ptRecommendationsData: Recommendation[] = [
     image: LuizDoretto,
     name: "Luiz Henrique Doretto",
     occupation: "Desenvolvedor Frontend",
+    link: "https://www.linkedin.com/in/luiz-doretto/",
   },
   {
     id: 5,
@@ -93,6 +104,7 @@ export const ptRecommendationsData: Recommendation[] = [
     image: PauloBorges,
     name: "Paulo Borges",
     occupation: "Engenheiro de Software",
+    link: "https://br.linkedin.com/in/paulo-borges-1133341a1",
   },
   {
     id: 6,
@@ -100,5 +112,6 @@ export const ptRecommendationsData: Recommendation[] = [
     image: LucasLima,
     name: "Lucas de Lima",
     occupation: "Desenvolvedor Mobile",
+    link: "https://www.linkedin.com/in/lucas-de-lima-azsura/",
   },
 ];

@@ -9,7 +9,7 @@ module.exports = {
         primaryDark: "#F6B21D",
         primaryBackground: "#FFFFFF",
         secondaryBackground: "#F6F4EB",
-        tertiaryBackground: "#c9bc98",
+        tertiaryBackground: "#e2d6b5",
         primaryDarkBackground: "#000000",
         secondaryDarkBackground: "#141414",
         tertiaryDarkBackground: "#404142",

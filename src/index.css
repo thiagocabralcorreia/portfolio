@@ -29,7 +29,7 @@
   }
 
   .section-title {
-    @apply text-3xl sm:text-5xl xl:text-5xl max-lg:mb-8 mb-12 dark:text-white text-black font-poppins;
+    @apply text-3xl sm:text-5xl xl:text-4xl font-semibold max-lg:mb-8 mb-12 font-poppins dark:text-white text-black;
   }
 
   .section-text {
@@ -59,7 +59,7 @@
 
 ::selection {
   background-color: #000000;
-  color: #fbbc25;
+  color: #ffffff;
 }
 
 ::-moz-selection {
