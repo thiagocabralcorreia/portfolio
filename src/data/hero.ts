@@ -5,7 +5,7 @@ export const enHeroData = {
   frontend: "Front-end",
   developer: "Developer",
   passionate: "Passionate about building beautiful user interfaces,",
-  ui: "turning design concepts into digital experiences",
+  ui: "turning design concepts into great digital experiences",
 };
 
 export const ptHeroData = {

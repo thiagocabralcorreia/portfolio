@@ -51,7 +51,7 @@ const ContactForm = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="max-lg:justify-content max-lg:m-auto max-w-xl rounded-xl text-left"
+          className="max-lg:justify-content max-lg:m-auto max-w-xl text-left"
         >
           <FormInput
             inputLabel={contactData.name}
@@ -92,7 +92,7 @@ const ContactForm = () => {
               className="w-full px-5 py-2 border dark:border-gray-300 border-gray-700 border-opacity-50 text-black dark:text-white
               focus:outline-none focus:border-primary dark:focus:border-primaryDark focus:ring-1
               focus:ring-primary dark:focus:ring-primaryDark bg-white dark:bg-primaryDarkBackground
-              rounded-md shadow-sm text-md"
+              shadow-sm text-md"
               id="message"
               name="message"
               cols={14}

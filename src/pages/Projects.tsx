@@ -69,7 +69,7 @@ const Projects = () => {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="bg-primaryDarkBackground"
       >
-        <div className="relative w-full mt-[96px] max-lg:mb-32 dark:bg-primaryDarkBackground bg-white">
+        <div className="relative w-full pt-[96px] max-lg:mb-32 dark:bg-primaryDarkBackground bg-white">
           <ProjectsGrid />
         </div>
       </motion.div>
