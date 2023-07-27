@@ -21,7 +21,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
     <div className="block sm:flex gap-0 sm:gap-10 sm:mt-14">
       <div className="w-full sm:w-1/3 text-left">
         <div className="mb-7">
-          <p className="text-4xl text-black dark:text-white font-barlow mb-7">
+          <p className="text-3xl font-semibold text-black dark:text-white font-poppins  mb-7">
             {projectIntroDetailsData.skills}
           </p>
           <div className="flex flex-wrap">
@@ -29,8 +29,8 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
               return (
                 <div
                   key={index}
-                  className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
-                  rounded-lg bg-primary dark:bg-primaryDark text-white dark:text-neutral-900"
+                  className="flex justify-center items-center my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
+                bg-tertiaryBackground dark:bg-tertiaryDarkBackground text-neutral-900 dark:text-white"
                 >
                   <p className="text-sm">{skill}</p>
                 </div>
@@ -40,8 +40,8 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
         </div>
 
         <div className="mb-7">
-          <p className="text-4xl text-black dark:text-white font-barlow mb-7">
-            LINKS
+          <p className="text-3xl font-semibold text-black dark:text-white font-poppins  mb-7">
+            Links
           </p>
           {project?.website && (
             <a
@@ -95,7 +95,7 @@ const ProjectContent = ({ project }: ProjectContentProps) => {
       </div>
 
       <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-        <p className="text-4xl text-black dark:text-white font-barlow mb-7">
+        <p className="text-3xl font-semibold text-black dark:text-white font-poppins  mb-7">
           {projectIntroDetailsData.overview}
         </p>
         {project?.about.map(({ id, text }) => (

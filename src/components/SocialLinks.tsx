@@ -7,17 +7,14 @@ const SocialLinks = () => {
       initial={{ x: -180 }}
       animate={{ x: 0 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="absolute hidden md:flex flex-col top-[50%] lg:top-[35%] left-0"
+      className="absolute hidden md:flex flex-col top-[60%] lg:top-[45%] left-0"
     >
       <ul>
-        {links.map(({ id, child, href, style }: LinkSchema) => (
+        {links.map(({ id, child, href }: LinkSchema) => (
           <li
             key={id}
-            className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-20px] hover:rounded-md duration-300 bg-neutral-200 dark:bg-neutral-800" +
-              " " +
-              style
-            }
+            className="flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-20px]
+            duration-300 bg-secondaryBackground dark:bg-secondaryDarkBackground"
           >
             <a
               href={href}

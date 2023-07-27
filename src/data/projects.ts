@@ -19,13 +19,13 @@ export interface ProjecSchema {
 }
 
 export const enIntroProjectsData = {
-  title: "PROJECTS",
+  title: "Projects",
   description: "Here are a few professional and personal projects I’ve built.",
   filter: "You can filter them by category.",
 };
 
 export const ptIntroProjectsData = {
-  title: "PROJETOS",
+  title: "Projetos",
   description:
     "Aqui estão alguns projetos profissionais e pessoais que eu desenvolvi.",
   filter: "Você pode filtrá-los por categoria.",

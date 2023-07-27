@@ -3,38 +3,28 @@ import { ProjecSchema } from "../data/projects";
 
 const ProjectCard = ({ title, category, image, onClick }: ProjecSchema) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 1.1 }}
-      transition={{
-        ease: "easeInOut",
-        duration: 0.15,
-        delay: 0.15,
-      }}
-    >
-      <div
-        onClick={onClick}
-        className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
-      >
-        <div>
-          <img
-            src={image}
-            className="rounded-t-xl border-none"
-            alt="Single Project"
-          />
+    <div className="relative overflow-hidden shadow-lg ring-1 ring-neutral-500 ring-opacity-5">
+      <div onClick={onClick} className="cursor-pointer mb-10 sm:mb-0">
+        <div className="relative h-0" style={{ paddingTop: "56.25%" }}>
+          <div
+            className="absolute inset-0 bg-center bg-no-repeat bg-cover"
+            style={{
+              backgroundImage: `url('${image}')`,
+              transformOrigin: "center",
+              transition: "transform 0.3s ease-in-out",
+            }}
+          ></div>
         </div>
-        <div className="rounded-b-xl text-center px-4 py-6 bg-primary dark:bg-primaryDark">
-          <p className="mb-2 text-lg md:text-2xl text-white dark:text-neutral-900 font-bold font-barlow">
-            {title.toLocaleUpperCase()}
+        <div className="px-8 py-8 dark:bg-secondaryDarkBackground bg-secondaryBackground">
+          <p className="text-lg dark:text-neutral-300 text-neutral-700 font-bold font-poppins">
+            {title}
           </p>
-          <span className="text-md text-white dark:text-neutral-900">
+          <span className="text-md dark:text-neutral-300 text-neutral-700">
             {category}
           </span>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -16,29 +16,29 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="dark:bg-neutral-800 bg-neutral-100 py-20"
+      className="dark:bg-secondaryDarkBackground bg-secondaryBackground py-20"
     >
-      <div className="w-10/12 flex max-lg:flex-col m-auto lg:mb-10 max-lg:text-center content-center justify-center">
-        <div className="max-md: px-5 lg:w-1/2 lg:mr-24 max-lg:mb-20">
+      <div className="flex max-lg:flex-col w-10/12 mx-auto lg:mb-10 max-lg:text-center content-center justify-between">
+        <div className="px-5 lg:mr-24 max-lg:mb-20">
           <h1 className="section-title">{aboutData.niceToMeet}</h1>
           <p className="section-text">
             {aboutData.iAm}{" "}
-            <span className="text-primary dark:text-primaryDark">
+            <span className="font-bold dark:font-normal text-primary dark:text-primaryDark">
               {aboutData.frontend}
             </span>{" "}
             {aboutData.exp}{" "}
-            <span className="text-primary dark:text-primaryDark">
+            <span className="font-bold dark:font-normal text-primary dark:text-primaryDark">
               {aboutData.companies}
             </span>
             , {aboutData.work}.{" "}
           </p>
           <p className="section-text">
             {aboutData.iAmUiUx}{" "}
-            <span className="text-primary dark:text-primaryDark">
+            <span className="font-bold dark:font-normal text-primary dark:text-primaryDark">
               {aboutData.uiUx}
             </span>
             , {aboutData.detailOriented}
-            <span className="text-primary dark:text-primaryDark">
+            <span className="font-bold dark:font-normal text-primary dark:text-primaryDark">
               {" "}
               {aboutData.designSystem}
             </span>
@@ -46,7 +46,7 @@ const About = () => {
           </p>
           <p className="text-xl mx-auto dark:text-neutral-300 text-neutral-800">
             {aboutData.learn}{" "}
-            <span className="text-primary dark:text-primaryDark">
+            <span className="font-bold dark:font-normal text-primary dark:text-primaryDark">
               {aboutData.feelFree}{" "}
               <Link
                 to={"contact"}
@@ -63,7 +63,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="lg:w-1/2 lg:mr-24">
+        <div>
           <h1 className="section-title">{aboutData.skills}</h1>
           <p className="section-text">{aboutData.someSkills}</p>
           <div className="flex flex-wrap max-lg:justify-center">
@@ -71,8 +71,8 @@ const About = () => {
               return (
                 <div
                   key={id}
-                  className="flex justify-center items-center  my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
-                  rounded-lg bg-primary dark:bg-primaryDark text-white dark:text-neutral-900"
+                  className="flex justify-center items-center my-1 md:my-2 mr-2 lg:mr-4 text-lg p-2 sm:p-3
+                  bg-tertiaryBackground dark:bg-tertiaryDarkBackground text-neutral-900 dark:text-white"
                 >
                   <p className="text-sm">{skill}</p>
                 </div>

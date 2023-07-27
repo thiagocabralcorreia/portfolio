@@ -38,7 +38,7 @@ const ProjectsFilter = ({ setSelectProject }: any) => {
     <Listbox value={selected} onChange={onSelect}>
       <div className="relative flex m-auto justify-center z-50">
         <Listbox.Button
-          className="h-11 w-40 flex justify-between content-center rounded-xl appearance-none relative
+          className="h-11 w-40 flex justify-between content-center appearance-none relative
           py-2 pl-5 pr-3 bg-primary dark:bg-primaryDark text-white dark:text-neutral-900 border border-none text-md text-center
           focus:outline-none cursor-default transition duration-150 ease-out hover:ease-in"
         >
@@ -57,7 +57,7 @@ const ProjectsFilter = ({ setSelectProject }: any) => {
           leaveTo="hidden relative"
         >
           <Listbox.Options
-            className="absolute top-12 w-40 overflow-auto rounded-xl bg-white dark:bg-neutral-800
+            className="absolute top-12 w-40 overflow-auto bg-white dark:bg-neutral-800
             shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-md"
           >
             {options.map(

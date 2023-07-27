@@ -53,8 +53,8 @@ export interface ProjectDetailsSchema {
 }
 
 export const enIntroProjectDetailsData = {
-  skills: "SKILLS & TOOLS",
-  overview: "PROJECT OVERVIEW",
+  skills: "Skills & Tools",
+  overview: "Project Overview",
   website: "Visit website",
   apple: "Download from Apple Store",
   play: "Download from Play Store",
@@ -62,8 +62,8 @@ export const enIntroProjectDetailsData = {
 };
 
 export const ptIntroProjectDetailsData = {
-  skills: "HABILIDADES",
-  overview: "VISÃO GERAL DO PROJETO",
+  skills: "Habilidades",
+  overview: "Visão Geral do Projeto",
   website: "Visite o site",
   apple: "Baixe na Apple Store",
   play: "Baixe na Play Store",
@@ -142,8 +142,8 @@ export const enProjectDetailsData = [
     ],
     website: "https://caule.app",
     github: "",
-    appleStore: "",
-    playStore: "",
+    appleStore: "https://apps.apple.com/br/app/caule/id6444843213",
+    playStore: "https://play.google.com/store/apps/details?id=com.caule.app",
     images: [
       {
         id: "caule1.png",
@@ -641,8 +641,8 @@ export const ptProjectDetailsData = [
     ],
     website: "https://caule.app",
     github: "",
-    appleStore: "",
-    playStore: "",
+    appleStore: "https://apps.apple.com/br/app/caule/id6444843213",
+    playStore: "https://play.google.com/store/apps/details?id=com.caule.app",
     images: [
       {
         id: "caule1.png",

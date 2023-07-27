@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <Header
       desktopChildren={
-        <>
+        <div className="flex w-full justify-between">
           {sections.map(({ id, section, value }: SectionSchema) => {
             return (
               <Link
@@ -41,37 +41,38 @@ const Navbar = () => {
                 offset={-96}
                 smooth
                 duration={500}
-                className="px-3 py-2 header-link"
+                className="px-6 py-2 header-link"
               >
                 {section}
               </Link>
             );
           })}
-          <Tooltip
-            text={headerData.toggleTheme}
-            customStyle="top-10 right-[-36px] w-24"
-          >
-            <ThemeToggleButton />
-          </Tooltip>
-          <LanguageMenu
-            imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
-            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
-          />
-        </>
+          <div className="flex ml-8 space-x-3">
+            <Tooltip
+              text={headerData.toggleTheme}
+              customStyle="top-10 right-[-36px] w-24"
+            >
+              <ThemeToggleButton />
+            </Tooltip>
+            <LanguageMenu
+              imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+              hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
+            />
+          </div>
+        </div>
       }
       mobileChildren={
-        <>
+        <div className="flex space-x-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="inline-flex items-center justify-center p-2 rounded-md primary-font-colors
-          duration-500 dark:hover:bg-neutral-800 hover:bg-neutral-100"
+            className="inline-flex items-center justify-center p-2 rounded-md primary-font-colors duration-500"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
             {!isOpen ? (
               <svg
-                className="block h-6 w-6"
+                className="block h-7 w-7"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -87,7 +88,7 @@ const Navbar = () => {
               </svg>
             ) : (
               <svg
-                className="block h-6 w-6"
+                className="block h-7 w-7"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -103,15 +104,15 @@ const Navbar = () => {
               </svg>
             )}
           </button>
-          <ThemeToggleButton iconSize={24} />
-          <div className="ml-2 content-center my-auto">
+          <ThemeToggleButton iconSize={28} />
+          <div className="content-center my-auto flex-shrink-0 w-9">
             <LanguageMenu
-              imgWidth={22}
-              imgStyle="cursor-pointer transition ease-out duration-500
-            hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
+              imgWidth={24}
+              imgStyle="ml-2 cursor-pointer content-center my-auto transition ease-out duration-500
+              hover:border-2 hover:border-primary dark:hover:border-primaryDark rounded-xl"
             />
           </div>
-        </>
+        </div>
       }
       dropdownMenu={
         <DropdownMenu show={isOpen} onClose={() => setIsOpen(false)} />
