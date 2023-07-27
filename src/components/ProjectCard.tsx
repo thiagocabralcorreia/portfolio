@@ -3,33 +3,28 @@ import { ProjecSchema } from "../data/projects";
 
 const ProjectCard = ({ title, category, image, onClick }: ProjecSchema) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 1.1 }}
-      transition={{
-        ease: "easeInOut",
-        duration: 0.15,
-        delay: 0.15,
-      }}
-    >
-      <div onClick={onClick} className="cursor-pointer">
-        <div>
-          <img
-            src={image}
-            className="border-none shadow-lg hover:shadow-xl "
-            alt="Single Project"
-          />
+    <div className="relative overflow-hidden shadow-lg ring-1 ring-neutral-500 ring-opacity-5">
+      <div onClick={onClick} className="cursor-pointer mb-10 sm:mb-0">
+        <div className="relative h-0" style={{ paddingTop: "56.25%" }}>
+          <div
+            className="absolute inset-0 bg-center bg-no-repeat bg-cover"
+            style={{
+              backgroundImage: `url('${image}')`,
+              transformOrigin: "center",
+              transition: "transform 0.3s ease-in-out",
+            }}
+          ></div>
         </div>
-        {/* <div
-          className="text-center content-center justify-center m-auto p-4 text-lg md:text-2xl
-        dark:text-white text-neutral-900"
-        >
-          <p className="mb-2 font-poppins ">{title.toLocaleUpperCase()}</p>
-        </div> */}
+        <div className="px-8 py-8 dark:bg-secondaryDarkBackground bg-secondaryBackground">
+          <p className="text-lg dark:text-neutral-300 text-neutral-700 font-bold font-poppins">
+            {title}
+          </p>
+          <span className="text-md dark:text-neutral-300 text-neutral-700">
+            {category}
+          </span>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

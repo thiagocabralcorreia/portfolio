@@ -33,7 +33,7 @@
   }
 
   .section-text {
-    @apply text-xl mx-auto mb-8 dark:text-neutral-300 text-neutral-800;
+    @apply text-lg mx-auto mb-8 dark:text-neutral-300 text-neutral-800;
   }
 
   .header-link {

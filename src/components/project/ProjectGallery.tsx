@@ -19,7 +19,7 @@ const ProjectGallery = ({ project }: ProjectGalleryProps) => {
           >
             <img
               src={image.src}
-              className="rounded-xl shadow-md shadow-neutral-200 dark:shadow-neutral-800"
+              className="shadow-md shadow-neutral-200 dark:shadow-neutral-800"
               alt={image.alt}
               key={image.id}
             />

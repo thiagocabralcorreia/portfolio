@@ -18,7 +18,7 @@ const About = () => {
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="dark:bg-secondaryDarkBackground bg-secondaryBackground py-20"
     >
-      <div className="flex max-lg:flex-col w-10/12 m-auto lg:mb-10 max-lg:text-center content-center justify-between">
+      <div className="flex max-lg:flex-col w-10/12 mx-auto lg:mb-10 max-lg:text-center content-center justify-between">
         <div className="px-5 lg:mr-24 max-lg:mb-20">
           <h1 className="section-title">{aboutData.niceToMeet}</h1>
           <p className="section-text">

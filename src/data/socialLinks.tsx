@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaEnvelope } from "react-icons/fa";
 
 export interface LinkSchema {
   id: number;
@@ -29,7 +29,7 @@ export const links = [
     id: 3,
     child: (
       <>
-        <p className="ml-5">Email</p> <HiOutlineMail size={30} />
+        <p className="ml-5">Email</p> <FaEnvelope size={28} />
       </>
     ),
     href: "mailto:thiagocabralcorreia@gmail.com",

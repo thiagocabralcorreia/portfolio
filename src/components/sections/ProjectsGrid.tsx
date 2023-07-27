@@ -25,7 +25,7 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
     selectProjectsByCategory,
   } = useContext(ProjectsContext);
   const { language } = useContext(LanguageContext);
-  const contactData =
+  const projectData =
     language === "en" ? enIntroProjectsData : ptIntroProjectsData;
   const navigate = useNavigate();
 
@@ -46,12 +46,12 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
       className="w-full pt-20 pb-12"
     >
       <div className="w-10/12 m-auto text-center">
-        <h1 className="section-title">{contactData.title}</h1>
+        <h1 className="section-title">{projectData.title}</h1>
       </div>
 
       <p className="section-text w-8/12 m-auto text-center">
-        {contactData.description}
-        {!home && <span className="lg:block">{contactData.filter}</span>}
+        {projectData.description}
+        {!home && <span className="lg:block">{projectData.filter}</span>}
       </p>
 
       {!home && (
@@ -60,7 +60,7 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
         </div>
       )}
 
-      <div className="w-9/12 m-auto max-sm:mt-12 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6">
+      <div className="w-9/12 m-auto max-sm:mt-12 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
         {home
           ? projects
               ?.slice(0, 6)

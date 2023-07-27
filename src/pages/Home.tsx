@@ -19,7 +19,7 @@ const Home = () => {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="dark:bg-primaryDarkBackground bg-white"
       >
-        <div className="relative w-full pb-16 dark:bg-primaryDarkBackground bg-primaryBackground">
+        <div className="relative w-full max-lg:pb-16 dark:bg-primaryDarkBackground bg-primaryBackground">
           <Hero />
           <SocialLinks />
         </div>

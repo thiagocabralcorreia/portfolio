@@ -81,7 +81,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         className="pt-36 w-10/12 m-auto px-4 sm:px-6 lg:px-8 bg:neutral-900"
       >
         <p className="section-title text-primary dark:text-primaryDark">
-          {project?.name.toLocaleUpperCase()}
+          {project?.name}
         </p>
         <div className="flex max-sm:flex-col mt-[-14px] lg:mt-[-24px]">
           <div className="flex items-center max-sm:mb-5 mr-10">

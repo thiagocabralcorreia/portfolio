@@ -47,7 +47,7 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <div className="flex ml-12 space-x-3">
+          <div className="flex ml-8 space-x-3">
             <Tooltip
               text={headerData.toggleTheme}
               customStyle="top-10 right-[-36px] w-24"
