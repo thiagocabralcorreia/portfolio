@@ -17,7 +17,7 @@ const Footer = () => {
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="flex w-full dark:bg-secondaryDarkBackground bg-secondaryBackground"
     >
-      <div className="block w-10/12 mx-auto px-4 justify-between content-center">
+      <div className="block max-width mx-auto px-4 justify-between content-center">
         <div className="flex items-center justify-between mx-auto mt-14 mb-10">
           <Link
             to="home"

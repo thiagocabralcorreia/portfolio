@@ -13,7 +13,7 @@ const Contact = () => {
         duration: 0.5,
         delay: 0.1,
       }}
-      className="w-10/12 flex max-lg:flex-col m-auto py-20 px-4 sm:px-6 lg:px-8"
+      className="max-width flex max-lg:flex-col m-auto py-20 px-4 sm:px-6 lg:px-8"
     >
       <ContactInfo />
       <ContactForm />

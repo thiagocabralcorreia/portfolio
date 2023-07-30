@@ -21,7 +21,7 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 1.2, delay: 0.2 }}
-      className="w-10/12 lg:h-screen m-auto px-8 pt-28 lg:pt-24 lg:flex lg:justify-between lg:item-center"
+      className="max-width max-w-[1200px] lg:h-screen m-auto px-8 pt-28 lg:pt-24 lg:flex lg:justify-between lg:item-center"
     >
       <div className="flex flex-col max-lg:pt-12 max-lg:pb-16 text-center lg:text-left content-center justify-center">
         <p className="text-neutral-700 dark:text-neutral-300 sm:text-md text-xl mb-3 sm:mb-4 font-inter">
@@ -63,7 +63,7 @@ const Hero = () => {
         <img
           src={photo}
           alt="Animated developer guy with laptop"
-          className="w-10/12 lg:w-9/12 self-center lg:self-end"
+          className="max-width lg:w-9/12 self-center lg:self-end"
         />
       </motion.div>
     </motion.section>

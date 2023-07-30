@@ -19,7 +19,7 @@ const NotFound = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="w-10/12 m-auto pb-14 max-lg:pb-32 px-4 sm:px-6 lg:px-8"
+      className="max-width m-auto pb-14 max-lg:pb-32 px-4 sm:px-6 lg:px-8"
     >
       <Header
         desktopChildren={

@@ -25,7 +25,7 @@ const Home = () => {
         </div>
         <About />
         <ProjectsGrid home />
-        <div className="w-10/12 m-auto mt-[-20px] mb-20 text-center">
+        <div className="max-width m-auto mt-[-20px] mb-20 text-center">
           <Link to={"/projects"}>
             <Button>More Projects</Button>
           </Link>

@@ -20,6 +20,10 @@
     font-family: "Inter", sans-serif;
   }
 
+  .max-width {
+    @apply w-10/12 max-w-[1200px];
+  }
+
   .primary-font-colors {
     @apply dark:text-white text-black dark:hover:text-primaryDark hover:text-primary;
   }
