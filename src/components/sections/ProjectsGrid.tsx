@@ -45,7 +45,7 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
       }}
       className="w-full pt-20 pb-12"
     >
-      <div className="w-10/12 m-auto text-center">
+      <div className="max-width m-auto text-center">
         <h1 className="section-title">{projectData.title}</h1>
       </div>
 
@@ -55,7 +55,7 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
       </p>
 
       {!home && (
-        <div className="w-10/12 m-auto text-center mt-10">
+        <div className="max-width m-auto text-center mt-10">
           <ProjectsFilter setSelectProject={setSelectProject} />
         </div>
       )}

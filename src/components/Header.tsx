@@ -23,7 +23,7 @@ const Header = ({
         className="mb-[-5px] border-b-4 border-secondaryBackground dark:border-secondaryDarkBackground
       dark:bg-primaryDarkBackground bg-primaryBackground opacity-90 backdrop-blur-md"
       >
-        <div className="flex items-center justify-between w-10/12 mx-auto px-4 sm:px-6 lg:px-8 h-24">
+        <div className="flex items-center justify-between max-width mx-auto px-6 lg:px-8 h-24">
           <div className="flex w-full items-center justify-between">
             <div className="flex-shrink-0">
               <Link to={"/"}>

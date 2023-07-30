@@ -78,7 +78,7 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="pt-36 w-10/12 m-auto px-4 sm:px-6 lg:px-8 bg:neutral-900"
+        className="pt-36 max-width m-auto px-4 sm:px-6 lg:px-8 bg:neutral-900"
       >
         <p className="section-title text-primary dark:text-primaryDark">
           {project?.name}
