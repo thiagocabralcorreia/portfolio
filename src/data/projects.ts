@@ -1,3 +1,4 @@
+import BNB from "../assets/projects/project-bnb0.png";
 import Scoutfy from "../assets/projects/project-scoutfy0.png";
 import Caule from "../assets/projects/project-caule0.png";
 import CoffeeHouse from "../assets/projects/project-coffeehouse0.png";
@@ -33,6 +34,12 @@ export const ptIntroProjectsData = {
 
 export const projectsData = [
   {
+    id: "bnb",
+    title: "Banco do Nordeste",
+    category: "Web",
+    image: BNB,
+  },
+  {
     id: "scoutfy",
     title: "Scoutfy",
     category: "Web",
@@ -43,6 +50,12 @@ export const projectsData = [
     title: "Caule App",
     category: "Mobile",
     image: Caule,
+  },
+  {
+    id: "appqd",
+    title: "APPqd",
+    category: "Mobile",
+    image: APPqd,
   },
   {
     id: "coffee-house",
@@ -63,10 +76,10 @@ export const projectsData = [
     image: DevMeetup,
   },
   {
-    id: "appqd",
-    title: "APPqd",
+    id: "cnh",
+    title: "Comida na Hora",
     category: "Mobile",
-    image: APPqd,
+    image: ComidaNaHora,
   },
   {
     id: "film-n-chips",
@@ -75,22 +88,16 @@ export const projectsData = [
     image: FilmNChips,
   },
   {
-    id: "cnh",
-    title: "Comida na Hora",
-    category: "Mobile",
-    image: ComidaNaHora,
+    id: "web-accessibility",
+    title: "Web Accessibility",
+    category: "Web",
+    image: WA,
   },
   {
     id: "portfolio",
     title: "Portfolio",
     category: "Web",
     image: Portfolio,
-  },
-  {
-    id: "web-accessibility",
-    title: "Web Accessibility",
-    category: "Web",
-    image: WA,
   },
   {
     id: "gofinances",

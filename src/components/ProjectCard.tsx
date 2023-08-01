@@ -1,9 +1,8 @@
-import { motion } from "framer-motion";
 import { ProjecSchema } from "../data/projects";
 
 const ProjectCard = ({ title, category, image, onClick }: ProjecSchema) => {
   return (
-    <div className="relative overflow-hidden shadow-lg ring-1 ring-neutral-500 ring-opacity-5">
+    <div className="relative overflow-hidden">
       <div onClick={onClick} className="cursor-pointer mb-10 sm:mb-0">
         <div className="relative h-0" style={{ paddingTop: "56.25%" }}>
           <div

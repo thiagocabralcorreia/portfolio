@@ -1,5 +1,6 @@
 import Scoutfy1 from "../assets/projects/project-scoutfy1.png";
 import Scoutfy2 from "../assets/projects/project-scoutfy2.png";
+import BNB from "../assets/projects/project-bnb0.png";
 import Caule1 from "../assets/projects/project-caule1.png";
 import Caule2 from "../assets/projects/project-caule2.png";
 import CoffeeHouse1 from "../assets/projects/project-coffeehouse1.png";
@@ -63,7 +64,7 @@ export const enIntroProjectDetailsData = {
 
 export const ptIntroProjectDetailsData = {
   skills: "Habilidades",
-  overview: "Visão Geral do Projeto",
+  overview: "Sobre o Projeto",
   website: "Visite o site",
   apple: "Baixe na Apple Store",
   play: "Baixe na Play Store",
@@ -71,6 +72,53 @@ export const ptIntroProjectDetailsData = {
 };
 
 export const enProjectDetailsData = [
+  {
+    id: "bnb",
+    name: "Banco do Nordeste",
+    date: "May 2023 - Present",
+    type: "Web",
+    professional: true,
+    skills: [
+      "React.js",
+      "TypeScript",
+      "SASS",
+      "Responsive Web Design",
+      "Storybook",
+    ],
+    about: [
+      {
+        id: "bnb1",
+        text: "Via SONDA, I was hired to work at Banco do Nordeste (BNB) as a Frontend Developer, joining the UX team in the development of the Bank's Design System. One of my main missions is to bridge the gap between designers and developers.",
+      },
+      {
+        id: "bnb2",
+        text: "By far my primary task has been the development of the Design Systems library (also known as the user interface component library). This work involves translating design into code, producing reusable components that ensure high productivity in the development of future screens.",
+      },
+      {
+        id: "bnb3",
+        text: "For the web-oriented library, I have chosen to use React.js, TypeScript, and SASS. Additionally, I have been working with Storybook to showcase, document, and test each component in isolation.",
+      },
+      {
+        id: "bnb4",
+        text: "Furthermore, I am gaining knowledge in automated testing, using Jest and React Testing. This experience has been an exceptional learning opportunity for me.",
+      },
+      {
+        id: "bnb5",
+        text: "Note: As the library and documentation are currently accessible only to employees, I will provide more information about the project just when everything is publicly available on the bank's website.",
+      },
+    ],
+    website: "https://www.bnb.gov.br",
+    github: "",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "bnb0.png",
+        src: BNB,
+        alt: "BNB logo",
+      },
+    ],
+  },
   {
     id: "scoutfy",
     name: "Scoutfy",
@@ -570,6 +618,53 @@ export const enProjectDetailsData = [
 ];
 
 export const ptProjectDetailsData = [
+  {
+    id: "bnb",
+    name: "Banco do Nordeste",
+    date: "May 2023 - Present",
+    type: "Web",
+    professional: true,
+    skills: [
+      "React.js",
+      "TypeScript",
+      "SASS",
+      "Responsive Web Design",
+      "Storybook",
+    ],
+    about: [
+      {
+        id: "bnb1",
+        text: "Através da SONDA, fui contratado para trabalhar no Banco do Nordeste (BNB) como Desenvolvedor Frontend, integrando-me ao time de UX no desenvolvimento do Design System do Banco. Uma das minhas principais missões é preencher a lacuna entre designers e desenvolvedores.",
+      },
+      {
+        id: "bnb2",
+        text: "Sem dúvida minha tarefa principal tem sido o desenvolvimento da biblioteca de Design Systems (também conhecida como biblioteca de componentes de interface do usuário). Esse trabalho envolve transformar o design em código, produzindo componentes reutilizáveis que garantam alta produtividade no desenvolvimento de futuras telas.",
+      },
+      {
+        id: "bnb3",
+        text: "Para a biblioteca voltada para a web, escolhi utilizar React.js, TypeScript e SASS. Além disso, tenho trabalhado com o Storybook para mostrar, documentar e testar cada componente em isolamento.",
+      },
+      {
+        id: "bnb4",
+        text: "Adicionalmente, estou adquirindo conhecimentos em testes automatizados, utilizando Jest e React Testing. Essa experiência tem sido uma oportunidade de aprendizado excepcional para mim.",
+      },
+      {
+        id: "bnb5",
+        text: "Nota: Como no momento a biblioteca e a documentação estão acessíveis apenas para funcionários,  eu apenas poderei trazer mais informações a respeito do projeto quando tudo estiver público e disponível no site do banco.",
+      },
+    ],
+    website: "https://www.bnb.gov.br",
+    github: "",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "bnb0.png",
+        src: BNB,
+        alt: "BNB logo",
+      },
+    ],
+  },
   {
     id: "scoutfy",
     name: "Scoutfy",

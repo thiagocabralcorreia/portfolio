@@ -60,7 +60,7 @@ const ProjectsGrid = ({ home }: ProjectsGridProps) => {
         </div>
       )}
 
-      <div className="w-9/12 m-auto max-sm:mt-12 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+      <div className="max-w-[1200px] w-9/12 m-auto max-sm:mt-12 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
         {home
           ? projects
               ?.slice(0, 6)

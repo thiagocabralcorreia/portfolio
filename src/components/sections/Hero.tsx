@@ -32,7 +32,9 @@ const Hero = () => {
             {heroData.name}
           </span>
         </p>
-        <h1 className="text-5xl md:text-7xl text-primary dark:text-primaryDark font-semibold mb-3 sm:mb-5 font-poppins">
+        <h1 className={(language !== "en" && "max-sm:text-3xl")
+          + " text-5xl md:text-7xl text-primary dark:text-primaryDark font-semibold mb-3 sm:mb-5 font-poppins"
+        }>
           {heroData.frontend}
           <br className="max-md:hidden" />
           <span className="lg:hidden"> </span>
