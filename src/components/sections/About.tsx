@@ -44,7 +44,7 @@ const About = () => {
             </span>
             , {aboutData.library}
           </p>
-          <p className="text-xl mx-auto dark:text-neutral-300 text-neutral-800">
+          <p className="section-text mx-auto dark:text-neutral-300 text-neutral-800">
             {aboutData.learn}{" "}
             <span className="font-bold dark:font-normal text-primary dark:text-primaryDark">
               {aboutData.feelFree}{" "}

@@ -22,4 +22,5 @@ export const skills = [
   { id: 16, skill: "Scrum & Kanban" },
   { id: 17, skill: "Web Accessibility" },
   { id: 18, skill: "Design Systems" },
+  { id: 19, skill: "Jest" },
 ];

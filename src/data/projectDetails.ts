@@ -81,30 +81,32 @@ export const enProjectDetailsData = [
     skills: [
       "React.js",
       "TypeScript",
-      "SASS",
+      "SCSS",
       "Responsive Web Design",
       "Storybook",
+      "Jest",
+      "React Testing",
     ],
     about: [
       {
         id: "bnb1",
-        text: "Via SONDA, I was hired to work at Banco do Nordeste (BNB) as a Frontend Developer, joining the UX team in the development of the Bank's Design System. One of my main missions is to bridge the gap between designers and developers.",
+        text: "Via SONDA, I was hired to work at Banco do Nordeste (BNB), the largest social development bank in Latin America. And, along with the UX team, I am part of building the Bank's Design System. One of my main missions is to bridge the gap between designers and developers.",
       },
       {
         id: "bnb2",
-        text: "By far my primary task has been the development of the Design Systems library (also known as the user interface component library). This work involves translating design into code, producing reusable components that ensure high productivity in the development of future screens.",
+        text: "By far my most impactful task has been the creation of the Design System library (a library of user interface components). This work involves translating design and variables into code, producing a complex set of components that will be reused on various company websites to ensure high productivity in the development of future screens.",
       },
       {
         id: "bnb3",
-        text: "For the web-oriented library, I have chosen to use React.js, TypeScript, and SASS. Additionally, I have been working with Storybook to showcase, document, and test each component in isolation.",
+        text: "For the web-focused library, I decided to use React.js with Vite, TypeScript, SCSS, and Storybook (to showcase, document, and test each component in isolation). Additionally, automated testing, using Jest and React Testing.",
       },
       {
         id: "bnb4",
-        text: "Furthermore, I am gaining knowledge in automated testing, using Jest and React Testing. This experience has been an exceptional learning opportunity for me.",
+        text: "Initially, before starting the library production, I also created the Digital Platform for BNB, a collaborative documentation site created with Docusaurus, a static site generator that enables the combination of Markdown with React components.",
       },
       {
         id: "bnb5",
-        text: "Note: As the library and documentation are currently accessible only to employees, I will provide more information about the project just when everything is publicly available on the bank's website.",
+        text: "• Note: Currently, the library and documentation are only accessible to employees, so I will only be able to share links and images of the projects when - and if - they are published and available on the bank's website.",
       },
     ],
     website: "https://www.bnb.gov.br",
@@ -114,7 +116,7 @@ export const enProjectDetailsData = [
     images: [
       {
         id: "bnb0.png",
-        src: BNB,
+        src: "BNB",
         alt: "BNB logo",
       },
     ],
@@ -627,30 +629,32 @@ export const ptProjectDetailsData = [
     skills: [
       "React.js",
       "TypeScript",
-      "SASS",
+      "SCSS",
       "Responsive Web Design",
       "Storybook",
+      "Jest",
+      "React Testing",
     ],
     about: [
       {
         id: "bnb1",
-        text: "Através da SONDA, fui contratado para trabalhar no Banco do Nordeste (BNB) como Desenvolvedor Frontend, integrando-me ao time de UX no desenvolvimento do Design System do Banco. Uma das minhas principais missões é preencher a lacuna entre designers e desenvolvedores.",
+        text: "Através da SONDA, fui contratado para trabalhar no Banco do Nordeste (BNB), o maior banco de desenvolvimento social da América Latina. E, junto ao time de UX, faço parte da construção do Design System do Banco. Uma das minhas principais missões é preencher a lacuna entre designers e desenvolvedores.",
       },
       {
         id: "bnb2",
-        text: "Sem dúvida minha tarefa principal tem sido o desenvolvimento da biblioteca de Design Systems (também conhecida como biblioteca de componentes de interface do usuário). Esse trabalho envolve transformar o design em código, produzindo componentes reutilizáveis que garantam alta produtividade no desenvolvimento de futuras telas.",
+        text: "Sem dúvida minha tarefa mais impactante tem sido a criação da biblioteca de Design System (uma biblioteca de componentes de interface do usuário). Esse trabalho envolve transformar o design e as variáveis em código, produzindo um complexo conjunto de componentes que serão reutilizados em vários sites da empresa, a fim de garantir alta produtividade no desenvolvimento de futuras telas.",
       },
       {
         id: "bnb3",
-        text: "Para a biblioteca voltada para a web, escolhi utilizar React.js, TypeScript e SASS. Além disso, tenho trabalhado com o Storybook para mostrar, documentar e testar cada componente em isolamento.",
+        text: "Para a biblioteca voltada para web, decidi utilizar React.js com Vite, TypeScript, SCSS e Storybook (para mostrar, documentar e testar cada componente em isolamento). Além disso, testes automatizados, utilizando Jest e React Testing.",
       },
       {
         id: "bnb4",
-        text: "Adicionalmente, estou adquirindo conhecimentos em testes automatizados, utilizando Jest e React Testing. Essa experiência tem sido uma oportunidade de aprendizado excepcional para mim.",
+        text: "Inicialmente, antes de começar a produção da biblioteca, também produzi para o BNB a Plataforma Digital, um site de documentação colaborativa criado com Docusaurus, um gerador de sites estático que possibilita a combinação de Markdown com componentes React.",
       },
       {
         id: "bnb5",
-        text: "Nota: Como no momento a biblioteca e a documentação estão acessíveis apenas para funcionários,  eu apenas poderei trazer mais informações a respeito do projeto quando tudo estiver público e disponível no site do banco.",
+        text: "• Nota: Como no momento a biblioteca e a documentação estão acessíveis apenas para funcionários, eu somente poderei divulgar links e imagens dos projetos quando - e se - estes estiverem publicados e disponíveis no site do banco.",
       },
     ],
     website: "https://www.bnb.gov.br",

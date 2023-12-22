@@ -74,13 +74,13 @@ function Recommendations() {
                     />
                     <div className="flex max-sm:flex-col items-center max-sm:divide-x-0 divide-x-2 divide-tertiaryBackground dark:divide-tertiaryDarkBackground">
                       <p
-                        className="max-sm:px-0 max-sm:pb-2 pr-4 max-sm:text-md text-lg font-poppins
+                        className="max-sm:px-0 max-sm:pb-2 pr-4 max-sm:text-md text-lg
                         dark:text-neutral-300 text-neutral-700 max-sm:text-primary dark:max-sm:text-primaryDark"
                       >
                         {recommendation.name}
                       </p>
 
-                      <p className="max-sm:px-0 pl-4 max-sm:text-md text-lg font-poppins dark:text-neutral-300 text-neutral-700">
+                      <p className="max-sm:px-0 pl-4 max-sm:text-md text-lg dark:text-neutral-300 text-neutral-700">
                         {recommendation.occupation}
                       </p>
                     </div>
