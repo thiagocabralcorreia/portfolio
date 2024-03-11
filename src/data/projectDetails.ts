@@ -26,6 +26,7 @@ import DevMeetup2 from "../assets/projects/project-devmeetup2.png";
 import DevMeetup3 from "../assets/projects/project-devmeetup3.png";
 import CNH1 from "../assets/projects/project-cnh1.png";
 import CNH2 from "../assets/projects/project-cnh2.png";
+import DigitalPlatform from "../assets/projects/project-bnb-digital-platform0.png";
 
 export interface ProjectText {
   id: string;
@@ -74,7 +75,7 @@ export const ptIntroProjectDetailsData = {
 export const enProjectDetailsData = [
   {
     id: "bnb",
-    name: "Banco do Nordeste",
+    name: "BNB React Lib",
     date: "May 2023 - Present",
     type: "Web",
     professional: true,
@@ -90,23 +91,19 @@ export const enProjectDetailsData = [
     about: [
       {
         id: "bnb1",
-        text: "Via SONDA, I was hired to work at Banco do Nordeste (BNB), the largest social development bank in Latin America. And, along with the UX team, I am part of building the Bank's Design System. One of my main missions is to bridge the gap between designers and developers.",
+        text: "Through SONDA, I was hired to work at Banco do Nordeste (BNB), the largest social development bank in Latin America. Alongside the UX team, I am part of building the Bank's Design System, with the mission of bridging the gap between designers and developers.",
       },
       {
         id: "bnb2",
-        text: "By far my most impactful task has been the creation of the Design System library (a library of user interface components). This work involves translating design and variables into code, producing a complex set of components that will be reused on various company websites to ensure high productivity in the development of future screens.",
+        text: "My most impactful task has been creating the Design System library (a library of user interface components). This work involves translating design and variables into code, producing a complex set of over 50 components that will be reused across various company websites to ensure high productivity in developing future screens.",
       },
       {
         id: "bnb3",
-        text: "For the web-focused library, I decided to use React.js with Vite, TypeScript, SCSS, and Storybook (to showcase, document, and test each component in isolation). Additionally, automated testing, using Jest and React Testing.",
+        text: "For the web-focused library, I used React.js with Vite, TypeScript, SCSS, and Storybook (to showcase, document, and test each component in isolation). Through an API developed by us, Figma's variables and tokens are converted from JSON to SCSS files, updating themes, measurements, and other styles in real-time. Additionally, I performed automated tests on each component using Jest and React Testing Library.",
       },
       {
         id: "bnb4",
-        text: "Initially, before starting the library production, I also created the Digital Platform for BNB, a collaborative documentation site created with Docusaurus, a static site generator that enables the combination of Markdown with React components.",
-      },
-      {
-        id: "bnb5",
-        text: "• Note: Currently, the library and documentation are only accessible to employees, so I will only be able to share links and images of the projects when - and if - they are published and available on the bank's website.",
+        text: "• Note: The portal is accessed only by the bank's IT employees, and its site cannot be disclosed.",
       },
     ],
     website: "https://www.bnb.gov.br",
@@ -116,7 +113,47 @@ export const enProjectDetailsData = [
     images: [
       {
         id: "bnb0.png",
-        src: "BNB",
+        src: BNB,
+        alt: "BNB logo",
+      },
+    ],
+  },
+  {
+    id: "digital-platform",
+    name: "Platforma Digital BNB",
+    date: "May 2023 - Aug 2023",
+    type: "Web",
+    professional: true,
+    skills: [
+      "React.js",
+      "TypeScript",
+      "Docusaurus",
+      "Markdown",
+      "Responsive Web Design",
+      "Gitlab",
+    ],
+    about: [
+      {
+        id: "bnbdp1",
+        text: "Although my main task was to build the React component library for Banco do Nordeste's (BNB) Design System, my first project was the Digital Platform, a collaborative documentation website created with Docusaurus, a static site generator that allows the combination of Markdown with React components.",
+      },
+      {
+        id: "bnbdp2",
+        text: "This portal is used by all Banco do Nordeste's IT employees to inform and be informed about guidelines and guides for performing development and testing activities. This implementation resulted in an increase of more than 50% in engagement compared to the previous version of the Digital Platform.",
+      },
+      {
+        id: "bnbdp3",
+        text: "• Note: The portal is accessed only by the bank's IT employees, and its site cannot be disclosed.",
+      },
+    ],
+    website: "https://www.bnb.gov.br",
+    github: "",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "bnbpd0.png",
+        src: DigitalPlatform,
         alt: "BNB logo",
       },
     ],
@@ -622,7 +659,7 @@ export const enProjectDetailsData = [
 export const ptProjectDetailsData = [
   {
     id: "bnb",
-    name: "Banco do Nordeste",
+    name: "BNB React Lib",
     date: "May 2023 - Present",
     type: "Web",
     professional: true,
@@ -638,23 +675,19 @@ export const ptProjectDetailsData = [
     about: [
       {
         id: "bnb1",
-        text: "Através da SONDA, fui contratado para trabalhar no Banco do Nordeste (BNB), o maior banco de desenvolvimento social da América Latina. E, junto ao time de UX, faço parte da construção do Design System do Banco. Uma das minhas principais missões é preencher a lacuna entre designers e desenvolvedores.",
+        text: "Via SONDA, fui contratado para trabalhar no Banco do Nordeste (BNB), o maior banco de desenvolvimento social da América Latina. E, junto ao time de UX, faço parte da construção do Design System do Banco, com a missão de preencher a lacuna entre designers e desenvolvedores.",
       },
       {
         id: "bnb2",
-        text: "Sem dúvida minha tarefa mais impactante tem sido a criação da biblioteca de Design System (uma biblioteca de componentes de interface do usuário). Esse trabalho envolve transformar o design e as variáveis em código, produzindo um complexo conjunto de componentes que serão reutilizados em vários sites da empresa, a fim de garantir alta produtividade no desenvolvimento de futuras telas.",
+        text: "Minha tarefa mais impactante tem sido a criação da biblioteca de Design System (uma biblioteca de componentes de interface do usuário). Esse trabalho envolve transformar o design e as variáveis em código, produzindo um complexo conjunto de mais de 50 componentes que serão reutilizados em vários sites da empresa, a fim de garantir alta produtividade no desenvolvimento de futuras telas.",
       },
       {
         id: "bnb3",
-        text: "Para a biblioteca voltada para web, decidi utilizar React.js com Vite, TypeScript, SCSS e Storybook (para mostrar, documentar e testar cada componente em isolamento). Além disso, testes automatizados, utilizando Jest e React Testing.",
+        text: "Para a biblioteca voltada para web, utilizei React.js com Vite, TypeScript, SCSS e Storybook (para mostrar, documentar e testar cada componente em isolamento). Através de uma API desenvolvida por nós, as variáveis e os tokens do Figma são convertidas de JSON para arquivos SCSS, atualizando em tempo real temas, medidas e demais estilos. Além disso, realizei testes automatizados em cada componente, utilizando Jest e React Testing Library.",
       },
       {
         id: "bnb4",
-        text: "Inicialmente, antes de começar a produção da biblioteca, também produzi para o BNB a Plataforma Digital, um site de documentação colaborativa criado com Docusaurus, um gerador de sites estático que possibilita a combinação de Markdown com componentes React.",
-      },
-      {
-        id: "bnb5",
-        text: "• Nota: Como no momento a biblioteca e a documentação estão acessíveis apenas para funcionários, eu somente poderei divulgar links e imagens dos projetos quando - e se - estes estiverem publicados e disponíveis no site do banco.",
+        text: "• Nota: Como no momento a biblioteca e a documentação estão acessíveis apenas para funcionários, eu somente poderei divulgar links relacionados ao projeto quando - e caso - estes estiverem disponíveis ao público no site do banco. Por enquanto, o uso é restrito, com aplicações apenas em sites internos.",
       },
     ],
     website: "https://www.bnb.gov.br",
@@ -665,6 +698,46 @@ export const ptProjectDetailsData = [
       {
         id: "bnb0.png",
         src: BNB,
+        alt: "BNB logo",
+      },
+    ],
+  },
+  {
+    id: "digital-platform",
+    name: "BNB Digital Platform",
+    date: "May 2023 - Aug 2023",
+    type: "Web",
+    professional: true,
+    skills: [
+      "React.js",
+      "TypeScript",
+      "Docusaurus",
+      "Markdown",
+      "Responsive Web Design",
+      "Gitlab",
+    ],
+    about: [
+      {
+        id: "bnbdp1",
+        text: "Embora minha principal tarefa tenha sido a construção da biblioteca de componentes React do Design System do Banco do Nordeste (BNB), meu primeiro projeto foi a Plataforma Digital, um site de documentação colaborativa criado com Docusaurus, gerador de sites estático que possibilita a combinação de Markdown com componentes React.",
+      },
+      {
+        id: "bnbdp2",
+        text: "Este portal é utilizado por todos os colaboradores da TI do Banco do Nordeste a fim de informar e ser informado a respeito de diretrizes e guias para desempenhar as atividades de desenvolvimento e testes. Esta implementação resultou em um acréscimo de mais de 50% de engajamento em comparação à versão anterior da Plataforma Digital.",
+      },
+      {
+        id: "bnbdp3",
+        text: "• Nota: O portal é acessado apenas por funcionários da TI do banco e seu site não pode ser divulgado.",
+      },
+    ],
+    website: "https://www.bnb.gov.br",
+    github: "",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "bnbpd0.png",
+        src: DigitalPlatform,
         alt: "BNB logo",
       },
     ],

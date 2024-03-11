@@ -10,6 +10,7 @@ import GoFinances from "../assets/projects/project-gofinances0.png";
 import Portfolio from "../assets/projects/project-portfolio0.png";
 import DevMeetup from "../assets/projects/project-devmeetup0.png";
 import ComidaNaHora from "../assets/projects/project-cnh0.png";
+import DigitalPlatform from "../assets/projects/project-bnb-digital-platform0.png";
 
 export interface ProjecSchema {
   id?: string;
@@ -35,7 +36,7 @@ export const ptIntroProjectsData = {
 export const projectsData = [
   {
     id: "bnb",
-    title: "Banco do Nordeste",
+    title: "BNB React Lib",
     category: "Web",
     image: BNB,
   },
@@ -58,10 +59,10 @@ export const projectsData = [
     image: APPqd,
   },
   {
-    id: "coffee-house",
-    title: "CoffeeHouse",
+    id: "digital-platform",
+    title: "BNB Digital Platform",
     category: "Web",
-    image: CoffeeHouse,
+    image: DigitalPlatform,
   },
   {
     id: "wee-travel",
@@ -70,16 +71,22 @@ export const projectsData = [
     image: WeeTravel,
   },
   {
-    id: "dev-meetup",
-    title: "DevMeetup",
-    category: "Web",
-    image: DevMeetup,
-  },
-  {
     id: "cnh",
     title: "Comida na Hora",
     category: "Mobile",
     image: ComidaNaHora,
+  },
+  {
+    id: "coffee-house",
+    title: "CoffeeHouse",
+    category: "Web",
+    image: CoffeeHouse,
+  },
+  {
+    id: "dev-meetup",
+    title: "DevMeetup",
+    category: "Web",
+    image: DevMeetup,
   },
   {
     id: "film-n-chips",
