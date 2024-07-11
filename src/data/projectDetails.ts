@@ -24,6 +24,9 @@ import Portfolio3 from "../assets/projects/project-portfolio3.png";
 import DevMeetup1 from "../assets/projects/project-devmeetup1.png";
 import DevMeetup2 from "../assets/projects/project-devmeetup2.png";
 import DevMeetup3 from "../assets/projects/project-devmeetup3.png";
+import BritishBeers1 from "../assets/projects/project-british-beers1.png";
+import BritishBeers2 from "../assets/projects/project-british-beers2.png";
+import BritishBeers3 from "../assets/projects/project-british-beers3.png";
 import CNH1 from "../assets/projects/project-cnh1.png";
 import CNH2 from "../assets/projects/project-cnh2.png";
 import DigitalPlatform from "../assets/projects/project-bnb-digital-platform0.png";
@@ -120,7 +123,7 @@ export const enProjectDetailsData = [
   },
   {
     id: "digital-platform",
-    name: "Platforma Digital BNB",
+    name: "Plataforma Digital BNB",
     date: "May 2023 - Aug 2023",
     type: "Web",
     professional: true,
@@ -636,7 +639,7 @@ export const enProjectDetailsData = [
         text: "At Nano Incub, one of our missions was to develop a new version of the mobile app, which already existed and was working (its first version created with Iconic and Laravel). We rebuilt it with React Native and added new elements to improve the user experience.",
       },
     ],
-    website: "",
+    website: "https://comidanahora.com.br/",
     github: "",
     appleStore: "https://apps.apple.com/br/app/comida-na-hora/id1517670680",
     playStore:
@@ -651,6 +654,45 @@ export const enProjectDetailsData = [
         id: "cnh2.png",
         src: CNH2,
         alt: "Smartphones with Comida na Hora app screens",
+      },
+    ],
+  },
+  {
+    id: "british-beers",
+    name: "British Beers",
+    date: "Jun 2024",
+    type: "Web",
+    professional: false,
+    skills: ["Next.js", "TypeScript", "Taildwind CSS", "SSR"],
+    about: [
+      {
+        id: "britishbeers1",
+        text: "This website was developed for study purposes, aiming to learn new features of Next.js App Router through practice. As a keen enthusiast of British beers, I built a simple e-commerce site focused on data retrieval.",
+      },
+      {
+        id: "britishbeers2",
+        text: "• Note: Since this project was solely for studying App Router, I created a basic API using Next.js itself. I did not focus on site responsiveness, nor did I include a shopping cart page or purchasing tool.",
+      },
+    ],
+    website: "",
+    github: "https://github.com/thiagocabralcorreia/british-beers",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "british-beers1.png",
+        src: BritishBeers1,
+        alt: "British Beers Website home page",
+      },
+      {
+        id: "british-beers2.png",
+        src: BritishBeers2,
+        alt: "British Beers Website products page",
+      },
+      {
+        id: "british-beers3.png",
+        src: BritishBeers3,
+        alt: "British Beers Website product details page",
       },
     ],
   },
@@ -1220,7 +1262,7 @@ export const ptProjectDetailsData = [
         text: "Na Nano Incub, uma de nossas missões foi desenvolver uma nova versão do aplicativo móvel, que já existia e estava em funcionamento (sua primeira versão criada com Iconic e Laravel). Refizemos com React Native e adicionamos novos elementos a fim de melhorar a experiência do usuário.",
       },
     ],
-    website: "",
+    website: "https://comidanahora.com.br/",
     github: "",
     appleStore: "https://apps.apple.com/br/app/comida-na-hora/id1517670680",
     playStore:
@@ -1235,6 +1277,45 @@ export const ptProjectDetailsData = [
         id: "cnh2.png",
         src: CNH2,
         alt: "Smartphones with Comida na Hora app screens",
+      },
+    ],
+  },
+  {
+    id: "british-beers",
+    name: "British Beers",
+    date: "Jun 2024",
+    type: "Web",
+    professional: false,
+    skills: ["Next.js", "TypeScript", "Taildwind CSS", "SSR"],
+    about: [
+      {
+        id: "britishbeers1",
+        text: "Este website foi desenvolvido para fins de estudo, a fim de aprender novas features do Next.js App Router através da prática. Como bom apreciador de cervejas do Reino Unido, construí um e-commerce simples de cervejas britânicas, com foco na busca de dados.",
+      },
+      {
+        id: "britishbeers2",
+        text: "• Nota: Uma vez que este projeto teve fins apenas para estudo de App Router, criei simples API com o próprio Next.js, não foquei na responsividade do site nem adicionei a página de carrinho nem ferramenta de compra.",
+      },
+    ],
+    website: "",
+    github: "https://github.com/thiagocabralcorreia/british-beers",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "british-beers1.png",
+        src: BritishBeers1,
+        alt: "Página inicial do site British Beers",
+      },
+      {
+        id: "british-beers2.png",
+        src: BritishBeers2,
+        alt: "Página de produto do site British Beers",
+      },
+      {
+        id: "british-beers3.png",
+        src: BritishBeers3,
+        alt: "Página de detalhes de produto do site British Beers",
       },
     ],
   },

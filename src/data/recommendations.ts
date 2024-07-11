@@ -23,7 +23,7 @@ export const enRecommendationsData: Recommendation[] = [
     text: "I had the pleasure of working closely with Thiago at Sonda on a project for BNB, and I wholeheartedly recommend him as a highly skilled front-end developer. Thiago possesses a keen enthusiasm for UX design and actively collaborates with designers, offering insightful suggestions that enhance the user experience. His strong communication skills and team-oriented approach, combined with his eagerness to continually learn and adapt to project requirements, make him an outstanding professional in his field. Working with Thiago is both a productive and enjoyable experience.",
     image: RyanAlencar,
     name: "Francisco Ryan Alencar",
-    occupation: "Fullstack Developer",
+    occupation: "Senior Software Architect",
     link: "https://www.linkedin.com/in/ryanalencar/",
   },
   {
@@ -98,7 +98,7 @@ export const ptRecommendationsData: Recommendation[] = [
     text: "Tive o prazer de trabalhar de perto com o Thiago na Sonda em um projeto para o BNB, e recomendo ele como um desenvolvedor front-end altamente qualificado. O Thiago possui um entusiasmo marcante pelo design de UX, colaborando ativamente com os designers, oferecendo sugestões perspicazes que aprimoram a experiência do usuário. Sua habilidade de comunicação e seu espírito de equipe, combinados com sua vontade de aprender e se adaptar aos requisitos do projeto, o tornam um profissional excepcional em sua área. Trabalhar com o Thiago é tanto uma experiência produtiva quanto agradável.",
     image: RyanAlencar,
     name: "Francisco Ryan Alencar",
-    occupation: "Desenvolvedor Fullstack",
+    occupation: "Arquiteto de Software Sênior",
     link: "https://www.linkedin.com/in/ryanalencar/",
   },
   {

@@ -2,7 +2,7 @@ import { useContext, Fragment, useState } from "react";
 import { HiChevronUpDown } from "react-icons/hi2";
 import { Listbox, Transition } from "@headlessui/react";
 
-import { Language, LanguageContext } from "../context/LanguageContext";
+import { LanguageContext } from "../context/LanguageContext";
 
 const options = [
   { value: "All", name: "All" },

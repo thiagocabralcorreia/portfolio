@@ -1,7 +1,6 @@
 export const enHeroData = {
   hi: "Hi, there! I'm",
-  name: "Thiago Cabral Correia",
-  surname: "Cabral Correia",
+  name: "Thiago Correia",
   frontend: "Front-end",
   developer: "Developer",
   passionate: "Passionate about building beautiful user interfaces,",
@@ -10,8 +9,7 @@ export const enHeroData = {
 
 export const ptHeroData = {
   hi: "Olá! Eu sou",
-  name: "Thiago Cabral Correia",
-  surname: "Cabral Correia",
+  name: "Thiago Correia",
   frontend: "Desenvolvedor",
   developer: "Front-end",
   passionate: "Apaixonado por construir belas interfaces",

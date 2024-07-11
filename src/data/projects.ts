@@ -11,6 +11,7 @@ import Portfolio from "../assets/projects/project-portfolio0.png";
 import DevMeetup from "../assets/projects/project-devmeetup0.png";
 import ComidaNaHora from "../assets/projects/project-cnh0.png";
 import DigitalPlatform from "../assets/projects/project-bnb-digital-platform0.png";
+import BritishBeers from "../assets/projects/project-british-beers0.png";
 
 export interface ProjecSchema {
   id?: string;
@@ -65,16 +66,16 @@ export const projectsData = [
     image: DigitalPlatform,
   },
   {
-    id: "wee-travel",
-    title: "Wee Travel",
-    category: "Mobile",
-    image: WeeTravel,
-  },
-  {
     id: "cnh",
     title: "Comida na Hora",
     category: "Mobile",
     image: ComidaNaHora,
+  },
+  {
+    id: "wee-travel",
+    title: "Wee Travel",
+    category: "Mobile",
+    image: WeeTravel,
   },
   {
     id: "coffee-house",
@@ -87,6 +88,12 @@ export const projectsData = [
     title: "DevMeetup",
     category: "Web",
     image: DevMeetup,
+  },
+  {
+    id: "british-beers",
+    title: "British Beers",
+    category: "Web",
+    image: BritishBeers,
   },
   {
     id: "film-n-chips",
