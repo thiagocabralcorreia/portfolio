@@ -12,6 +12,7 @@ import DevMeetup from "../assets/projects/project-devmeetup0.png";
 import ComidaNaHora from "../assets/projects/project-cnh0.png";
 import DigitalPlatform from "../assets/projects/project-bnb-digital-platform0.png";
 import BritishBeers from "../assets/projects/project-british-beers0.png";
+import CVFY from "../assets/projects/project-cvfy0.png";
 
 export interface ProjecSchema {
   id?: string;
@@ -102,21 +103,27 @@ export const projectsData = [
     image: FilmNChips,
   },
   {
+    id: "cvfy",
+    title: "CVFY",
+    category: "Mobile",
+    image: CVFY,
+  },
+  {
     id: "web-accessibility",
     title: "Web Accessibility",
     category: "Web",
     image: WA,
   },
   {
-    id: "portfolio",
-    title: "Portfolio",
-    category: "Web",
-    image: Portfolio,
-  },
-  {
     id: "gofinances",
     title: "GoFinances",
     category: "Mobile",
     image: GoFinances,
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio",
+    category: "Web",
+    image: Portfolio,
   },
 ];

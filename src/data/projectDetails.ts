@@ -30,6 +30,7 @@ import BritishBeers3 from "../assets/projects/project-british-beers3.png";
 import CNH1 from "../assets/projects/project-cnh1.png";
 import CNH2 from "../assets/projects/project-cnh2.png";
 import DigitalPlatform from "../assets/projects/project-bnb-digital-platform0.png";
+import CVFY from "../assets/projects/project-cvfy0.png";
 
 export interface ProjectText {
   id: string;
@@ -696,6 +697,39 @@ export const enProjectDetailsData = [
       },
     ],
   },
+  {
+    id: "cvfy",
+    name: "CVFY",
+    date: "Apr 2022 - Aug 2022",
+    type: "Mobile",
+    professional: true,
+    skills: ["React.js", "TypeScript", "Styled-Components", "React Native"],
+    about: [
+      {
+        id: "cvfy1",
+        text: "I undertook a remote freelance project in collaboration with a team based in Northampton, England. This project encompassed two main areas: the development of a job search mobile application and the creation of a landing page.",
+      },
+      {
+        id: "cvfy2",
+        text: "The application was designed with a strong focus on user experience and a clean, intuitive interface. I used React Native and TypeScript to deliver a streamlined and efficient navigation experience, with job search and application features powered by artificial intelligence.",
+      },
+      {
+        id: "cvfy3",
+        text: "To complement the app, I developed a responsive, mobile-first landing page using React and TypeScript. The page was designed to maximise visitor-to-user conversion, featuring an attractive and easy-to-navigate layout. The design was implemented with Styled-components and mockups created in Adobe XD.",
+      },
+    ],
+    website: "",
+    github: "",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "cvfy.png",
+        src: CVFY,
+        alt: "CVFY logo",
+      },
+    ],
+  },
 ];
 
 export const ptProjectDetailsData = [
@@ -1316,6 +1350,39 @@ export const ptProjectDetailsData = [
         id: "british-beers3.png",
         src: BritishBeers3,
         alt: "Página de detalhes de produto do site British Beers",
+      },
+    ],
+  },
+  {
+    id: "cvfy",
+    name: "CVFY",
+    date: "Abr 2022 - Ago 2022",
+    type: "Mobile",
+    professional: true,
+    skills: ["React.js", "TypeScript", "Styled-Components", "React Native"],
+    about: [
+      {
+        id: "cvfy1",
+        text: "Realizei um projeto freelance remoto em colaboração com uma equipe localizada em Northampton, Inglaterra. Este projeto compreendia duas frentes principais: o desenvolvimento de um aplicativo móvel de busca de emprego e a criação de uma landing page.",
+      },
+      {
+        id: "cvfy2",
+        text: "O aplicativo foi concebido com um foco acentuado na experiência do usuário e em um design limpo e intuitivo. Utilizei React Native e TypeScript. O objetivo foi proporcionar uma navegação simplificada e eficiente, com funcionalidades de busca e aplicação de empregos impulsionadas por inteligência artificial.",
+      },
+      {
+        id: "cvfy3",
+        text: "Para complementar o aplicativo, desenvolvi uma landing page responsiva e mobile-first com React e TypeScript. A página foi projetada para maximizar a conversão de visitantes em usuários da plataforma, com um layout atraente e fácil de navegar. O design foi implementado utilizando Styled-components e mockups criados no Adobe XD.",
+      },
+    ],
+    website: "",
+    github: "",
+    appleStore: "",
+    playStore: "",
+    images: [
+      {
+        id: "cvfy.png",
+        src: CVFY,
+        alt: "Marca da plataforma CVFY",
       },
     ],
   },
