@@ -1,6 +1,8 @@
 import Scoutfy1 from "../assets/projects/project-scoutfy1.png";
 import Scoutfy2 from "../assets/projects/project-scoutfy2.png";
-import BNB from "../assets/projects/project-bnb0.png";
+import BNB1 from "../assets/projects/project-bnb1.png";
+import BNB2 from "../assets/projects/project-bnb2.png";
+import BNB3 from "../assets/projects/project-bnb3.png";
 import Caule1 from "../assets/projects/project-caule1.png";
 import Caule2 from "../assets/projects/project-caule2.png";
 import CoffeeHouse1 from "../assets/projects/project-coffeehouse1.png";
@@ -29,7 +31,9 @@ import BritishBeers2 from "../assets/projects/project-british-beers2.png";
 import BritishBeers3 from "../assets/projects/project-british-beers3.png";
 import CNH1 from "../assets/projects/project-cnh1.png";
 import CNH2 from "../assets/projects/project-cnh2.png";
-import DigitalPlatform from "../assets/projects/project-bnb-digital-platform0.png";
+import DigitalPlatform1 from "../assets/projects/project-bnb-digital-platform1.png";
+import DigitalPlatform2 from "../assets/projects/project-bnb-digital-platform2.png";
+import DigitalPlatform3 from "../assets/projects/project-bnb-digital-platform3.png";
 import CVFY from "../assets/projects/project-cvfy0.png";
 
 export interface ProjectText {
@@ -91,6 +95,7 @@ export const enProjectDetailsData = [
       "Storybook",
       "Jest",
       "React Testing",
+      "Vite",
     ],
     about: [
       {
@@ -107,7 +112,7 @@ export const enProjectDetailsData = [
       },
       {
         id: "bnb4",
-        text: "• Note: The portal is accessed only by the bank's IT employees, and its site cannot be disclosed.",
+        text: "• Note: At the moment, the library is accessed only by the bank's IT employees.",
       },
     ],
     website: "https://www.bnb.gov.br",
@@ -116,15 +121,25 @@ export const enProjectDetailsData = [
     playStore: "",
     images: [
       {
-        id: "bnb0.png",
-        src: BNB,
-        alt: "BNB logo",
+        id: "bnb1.png",
+        src: BNB1,
+        alt: "BNB DS React Library component shown in Storybook",
+      },
+      {
+        id: "bnb2.png",
+        src: BNB2,
+        alt: "BNB DS React Library component shown in Storybook",
+      },
+      {
+        id: "bnb1.png",
+        src: BNB3,
+        alt: "BNB DS React Library component shown in Storybook",
       },
     ],
   },
   {
     id: "digital-platform",
-    name: "Plataforma Digital BNB",
+    name: "BNB Digital Platform",
     date: "May 2023 - Aug 2023",
     type: "Web",
     professional: true,
@@ -156,9 +171,19 @@ export const enProjectDetailsData = [
     playStore: "",
     images: [
       {
-        id: "bnbpd0.png",
-        src: DigitalPlatform,
-        alt: "BNB logo",
+        id: "bnbpd1.png",
+        src: DigitalPlatform1,
+        alt: "Digital Platform portal",
+      },
+      {
+        id: "bnbpd2.png",
+        src: DigitalPlatform2,
+        alt: "Digital Platform portal",
+      },
+      {
+        id: "bnbpd3.png",
+        src: DigitalPlatform3,
+        alt: "Digital Platform portal",
       },
     ],
   },
@@ -736,7 +761,7 @@ export const ptProjectDetailsData = [
   {
     id: "bnb",
     name: "BNB React Lib",
-    date: "May 2023 - Present",
+    date: "Mai 2023 - Presente",
     type: "Web",
     professional: true,
     skills: [
@@ -747,6 +772,7 @@ export const ptProjectDetailsData = [
       "Storybook",
       "Jest",
       "React Testing",
+      "Vite",
     ],
     about: [
       {
@@ -763,7 +789,7 @@ export const ptProjectDetailsData = [
       },
       {
         id: "bnb4",
-        text: "• Nota: Como no momento a biblioteca e a documentação estão acessíveis apenas para funcionários, eu somente poderei divulgar links relacionados ao projeto quando - e caso - estes estiverem disponíveis ao público no site do banco. Por enquanto, o uso é restrito, com aplicações apenas em sites internos.",
+        text: "• Nota: No momento, o site está acessível apenas para funcionários.",
       },
     ],
     website: "https://www.bnb.gov.br",
@@ -772,16 +798,26 @@ export const ptProjectDetailsData = [
     playStore: "",
     images: [
       {
-        id: "bnb0.png",
-        src: BNB,
-        alt: "BNB logo",
+        id: "bnb1.png",
+        src: BNB1,
+        alt: "Componente da BNB DS React Library apresentado no Storybook",
+      },
+      {
+        id: "bnb2.png",
+        src: BNB2,
+        alt: "Componente da BNB DS React Library apresentado no Storybook",
+      },
+      {
+        id: "bnb1.png",
+        src: BNB3,
+        alt: "Componente da BNB DS React Library apresentado no Storybook",
       },
     ],
   },
   {
     id: "digital-platform",
-    name: "BNB Digital Platform",
-    date: "May 2023 - Aug 2023",
+    name: "Plataforma Digital BNB",
+    date: "Mai 2023 - Ago 2023",
     type: "Web",
     professional: true,
     skills: [
@@ -812,9 +848,19 @@ export const ptProjectDetailsData = [
     playStore: "",
     images: [
       {
-        id: "bnbpd0.png",
-        src: DigitalPlatform,
-        alt: "BNB logo",
+        id: "bnbpd1.png",
+        src: DigitalPlatform1,
+        alt: "Portal Plataforma Digital",
+      },
+      {
+        id: "bnbpd2.png",
+        src: DigitalPlatform2,
+        alt: "Portal Plataforma Digital",
+      },
+      {
+        id: "bnbpd3.png",
+        src: DigitalPlatform3,
+        alt: "Portal Plataforma Digital",
       },
     ],
   },
