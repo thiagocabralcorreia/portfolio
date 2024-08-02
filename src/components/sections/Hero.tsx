@@ -32,16 +32,19 @@ const Hero = () => {
             {heroData.name}
           </span>
         </p>
-        <h1 className={(language !== "en" && "max-sm:text-3xl")
-          + " text-5xl md:text-7xl text-primary dark:text-primaryDark font-semibold mb-3 sm:mb-5 font-poppins"
-        }>
+        <h1
+          className={
+            (language !== "en" && "max-sm:text-3xl") +
+            " text-5xl md:text-7xl text-primary dark:text-primaryDark font-semibold mb-3 sm:mb-5 font-poppins"
+          }
+        >
           {heroData.frontend}
           <br className="max-md:hidden" />
           <span className="lg:hidden"> </span>
           <span>{heroData.developer}</span>
         </h1>
         <p className="sm:text-md text-xl max-w-xl max-lg:mx-auto text-neutral-700 dark:text-neutral-300">
-          {heroData.passionate} <span className="xl:block">{heroData.ui}</span>
+          {heroData.passionate} {heroData.ui}
         </p>
 
         <div className="flex justify-center text-lg lg:block w-52 pt-12 max-lg:m-auto ">
@@ -65,7 +68,7 @@ const Hero = () => {
         <img
           src={photo}
           alt="Animated developer guy with laptop"
-          className="max-width lg:w-9/12 self-center lg:self-end"
+          className="max-width lg:w-7/12 self-center lg:self-end"
         />
       </motion.div>
     </motion.section>
